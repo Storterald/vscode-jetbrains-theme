@@ -1,0 +1,24 @@
+{
+  "name": "intellij-idea-theme-for-vs-code",
+  "displayName": "Intellij IDEA Theme for VS Code",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "New UI",
+        "uiTheme": "vs-dark",
+        "path": "./themes/New UI-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11"
+  }
+}
