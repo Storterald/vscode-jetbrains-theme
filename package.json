@@ -2,7 +2,7 @@
   "name": "intellij-idea-theme-for-vs-code",
   "displayName": "Intellij IDEA Theme for VS Code",
   "description": "",
-  "version": "0.0.1",
+  "version": "Beta-1.2.0",
   "engines": {
     "vscode": "^1.85.0"
   },
