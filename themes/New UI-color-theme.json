@@ -396,6 +396,20 @@
                 "foreground": "#cb8c6c"
             }
         },
+        {
+            "name": "'true' keyword",
+            "scope": "constant.language.true.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
+        {
+            "name": "'false' keyword",
+            "scope": "constant.language.false.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
 
         //Include
         {
@@ -424,6 +438,7 @@
 
         //Variables
         {
+            "name": "variable color",
             "scope": "variable.other.global.cpp",
             "settings": {
                 "foreground": "#c77dbb"
@@ -448,12 +463,14 @@
             }
         },
         {
+            "name": "string value",
             "scope": "string.quoted.double.cpp",
             "settings": {
                 "foreground": "#60a757"
             }
         },
         {
+            "name": "int value",
             "scope": "constant.numeric.decimal.cpp",
             "settings": {
                 "foreground": "#299fa2"
@@ -469,18 +486,6 @@
             "scope": "variable.other.property.cpp",
             "settings": {
                 "foreground": "#c77dbb"
-            }
-        },
-        {
-            "scope": "constant.language.true.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "scope": "constant.language.false.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
             }
         },
         {
