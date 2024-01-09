@@ -1,5 +1,3 @@
-//cmd 1: cd C:\Visual Studio Code\intellij-idea-theme-for-vs-code
-//cmd 2: vsce package
 //cmd 3 (admin): code --install-extension "C:\Visual Studio Code\intellij-idea-theme-for-vs-code\intellij-idea-theme-for-vs-code-0.0.1.vsix"
 {
 	"name": "New UI",
@@ -406,6 +404,27 @@
         {
             "name": "'false' keyword",
             "scope": "constant.language.false.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
+        {
+            "name": "'try' keyword",
+            "scope": "keyword.control.catch.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
+        {
+            "name": "'catch' keyword",
+            "scope": "keyword.control.try.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
+        {
+            "name": "'continue' keyword",
+            "scope": "keyword.control.continue.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             }
