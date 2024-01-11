@@ -533,6 +533,12 @@
                 "foreground": "#c77dbb"
             }
 		},
+        {
+			"scope": "entity.name.function.preprocessor.cpp",
+			"settings": {
+				"foreground": "#bcbec4"
+			}
+		},
 
         //Functions
         {
