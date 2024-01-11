@@ -429,6 +429,20 @@
                 "foreground": "#cb8c6c"
             }
         },
+        {
+            "name": "'template' keyword",
+            "scope": "storage.type.template.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
+        {
+            "name": "'typename' keyword",
+            "scope": "storage.type.template.argument.typename.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            }
+        },
 
         //Include
         {
@@ -558,6 +572,12 @@
 			"settings": {
 				"foreground": "#5289f6",
 				"fontStyle": "bold"
+			}
+		}, 	
+        {
+			"scope": "comment.block.cpp",
+			"settings": {
+				"foreground": "#7d7d7d"
 			}
 		},
 
