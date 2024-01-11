@@ -592,6 +592,12 @@
 				"foreground": "#7d7d7d"
 			}
 		},
+        {
+            "scope": "comment.line.double-slash.documentation.cpp",
+            "settings": {
+                "foreground": "#7d7d7d"
+            }
+        },
 
         //Operators
         {
