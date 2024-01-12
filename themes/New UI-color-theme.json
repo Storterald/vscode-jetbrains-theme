@@ -457,6 +457,13 @@
                 "foreground": "#cb8c6c"
             } 
         },
+        {
+            "name": "'default' keyword",
+            "scope": "keyword.control.default.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
 
         //Include
         {
