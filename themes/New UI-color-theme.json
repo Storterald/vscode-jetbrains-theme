@@ -434,7 +434,7 @@
             "scope": "storage.type.template.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
-            }
+            } 
         },
         {
             "name": "'typename' keyword",
@@ -442,6 +442,20 @@
             "settings": {
                 "foreground": "#cb8c6c"
             }
+        },
+        {
+            "name": "'case' keyword",
+            "scope": "keyword.control.case.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        {
+            "name": "'switch' keyword",
+            "scope": "keyword.control.switch.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
         },
 
         //Include
