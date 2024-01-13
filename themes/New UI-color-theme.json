@@ -647,6 +647,30 @@
                 "foreground": "#7d7d7d"
             }
         },
+        {
+            "scope": "comment.line.block.js",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
+        {
+            "scope": "comment.line.double-slash.js",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
+        {
+            "scope": "comment.line.documentation.js",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
+        {
+            "scope": "comment.line.double-slash.documentation.js",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
 
         //Operators
         {
@@ -787,6 +811,20 @@
             "settings": {
 				"foreground": "#5289f6"
 			}
-        }
+        },
+
+        //CMAKE 	
+        {
+            "scope": "keyword.cmake",
+            "settings": {
+				"foreground": "#5289f6"
+			}
+        }, 
+        {
+            "scope": "storage.source.cmake",
+            "settings": {
+				"foreground": "#5289f6"
+			}
+        },
 	]
 }
