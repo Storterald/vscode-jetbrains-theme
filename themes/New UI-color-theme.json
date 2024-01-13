@@ -492,6 +492,13 @@
                 "foreground": "#cb8c6c"
             } 
         },
+        { 	
+            "name": "'extern' keyword",
+            "scope": "storage.type.extern.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
 
         //Include
         {
