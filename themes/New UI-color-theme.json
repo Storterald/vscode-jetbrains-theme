@@ -449,7 +449,7 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        },  
         {
             "name": "'switch' keyword",
             "scope": "keyword.control.switch.cpp",
@@ -460,6 +460,13 @@
         {
             "name": "'default' keyword",
             "scope": "keyword.control.default.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        {
+            "name": "'return' keyword",
+            "scope": "keyword.control.return.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
