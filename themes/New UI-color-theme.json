@@ -552,12 +552,6 @@
             }
         },
         {
-            "scope": "variable.other.local.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
             "scope": "variable.other.property.cpp",
             "settings": {
                 "foreground": "#c77dbb"
@@ -574,13 +568,19 @@
 			"settings": {
                 "foreground": "#c77dbb"
             }
-		},
+		}, 
         {
 			"scope": "entity.name.function.preprocessor.cpp",
 			"settings": {
 				"foreground": "#bcbec4"
 			}
 		},
+        {
+            "scope": "variable.other.enummember.cpp",
+            "settings": {
+                "foreground": "#c77dbb"
+            }
+        },
 
         //Functions
         {
