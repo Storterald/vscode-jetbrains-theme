@@ -515,7 +515,7 @@
         },
         { 	
             "name": "'else' keyword",
-            "scope": "keyword.control.directive.elif.cpp",
+            "scope": "keyword.control.directive.else.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
