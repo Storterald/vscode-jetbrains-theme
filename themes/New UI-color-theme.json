@@ -463,10 +463,24 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 	
         {
             "name": "'return' keyword",
             "scope": "keyword.control.return.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        }, 
+        {
+            "name": "'constexpr' keyword",
+            "scope": "storage.modifier.constexpr.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        {
+            "name": "'enum' keyword",
+            "scope": "storage.type.enum.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
