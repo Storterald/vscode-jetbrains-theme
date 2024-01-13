@@ -24,8 +24,5 @@
   "repository": {
     "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
   },
-  "author": {
-    "name": "storterald",
-    "url": "https://github.com/Storterald"
-  }
+  "publisher": "Storterald"
 }
