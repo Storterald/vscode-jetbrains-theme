@@ -491,10 +491,31 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'extern' keyword",
             "scope": "storage.type.extern.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'ifdef' keyword",
+            "scope": "keyword.control.directive.conditional.ifdef.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'elif' keyword",
+            "scope": "keyword.control.directive.elif.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'else' keyword",
+            "scope": "keyword.control.directive.elif.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
