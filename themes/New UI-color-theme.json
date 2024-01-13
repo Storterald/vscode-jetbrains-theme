@@ -485,6 +485,13 @@
                 "foreground": "#cb8c6c"
             } 
         },
+        { 	
+            "name": "'break' keyword",
+            "scope": "keyword.control.break.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
 
         //Include
         {
