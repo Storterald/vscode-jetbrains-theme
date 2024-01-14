@@ -583,6 +583,13 @@
             }
         },
         {
+            "name": "preprocessor parameter color",
+            "scope": "variable.parameter.preprocessor.cpp",
+            "settings": {
+                "foreground": "#c77dbb"
+            }
+        },
+        { 
             "scope": "storage.type",
             "settings": {
                 "foreground": "#bcbec4"
