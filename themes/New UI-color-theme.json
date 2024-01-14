@@ -1,4 +1,3 @@
-//cmd 3 (admin): code --install-extension "C:\Visual Studio Code\intellij-idea-theme-for-vs-code\intellij-idea-theme-for-vs-code-0.0.1.vsix"
 {
 	"name": "New UI",
 	"colors": {
@@ -235,8 +234,6 @@
 
         "focusBorder": "#2b2d30",
         "foreground": "#bcbec4",
-		
-        "gitDecoration.ignoredResourceForeground": "#bcbec4",
 
 		"sideBar.background": "#2b2d30",
 		"sideBar.border": "#393b40",
@@ -248,12 +245,23 @@
 		"titleBar.activeForeground": "#bcbec4",
 		"titleBar.border": "#1e1f22",
 		"titleBar.inactiveBackground": "#2b2d30",
-		"titleBar.inactiveForeground": "#bcbec4"
+		"titleBar.inactiveForeground": "#bcbec4",
+
+        /* 
+         * GitHub Pull Requests and Issues extension
+        */
+        "gitDecoration.ignoredResourceForeground": "#bcbec4"
+
+        /*
+         * Better Comments extension
+        */
 		
 	},
 	"tokenColors": [
-
-        //Key words
+        
+        /*
+         * CPP files support
+        */
         {
 			"name": "'class' keyword",
         	"scope": "storage.type.class.cpp",
@@ -541,8 +549,6 @@
                 "foreground": "#cb8c6c"
             } 
         },
-
-        //Include
         {
 			"name": "#include < > content",
             "scope": "string.quoted.other.lt-gt.include.cpp",
@@ -557,8 +563,6 @@
                 "foreground": "#bcbec4"
             }
         },
-
-        //Namespace
         {
 			"name": "namespace 'this'",
             "scope": "entity.name.namespace.cpp",
@@ -566,8 +570,6 @@
                 "foreground": "#bcbec4"
             }
         },
-
-        //Variables
         {
             "name": "variable color",
             "scope": "variable.other.global.cpp",
@@ -671,8 +673,6 @@
                 "foreground": "#c77dbb"
             }
         },
-
-        //Functions
         {
             "scope": "variable.parameter.cpp",
             "settings": {
@@ -691,8 +691,6 @@
                 "foreground": "#bcbec4"
             }
         },
-
-        //Comments
         {
             "scope": "comment.line.double-slash.cpp",
             "settings": {
@@ -705,13 +703,6 @@
                 "foreground": "#5289f6"
             }
 		},
-		{
-			"scope": "heading.1.markdown",
-			"settings": {
-				"foreground": "#5289f6",
-				"fontStyle": "bold"
-			}
-		}, 	
         {
 			"scope": "comment.block.cpp",
 			"settings": {
@@ -730,32 +721,6 @@
                 "foreground": "#7d7d7d"
             }
         },
-        {
-            "scope": "comment.line.block.js",
-            "settings": {
-				"foreground": "#7d7d7d"
-			}
-        },
-        {
-            "scope": "comment.line.double-slash.js",
-            "settings": {
-				"foreground": "#7d7d7d"
-			}
-        },
-        {
-            "scope": "comment.line.documentation.js",
-            "settings": {
-				"foreground": "#7d7d7d"
-			}
-        },
-        {
-            "scope": "comment.line.double-slash.documentation.js",
-            "settings": {
-				"foreground": "#7d7d7d"
-			}
-        },
-
-        //Operators
         {
             "scope": "entity.name.function.operator.cpp",
             "settings": {
@@ -781,7 +746,9 @@
             }
         },
 
-		//Markdown
+		/*
+         * MARKDOWN files support
+        */
 		{
 			"scope": "markup.italic.markdown",
 			"settings": {
@@ -887,16 +854,33 @@
 				"fontStyle": "bold"
 			}
         },
+        {
+			"scope": "heading.1.markdown",
+			"settings": {
+				"foreground": "#5289f6",
+				"fontStyle": "bold"
+			}
+		}, 	
         
-        //JSON
+        /*
+         * JSON files support
+        */ 
         {
             "scope": "support.type.property-name.json",
             "settings": {
 				"foreground": "#5289f6"
 			}
         },
-
-        //CMAKE 	
+        {
+            "scope": "comment.block.json.comments",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
+        
+        /*
+         * CMAKE files support
+        */	
         {
             "scope": "keyword.cmake",
             "settings": {
@@ -908,6 +892,6 @@
             "settings": {
 				"foreground": "#5289f6"
 			}
-        },
+        }
 	]
 }
