@@ -614,14 +614,14 @@
             "name": "string value",
             "scope": "string.quoted.double.cpp",
             "settings": {
-                "foreground": "#60a757"
+                "foreground": "#65a86d"
             }
         },
         {
             "name": "char value",
             "scope": "string.quoted.single.cpp",
             "settings": {
-                "foreground": "#60a757"
+                "foreground": "#65a86d"
             }
         },
         {
@@ -894,6 +894,34 @@
             "settings": {
 				"foreground": "#5289f6"
 			}
+        },
+
+        /*
+         * HTML files support
+        */ 
+        {
+            "scope": "entity.name.tag.html",
+            "settings": {
+                "foreground": "#d5b778"
+            }
+        },
+        {
+            "scope": "punctuation.definition.tag.begin.html",
+            "settings": {
+                "foreground": "#d5b778"
+            }
+        },
+        {
+            "scope": "punctuation.definition.tag.end.html",
+            "settings": {
+                "foreground": "#d5b778"
+            }
+        },
+        {
+            "scope": "string.quoted.double.html",
+            "settings": {
+                "foreground": "#65a86d"
+            }
         },
 
         /*
