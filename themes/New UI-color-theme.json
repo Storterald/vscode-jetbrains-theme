@@ -864,8 +864,14 @@
         {
             "scope": "support.type.property-name.json",
             "settings": {
-				"foreground": "#5289f6"
+				"foreground": "#c77dbb"
 			}
+        },
+        {
+            "scope": "string.quoted.double.json.comments",
+            "settings": {
+                "foreground": "#65a86d"
+            }
         },
         {
             "scope": "comment.block.json.comments",
