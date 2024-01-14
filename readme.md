@@ -1,6 +1,6 @@
 # Compatibility
 
-This extension works with ***GitHub Pull Requests and Issues***, ***Better Comments*** and more.
+This extension works with ***GitHub Pull Requests and Issues extension***, ***Geode extension*** and more.
 
 It supports *.c*, *.cpp*, *.json*, *.md* files.
 

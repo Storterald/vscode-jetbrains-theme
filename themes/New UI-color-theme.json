@@ -30,7 +30,7 @@
         "button.secondaryForeground": "#bcbec4",
         "button.secondaryHoverBackground": "#43454a",
         "button.separator": "#1e1f22",
-
+    
         "charts.blue": "#3b4496",
         "charts.foreground": "#8a8b8c",
         "charts.green": "#5d982f",
@@ -251,10 +251,6 @@
          * GitHub Pull Requests and Issues extension
         */
         "gitDecoration.ignoredResourceForeground": "#bcbec4"
-
-        /*
-         * Better Comments extension
-        */
 		
 	},
 	"tokenColors": [
@@ -727,7 +723,7 @@
                 "foreground": "#bcbec4"
             }
         },
-        {
+        { 
             "scope": "entity.name.function.operator.member.cpp",
             "settings": {
                 "foreground": "#bcbec4"
@@ -877,6 +873,12 @@
 				"foreground": "#7d7d7d"
 			}
         },
+        {
+            "scope": "comment.line.double-slash.js",
+            "settings": {
+				"foreground": "#7d7d7d"
+			}
+        },
         
         /*
          * CMAKE files support
@@ -892,6 +894,83 @@
             "settings": {
 				"foreground": "#5289f6"
 			}
-        }
+        },
+
+        /*
+         * Geode Extension support
+        */
+
+        {
+			"scope": "geode.flalert.blue",
+			"settings": {
+				"foreground": "#3a518d"
+			}
+		},
+		{
+			"scope": "geode.flalert.green",
+			"settings": {
+				"foreground": "#5d982f"
+			}
+		},
+		{
+			"scope": "geode.flalert.aqua",
+			"settings": {
+				"foreground": "#3b8b96"
+			}
+		},
+		{
+			"scope": "geode.flalert.cyan",
+			"settings": {
+				"foreground": "#2f768c"
+			}
+		},
+		{
+			"scope": "geode.flalert.yellow",
+			"settings": {
+				"foreground": "#b99822"
+			}
+		},
+		{
+			"scope": "geode.flalert.orange",
+			"settings": {
+				"foreground": "#af5832"
+			}
+		},
+		{
+			"scope": "geode.flalert.red",
+			"settings": {
+				"foreground": "#a03d3d"
+			}
+		},
+		{
+			"scope": "geode.flalert.pink",
+			"settings": {
+				"foreground": "#883695"
+			}
+		},
+		{
+			"scope": "token.info-token",
+			"settings": {
+				"foreground": "#5289f6"
+			}
+		},
+		{
+			"scope": "token.warn-token",
+			"settings": {
+				"foreground": "#6b5b3a"
+			}
+		},
+		{
+			"scope": "token.error-token",
+			"settings": {
+				"foreground": "#c25460"
+			}
+		},
+		{
+			"scope": "token.debug-token",
+			"settings": {
+				"foreground": "#B267E6"
+			}
+		}
 	]
 }
