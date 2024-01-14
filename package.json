@@ -25,6 +25,9 @@
   },
   "repository": {
     "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
-  }
+  },
+  "extensionDependencies": [
+    "chadalen.vscode-jetbrains-icon-theme"
+  ]
   
 }
