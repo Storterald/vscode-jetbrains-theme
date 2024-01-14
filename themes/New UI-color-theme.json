@@ -317,13 +317,6 @@
                 "foreground": "#cb8c6c"
             }
         },
-        {
-			"name": "'NULL' keyword",
-            "scope": "entity.name.function.preprocessor.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
 		{
 			"name": "'for' keyword",
 			"scope": "keyword.control.for.cpp",
@@ -636,6 +629,13 @@
         {
             "name": "int value",
             "scope": "constant.numeric.decimal.cpp",
+            "settings": {
+                "foreground": "#299fa2"
+            }
+        },
+        {
+            "name": "hexadecimal value",
+            "scope": "constant.numeric.hexadecimal.cpp",
             "settings": {
                 "foreground": "#299fa2"
             }
