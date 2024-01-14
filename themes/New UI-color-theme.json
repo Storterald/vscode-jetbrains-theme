@@ -601,6 +601,18 @@
             }
         }, 	
         {
+            "scope": "meta.preprocessor.conditional entity.name.function.preprocessor.cpp",
+            "settings": {
+                "foreground": "#bcbec4"
+            }
+        }, 	
+        {
+            "scope": "meta.preprocessor.macro.cpp entity.name.function.preprocessor.cpp",
+            "settings": {
+                "foreground": "#bcbec4"
+            }
+        }, 
+        {
             "name": "string value",
             "scope": "string.quoted.double.cpp",
             "settings": {
