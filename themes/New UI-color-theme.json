@@ -640,12 +640,6 @@
             }
 		}, 
         {
-			"scope": "entity.name.function.preprocessor.cpp",
-			"settings": {
-				"foreground": "#bcbec4"
-			}
-		},
-        {
             "scope": "variable.other.enummember.cpp",
             "settings": {
                 "foreground": "#c77dbb"
