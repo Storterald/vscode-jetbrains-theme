@@ -856,7 +856,7 @@
 				"foreground": "#5289f6",
 				"fontStyle": "bold"
 			}
-		}, 	
+		},
         
         /*
          * JSON files support
@@ -874,10 +874,16 @@
             }
         },
         {
+            "scope": "string.quoted.double.json",
+            "settings": {
+                "foreground": "#65a86d"
+            }
+        },
+        {
             "scope": "comment.block.json.comments",
             "settings": {
 				"foreground": "#7d7d7d"
-			}
+			} 	
         },
         {
             "scope": "comment.line.double-slash.js",
