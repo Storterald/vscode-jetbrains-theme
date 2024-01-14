@@ -585,10 +585,17 @@
             "settings": {
                 "foreground": "#bcbec4"
             }
-        },
+        }, 	
         {
             "name": "string value",
             "scope": "string.quoted.double.cpp",
+            "settings": {
+                "foreground": "#60a757"
+            }
+        },
+        {
+            "name": "char value",
+            "scope": "string.quoted.single.cpp",
             "settings": {
                 "foreground": "#60a757"
             }
