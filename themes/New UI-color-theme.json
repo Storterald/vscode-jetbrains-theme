@@ -533,10 +533,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 	
         { 	
             "name": "'namespace' keyword",
             "scope": "storage.type.namespace.definition.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'NULL' keyword",
+            "scope": "constant.language.NULL.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
