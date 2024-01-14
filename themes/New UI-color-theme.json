@@ -632,10 +632,17 @@
             "settings": {
                 "foreground": "#299fa2"
             }
-        },
+        }, 
         {
             "name": "hexadecimal value",
             "scope": "constant.numeric.hexadecimal.cpp",
+            "settings": {
+                "foreground": "#299fa2"
+            }
+        },
+        {
+            "name": "hexadecimal value",
+            "scope": "keyword.other.unit.hexadecimal.cpp",
             "settings": {
                 "foreground": "#299fa2"
             }
