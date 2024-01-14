@@ -1,8 +1,10 @@
 {
   "name": "intellij-idea-theme-for-vs-code",
   "displayName": "Intellij IDEA Theme for VS Code",
+  "icon": "logo.png",
   "description": "Intellij 'New UI' theme in VS Code!",
   "version": "1.0.0",
+  "publisher": "Storterald",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -23,6 +25,6 @@
   },
   "repository": {
     "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
-  },
-  "publisher": "Storterald"
+  }
+  
 }
