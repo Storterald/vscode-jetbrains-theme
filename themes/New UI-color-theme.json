@@ -551,6 +551,20 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
+        }, 	
+        { 	
+            "name": "'explicit' keyword",
+            "scope": "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'noexcept' keyword",
+            "scope": "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
         },
         { 	
             "name": "'typedef' keyword",
