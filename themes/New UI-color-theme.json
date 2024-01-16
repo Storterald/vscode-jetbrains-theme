@@ -537,10 +537,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'NULL' keyword",
             "scope": "constant.language.NULL.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'friend' keyword",
+            "scope": "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
