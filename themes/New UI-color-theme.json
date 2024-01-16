@@ -544,10 +544,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'friend' keyword",
             "scope": "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'typedef' keyword",
+            "scope": "keyword.other.typedef.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
