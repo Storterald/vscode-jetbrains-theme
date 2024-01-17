@@ -565,10 +565,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 	
         { 	
             "name": "'typedef' keyword",
             "scope": "keyword.other.typedef.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'static' keyword",
+            "scope": "storage.modifier.static.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
