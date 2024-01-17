@@ -651,10 +651,17 @@
             "settings": {
                 "foreground": "#65a86d"
             }
-        },
+        }, 
         {
             "name": "int value",
             "scope": "constant.numeric.decimal.cpp",
+            "settings": {
+                "foreground": "#299fa2"
+            }
+        }, 
+        {
+            "name": "'.'",
+            "scope": "constant.numeric.decimal.point.cpp",
             "settings": {
                 "foreground": "#299fa2"
             }
@@ -665,10 +672,17 @@
             "settings": {
                 "foreground": "#299fa2"
             }
-        },
+        }, 
         {
             "name": "hexadecimal value",
             "scope": "keyword.other.unit.hexadecimal.cpp",
+            "settings": {
+                "foreground": "#299fa2"
+            }
+        },
+        {
+            "name": "f suffix",
+            "scope": "keyword.other.unit.suffix.floating-point.cpp",
             "settings": {
                 "foreground": "#299fa2"
             }
