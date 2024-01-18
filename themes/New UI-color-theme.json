@@ -572,10 +572,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 	
         { 	
             "name": "'static' keyword",
             "scope": "storage.modifier.static.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'throw' keyword",
+            "scope": "keyword.control.throw.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
