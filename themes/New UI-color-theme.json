@@ -615,7 +615,7 @@
             } 
         },
         { 	
-            "scope": "punctuation.definition.capture.end.lambda.cpp",
+            "scope": "keyword.operator.assignment.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
