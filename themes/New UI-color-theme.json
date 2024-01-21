@@ -614,12 +614,6 @@
                 "foreground": "#cb8c6c"
             } 
         },
-        { 	
-            "scope": "keyword.operator.assignment.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
         {
 			"name": "#include < > content",
             "scope": "string.quoted.other.lt-gt.include.cpp",
