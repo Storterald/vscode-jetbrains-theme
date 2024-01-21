@@ -586,10 +586,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'const' keyword",
             "scope": "storage.modifier.specifier.functional.post-parameters.const.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'operator' keyword",
+            "scope": "keyword.other.operator.overload.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
