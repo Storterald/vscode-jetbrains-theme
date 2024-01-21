@@ -606,10 +606,16 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'inline' keyword",
             "scope": "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "scope": "punctuation.definition.capture.end.lambda.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
