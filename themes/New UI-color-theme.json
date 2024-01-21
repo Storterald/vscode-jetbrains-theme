@@ -579,10 +579,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'throw' keyword",
             "scope": "keyword.control.throw.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'const' keyword",
+            "scope": "storage.modifier.specifier.functional.post-parameters.const.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
