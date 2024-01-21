@@ -593,10 +593,23 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'operator' keyword",
             "scope": "keyword.other.operator.overload.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "scope": "storage.modifier.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'inline' keyword",
+            "scope": "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
