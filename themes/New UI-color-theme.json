@@ -781,13 +781,13 @@
 			"settings": {
                 "foreground": "#5289f6"
             }
-		},
+		}, 	
         {
 			"scope": "comment.block.cpp",
 			"settings": {
 				"foreground": "#7d7d7d"
 			}
-		},	
+		},		
         {
 			"scope": "comment.block.documentation.cpp",
 			"settings": {
@@ -990,6 +990,12 @@
 				"foreground": "#5289f6"
 			}
         },
+        {
+			"scope": "comment.source.cmake",
+			"settings": {
+				"foreground": "#7d7d7d"
+			}
+		},
 
         /*
          * HTML files support
