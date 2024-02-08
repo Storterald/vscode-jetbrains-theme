@@ -606,10 +606,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        }, 
+        },  	
         { 	
             "name": "'inline' keyword",
             "scope": "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'struct' keyword",
+            "scope": "storage.type.struct.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
