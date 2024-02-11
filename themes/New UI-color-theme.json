@@ -606,7 +606,14 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },  	
+        },
+        { 	
+            "name": "'inline' keyword",
+            "scope": "storage.modifier.inline.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
         { 	
             "name": "'inline' keyword",
             "scope": "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
