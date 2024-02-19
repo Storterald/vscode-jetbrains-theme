@@ -644,6 +644,13 @@
         },
         { 	
             "name": "'virtual' keyword",
+            "scope": "storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'virtual' keyword",
             "scope": "storage.modifier.virtual.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
