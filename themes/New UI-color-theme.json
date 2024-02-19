@@ -641,10 +641,24 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'virtual' keyword",
             "scope": "storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        }, 
+        { 	
+            "name": "'static' keyword",
+            "scope": "storage.modifier.specifier.static.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'constexpr' keyword",
+            "scope": "storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
