@@ -634,10 +634,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'private' keyword",
             "scope": "storage.type.modifier.access.private.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'virtual' keyword",
+            "scope": "storage.modifier.virtual.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
