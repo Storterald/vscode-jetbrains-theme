@@ -669,10 +669,17 @@
             "settings": {
                 "foreground": "#cb8c6c"
             } 
-        },
+        }, 
         { 	
             "name": "'protected' keyword",
             "scope": "storage.type.modifier.access.protected.cpp",
+            "settings": {
+                "foreground": "#cb8c6c"
+            } 
+        },
+        { 	
+            "name": "'new' keyword",
+            "scope": "keyword.operator.new.cpp",
             "settings": {
                 "foreground": "#cb8c6c"
             } 
