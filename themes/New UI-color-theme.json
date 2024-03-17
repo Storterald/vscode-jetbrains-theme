@@ -844,7 +844,7 @@
         {
             "scope": "storage.type.class.doxygen.cpp",
             "settings": {
-                "foreground": "#2f8683"
+                "foreground": "#5c7e67"
             }
         },
         {
