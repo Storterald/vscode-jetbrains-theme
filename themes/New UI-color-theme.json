@@ -247,668 +247,190 @@
 		"titleBar.inactiveBackground": "#2b2d30",
 		"titleBar.inactiveForeground": "#bcbec4",
 
-        /* 
+        /*
          * GitHub Pull Requests and Issues extension
         */
-        "gitDecoration.ignoredResourceForeground": "#bcbec4"
+        "gitDecoration.ignoredResourceForeground": "#bcbec4",
 		
 	},
 	"tokenColors": [
         
-        /*
-         * CPP files support
+        /**
+         * Keywords
         */
+
         {
-			"name": "'class' keyword",
-        	"scope": "storage.type.class.cpp",
-        	"settings": {
-            "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'#include' keyword",
-            "scope": "keyword.control.directive.include.cpp",
+            "name": "keywords",
+            "scope": [
+                "storage.type.class",                
+                "variable.language.this",
+                "storage.type.namespace.directive",
+                "storage.type.enum",
+                "storage.type.extern",
+                "storage.type.namespace.definition",
+                "storage.type.template",
+                "storage.type.struct",
+
+                // Generic
+                "constant.language",
+                "storage.modifier",
+                "storage.type.modifier",
+                "keyword"
+            ],
             "settings": {
                 "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'namespace' keyword",
-            "scope": "storage.type.namespace.directive.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'using' keyword",
-            "scope": "keyword.other.using.directive.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'extern' keyword",
-            "scope": "storage.modifier.specifier.extern.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'const' keyword",
-            "scope": "storage.modifier.specifier.const.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'if' keyword",
-            "scope": "keyword.control.if.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'else' keyword",
-            "scope": "keyword.control.else.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-			"name": "'this' keyword",
-            "scope": "variable.language.this.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-		{
-			"name": "'for' keyword",
-			"scope": "keyword.control.for.cpp",
-			"settings": {
-                "foreground": "#cb8c6c"
-            }
-		},
-        {
-            "name": "'pragma' keyword",
-            "scope": "keyword.control.directive.pragma.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'ifndef' keyword",
-            "scope": "keyword.control.directive.conditional.ifndef.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'define' keyword",
-            "scope": "keyword.control.directive.define.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'if' keyword",
-            "scope": "keyword.control.directive.conditional.if.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'undef' keyword",
-            "scope": "keyword.control.directive.undef.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'public' keyword",
-            "scope": "storage.type.modifier.access.control.public.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'endif' keyword",
-            "scope": "keyword.control.directive.endif.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'private' keyword",
-            "scope": "storage.type.modifier.access.control.private.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'protected' keyword",
-            "scope": "storage.type.modifier.access.control.protected.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'true' keyword",
-            "scope": "constant.language.true.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'false' keyword",
-            "scope": "constant.language.false.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'try' keyword",
-            "scope": "keyword.control.catch.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'catch' keyword",
-            "scope": "keyword.control.try.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'continue' keyword",
-            "scope": "keyword.control.continue.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'template' keyword",
-            "scope": "storage.type.template.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        {
-            "name": "'typename' keyword",
-            "scope": "storage.type.template.argument.typename.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            }
-        },
-        {
-            "name": "'case' keyword",
-            "scope": "keyword.control.case.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },  
-        {
-            "name": "'switch' keyword",
-            "scope": "keyword.control.switch.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        {
-            "name": "'default' keyword",
-            "scope": "keyword.control.default.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 	
-        {
-            "name": "'return' keyword",
-            "scope": "keyword.control.return.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        {
-            "name": "'constexpr' keyword",
-            "scope": "storage.modifier.constexpr.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        {
-            "name": "'enum' keyword",
-            "scope": "storage.type.enum.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'break' keyword",
-            "scope": "keyword.control.break.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'extern' keyword",
-            "scope": "storage.type.extern.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'ifdef' keyword",
-            "scope": "keyword.control.directive.conditional.ifdef.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'elif' keyword",
-            "scope": "keyword.control.directive.elif.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'else' keyword",
-            "scope": "keyword.control.directive.else.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'while' keyword",
-            "scope": "keyword.control.while.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'do' keyword",
-            "scope": "keyword.control.do.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 	
-        { 	
-            "name": "'namespace' keyword",
-            "scope": "storage.type.namespace.definition.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'NULL' keyword",
-            "scope": "constant.language.NULL.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'friend' keyword",
-            "scope": "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 	
-        { 	
-            "name": "'explicit' keyword",
-            "scope": "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'noexcept' keyword",
-            "scope": "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 	
-        { 	
-            "name": "'typedef' keyword",
-            "scope": "keyword.other.typedef.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 	
-        { 	
-            "name": "'static' keyword",
-            "scope": "storage.modifier.static.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'throw' keyword",
-            "scope": "keyword.control.throw.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'const' keyword",
-            "scope": "storage.modifier.specifier.functional.post-parameters.const.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'operator' keyword",
-            "scope": "keyword.other.operator.overload.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "scope": "storage.modifier.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'inline' keyword",
-            "scope": "storage.modifier.inline.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'inline' keyword",
-            "scope": "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'struct' keyword",
-            "scope": "storage.type.struct.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'public' keyword",
-            "scope": "storage.type.modifier.access.public.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'private' keyword",
-            "scope": "storage.type.modifier.access.private.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'virtual' keyword",
-            "scope": "storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        }, 
-        { 	
-            "name": "'static' keyword",
-            "scope": "storage.modifier.specifier.static.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'constexpr' keyword",
-            "scope": "storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'virtual' keyword",
-            "scope": "storage.modifier.virtual.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },  
-        { 	
-            "name": "'protected' keyword",
-            "scope": "storage.type.modifier.access.protected.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'override' keyword",
-            "scope": "storage.modifier.specifier.functional.post-parameters.override.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        { 	
-            "name": "'new' keyword",
-            "scope": "keyword.operator.new.cpp",
-            "settings": {
-                "foreground": "#cb8c6c"
-            } 
-        },
-        {
-			"name": "#include < > content",
-            "scope": "string.quoted.other.lt-gt.include.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
-			"name": "include '' '' content",
-            "scope": "string.quoted.double.include.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
-			"name": "namespace 'this'",
-            "scope": "entity.name.namespace.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
-            "name": "variable color",
-            "scope": "variable.other.global.cpp",
-            "settings": {
-                "foreground": "#c77dbb"
-            }
-        },
-        {
-            "name": "preprocessor parameter color",
-            "scope": "variable.parameter.preprocessor.cpp",
-            "settings": {
-                "foreground": "#c77dbb"
-            }
-        },
-        { 
-            "scope": "storage.type",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
-            "scope": "entity.name.type.class.templated.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        },
-        {
-            "scope": "entity.name.type.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
             }
         }, 	
+
+        /**
+         * Text
+        */
+
         {
-            "scope": "meta.preprocessor.conditional entity.name.function.preprocessor.cpp",
+            "name": "text",
+            "scope": [
+                "string.quoted.other.lt-gt.include",
+                "string.quoted.double.include",
+                "entity.name.namespace",
+                "variable.other.global",
+                "variable.parameter.preprocessor",
+                "entity.name.type.class.templated",
+                "meta.preprocessor.conditional entity.name.function.preprocessor",
+                "meta.preprocessor.macro entity.name.function.preprocessor",
+
+                // Generic
+                "storage.type",
+                "entity.name.type",
+                "keyword.operator"
+            ],
             "settings": {
                 "foreground": "#bcbec4"
             }
-        }, 	
+        },
+
+        /**
+         * Strings
+        */
+
         {
-            "scope": "meta.preprocessor.macro.cpp entity.name.function.preprocessor.cpp",
-            "settings": {
-                "foreground": "#bcbec4"
-            }
-        }, 
-        {
-            "name": "string value",
-            "scope": "string.quoted.double.cpp",
+            "name": "strings",
+            "scope": [
+                "string",
+            ],
             "settings": {
                 "foreground": "#65a86d"
             }
         },
+
+        /**
+         * Numeric values
+        */
+
         {
-            "name": "char value",
-            "scope": "string.quoted.single.cpp",
-            "settings": {
-                "foreground": "#65a86d"
-            }
-        }, 
-        {
-            "name": "int value",
-            "scope": "constant.numeric.decimal.cpp",
-            "settings": {
-                "foreground": "#299fa2"
-            }
-        }, 
-        {
-            "name": "'.'",
-            "scope": "constant.numeric.decimal.point.cpp",
-            "settings": {
-                "foreground": "#299fa2"
-            }
-        }, 
-        {
-            "name": "hexadecimal value",
-            "scope": "constant.numeric.hexadecimal.cpp",
-            "settings": {
-                "foreground": "#299fa2"
-            }
-        }, 
-        {
-            "name": "hexadecimal value",
-            "scope": "keyword.other.unit.hexadecimal.cpp",
+            "name": "numeric values",
+            "scope": [
+                "keyword.other.unit.hexadecimal",
+                "keyword.other.unit.suffix.floating-point",
+                "constant.numeric",
+            ],
             "settings": {
                 "foreground": "#299fa2"
             }
         },
+
+        /**
+         * Variables
+        */
+
         {
-            "name": "f suffix",
-            "scope": "keyword.other.unit.suffix.floating-point.cpp",
-            "settings": {
-                "foreground": "#299fa2"
-            }
-        },
-        {
-            "scope": "variable.other.property.cpp",
+            "name": "variables",
+            "scope": [
+                "variable",
+            ],
             "settings": {
                 "foreground": "#c77dbb"
             }
         },
+
+        /**
+         * Comments
+        */
+
         {
-            "scope": "variable.other.property.static.cpp",
+            "name": "comments",
+            "scope": [
+                "comment"
+            ],
             "settings": {
-                "foreground": "#c77dbb"
+                "foreground": "#7d7d7d"
             }
         },
-		{
-			"scope": "variable.other.local.cpp",
-			"settings": {
-                "foreground": "#c77dbb"
-            }
-		}, 
+
+        /**
+         * Documentation
+        */
+
         {
-            "scope": "variable.other.enummember.cpp",
-            "settings": {
-                "foreground": "#c77dbb"
-            }
-        },
-        {
-            "scope": "variable.parameter.cpp",
-            "settings": {
-                "foreground": "#c77dbb",
-            }
-        },
-        {
-            "scope": "comment.block.documentation.cpp variable.parameter.cpp",
-            "settings": {
-                "foreground": "#2f8683"
-            }
-        },
-        {
-            "scope": "storage.type.class.doxygen.cpp",
+            "name": "documentation",
+            "scope": [
+                "storage.type.class.doxygen",
+                "comment.block.documentation",
+                "comment.line.double-slash.documentation"
+            ],
             "settings": {
                 "foreground": "#5c7e67"
             }
         },
         {
-            "scope": "entity.name.function.definition.cpp",
+            "name": "documentation words",
+            "scope": [
+                "comment.block.documentation variable.parameter",
+            ],
             "settings": {
-                "foreground": "#5289f6"
+                "foreground": "#2f8683"
+            }
+        },
+
+        
+
+        {
+            "scope": "entity.name.function.definition",
+            "settings": {
+                "foreground": "#56a8f5"
             }
         },
         {
-            "scope": "entity.name.function.call.cpp",
+            "scope": "entity.name.function.call",
             "settings": {
                 "foreground": "#bcbec4"
-            }
-        },
-        {
-            "scope": "comment.line.double-slash.cpp",
-            "settings": {
-                "foreground": "#7d7d7d"
             }
         },
 		{
 			"scope": "comment.line.number-sign.ignore",
 			"settings": {
-                "foreground": "#5289f6"
+                "foreground": "#56a8f5"
             }
-		}, 	
+		}, 		
         {
-			"scope": "comment.block.cpp",
-			"settings": {
-				"foreground": "#7d7d7d"
-			}
-		},		
-        {
-			"scope": "comment.block.documentation.cpp",
-			"settings": {
-				"foreground": "#5c7e67"
-			}
-		},
-        {
-            "scope": "comment.line.double-slash.documentation.cpp",
-            "settings": {
-                "foreground": "#5c7e67"
-            }
-        },
-        {
-            "scope": "entity.name.function.operator.cpp",
+            "scope": "entity.name.function.operator",
             "settings": {
                 "foreground": "#bcbec4"
             }
         },
         { 
-            "scope": "entity.name.function.operator.member.cpp",
+            "scope": "entity.name.function.operator.member",
             "settings": {
                 "foreground": "#bcbec4"
         	}
         },
         {
-            "scope": "constant.character.escape.cpp",
+            "scope": "constant.character.escape",
             "settings": {
                 "foreground": "#cb8c6c"
             }
         },
         {
-            "scope": "storage.modifier.pointer.cpp",
+            "scope": "storage.modifier.pointer",
             "settings": {
                 "foreground": "#bcbec4"
             }
@@ -920,112 +442,112 @@
 		{
 			"scope": "markup.italic.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "markup.bold.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"scope": "markup.bold.markdown markup.italic.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold italic"
 			}
 		},
 		{
 			"scope": "markup.italic.markdown markup.bold.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold italic"
 			}
 		},
 		{
 			"scope": "markup.strikethrough.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough"
 			}
 		},
 		{
 			"scope": "markup.bold.markdown markup.strikethrough.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough bold"
 			}
 		},
 		{
 			"scope": "markup.italic.markdown markup.strikethrough.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic"
 			}
 		},
 		{
 			"scope": "markup.strikethrough.markdown markup.bold.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough bold"
 			}
 		},
 		{
 			"scope": "markup.strikethrough.markdown markup.italic.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic"
 			}
 		},
 		{
 			"scope": "markup.bold.markdown markup.italic.markdown markup.strikethrough.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic bold"
 			}
 		},
 		{
 			"scope": "markup.strikethrough.markdown markup.bold.markdown markup.italic.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic bold"
 			}
 		},
 		{
 			"scope": "markup.strikethrough.markdown markup.italic.markdown markup.bold.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic bold"
 			}
 		},
 		{
 			"scope": "markup.italic.markdown markup.bold.markdown markup.strikethrough.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "strikethrough italic bold"
 			}
 		},
 		{
 			"scope": "entity.name.section.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold"
 			}
 		},
         {
             "scope": "punctuation.definition.heading.markdown",
             "settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold"
 			}
         },
         {
 			"scope": "heading.1.markdown",
 			"settings": {
-				"foreground": "#5289f6",
+				"foreground": "#56a8f5",
 				"fontStyle": "bold"
 			}
 		},
@@ -1070,13 +592,13 @@
         {
             "scope": "keyword.cmake",
             "settings": {
-				"foreground": "#5289f6"
+				"foreground": "#56a8f5"
 			}
         }, 
         {
             "scope": "storage.source.cmake",
             "settings": {
-				"foreground": "#5289f6"
+				"foreground": "#56a8f5"
 			}
         },
         {
