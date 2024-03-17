@@ -836,6 +836,18 @@
             }
         },
         {
+            "scope": "comment.block.documentation.cpp variable.parameter.cpp",
+            "settings": {
+                "foreground": "#2f8683"
+            }
+        },
+        {
+            "scope": "storage.type.class.doxygen.cpp",
+            "settings": {
+                "foreground": "#2f8683"
+            }
+        },
+        {
             "scope": "entity.name.function.definition.cpp",
             "settings": {
                 "foreground": "#5289f6"
