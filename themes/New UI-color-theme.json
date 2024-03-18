@@ -247,8 +247,8 @@
 		"titleBar.inactiveBackground": "#2b2d30",
 		"titleBar.inactiveForeground": "#bcbec4",
 
-        /*
-         * GitHub Pull Requests and Issues extension
+        /**
+         * GitHub Extension support
         */
         "gitDecoration.ignoredResourceForeground": "#bcbec4",
 		
@@ -299,6 +299,8 @@
                 "meta.preprocessor.conditional entity.name.function.preprocessor",
                 "meta.preprocessor.macro entity.name.function.preprocessor",
                 "storage.modifier.pointer",
+                "storage.modifier.reference.cpp",
+                "markup.changed.git-commit",
 
                 // Generic
                 "storage.type",
@@ -428,7 +430,7 @@
 		{
 			"scope": "comment.line.number-sign.ignore",
 			"settings": {
-                "foreground": "#56a8f5"
+                "foreground": "#56a8f5",
             }
 		}, 		
 
@@ -439,7 +441,7 @@
         {
             "name": "markdown",
             "scope": [
-                "markup"
+                "markup.*.markdown"
             ],
             "settings": {
 				"foreground": "#56a8f5"
@@ -449,7 +451,7 @@
         {
             "name": "markdown",
             "scope": [
-                "heading.1.markdown",
+                "heading.*.markdown",
                 "punctuation.definition.heading.markdown",
                 "entity.name.section.markdown"
             ],
@@ -465,6 +467,7 @@
                 "markup.italic.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "italic"
             }
         },
@@ -475,6 +478,7 @@
                 "markup.bold.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "bold"
             }
         },
@@ -485,6 +489,7 @@
                 "markup.strikethrough.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "bold"
             }
         },
@@ -496,6 +501,7 @@
                 "markup.italic.markdown markup.bold.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "italic bold"
             }
         },
@@ -507,6 +513,7 @@
                 "markup.strikethrough.markdown markup.bold.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough bold"
             }
         },
@@ -518,6 +525,7 @@
                 "markup.strikethrough.markdown markup.italic.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough italic"
             }
         },
@@ -531,6 +539,7 @@
                 "markup.italic.markdown markup.bold.markdown markup.strikethrough.markdown"
             ],
             "settings": {
+                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough italic bold"
             }
         },
