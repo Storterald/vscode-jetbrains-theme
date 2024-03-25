@@ -250,7 +250,7 @@
         /**
          * GitHub Extension support
         */
-        "gitDecoration.ignoredResourceForeground": "#bcbec4",
+        "gitDecoration.ignoredResourceForeground": "#bcbec4"
 		
 	},
 	"tokenColors": [
@@ -271,6 +271,11 @@
                 "storage.type.template",
                 "storage.type.struct",
                 "constant.character.escape",
+                "punctuation.definition.variable.begin",
+                "meta.block.kotlin entity.name.function.constructor",
+                "storage.type.kotlin",
+                "keyword.operator.kotlin",
+                "variable.language.kotlin",
 
                 // Generic
                 "constant.language",
@@ -301,6 +306,9 @@
                 "storage.modifier.pointer",
                 "storage.modifier.reference.cpp",
                 "markup.changed.git-commit",
+                "storage.modifier.import",
+                "variable.parameter.function.kotlin",
+                "keyword.operator.*.kotlin",
 
                 // Generic
                 "storage.type",
@@ -319,7 +327,7 @@
         {
             "name": "strings",
             "scope": [
-                "string",
+                "string"
             ],
             "settings": {
                 "foreground": "#65a86d"
@@ -335,7 +343,7 @@
             "scope": [
                 "keyword.other.unit.hexadecimal",
                 "keyword.other.unit.suffix.floating-point",
-                "constant.numeric",
+                "constant.numeric"
             ],
             "settings": {
                 "foreground": "#299fa2"
@@ -352,7 +360,7 @@
                 "support.type.property-name",
 
                 // Generic
-                "variable",
+                "variable"
             ],
             "settings": {
                 "foreground": "#c77dbb"
@@ -403,7 +411,7 @@
                 "storage.type.class.doxygen"
             ],
             "settings": {
-                "foreground": "#67a37c",
+                "foreground": "#67a37c"
             }
         },
 
@@ -414,7 +422,9 @@
         {
             "name": "function definition",
             "scope": [
-                "entity.name.function.definition"
+                "entity.name.function.definition",
+                "meta.method.identifier entity.name.function",
+                "entity.name.function.kotlin"
             ],
             "settings": {
                 "foreground": "#56a8f5"
@@ -426,6 +436,7 @@
                 "entity.name.function.call",
                 "entity.name.function.operator.member",
                 "entity.name.function.operator",
+                "meta.function-call entity.name.function"
             ],
             "settings": {
                 "foreground": "#bcbec4"
@@ -439,7 +450,7 @@
 		{
 			"scope": "comment.line.number-sign.ignore",
 			"settings": {
-                "foreground": "#56a8f5",
+                "foreground": "#56a8f5"
             }
 		}, 		
 
@@ -560,7 +571,7 @@
         {
             "name": "cmake",
             "scope": [
-                "storage.source.cmake",
+                "storage.source.cmake"
             ],
             "settings": {
 				"foreground": "#806a81"

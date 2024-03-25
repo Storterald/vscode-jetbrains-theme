@@ -16,7 +16,7 @@
       {
         "label": "New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/New UI-color-theme.json"
+        "path": "./themes/New UI.json"
       }
     ]
   },
