@@ -271,7 +271,8 @@
                 "storage.type.template",
                 "storage.type.struct",
                 "constant.character.escape",
-                "punctuation.definition.variable.begin",
+                "punctuation.definition.variable",
+
                 "meta.block.kotlin entity.name.function.constructor",
                 "storage.type.kotlin",
                 "keyword.operator.kotlin",
@@ -295,8 +296,6 @@
         {
             "name": "text",
             "scope": [
-                "string.quoted.other.lt-gt.include",
-                "string.quoted.double.include",
                 "entity.name.namespace",
                 "variable.other.global",
                 "variable.parameter.preprocessor",
@@ -328,6 +327,9 @@
         {
             "name": "strings",
             "scope": [
+                "string.quoted.other.lt-gt.include",
+                "string.quoted.double.include",
+                
                 "string"
             ],
             "settings": {
@@ -444,7 +446,14 @@
 			"settings": {
                 "foreground": "#56a8f5"
             }
-		}, 		
+		}, 	
+        {
+            "name": "#include",
+            "scope": "keyword.control.directive",
+            "settings": {
+                "foreground": "#a7ae77"
+            }
+        },
 
 		/**
          * Markdown
