@@ -385,7 +385,7 @@
                 "comment.line.double-slash.documentation"
             ],
             "settings": {
-                "foreground": "#5c7e67"
+                "foreground": "#5e8163"
             }
         },
         {
@@ -394,7 +394,16 @@
                 "comment.block.documentation variable.parameter"
             ],
             "settings": {
-                "foreground": "#2f8683"
+                "foreground": "#5e8163"
+            }
+        },
+        {
+            "name": "doxygen types",
+            "scope": [
+                "storage.type.class.doxygen"
+            ],
+            "settings": {
+                "foreground": "#67a37c",
             }
         },
 
