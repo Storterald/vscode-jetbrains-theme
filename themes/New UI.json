@@ -307,6 +307,7 @@
                 "storage.modifier.reference.cpp",
                 "markup.changed.git-commit",
                 "storage.modifier.import",
+                "comment.block.documentation variable.parameter",
                 "variable.parameter.function.kotlin",
                 "keyword.operator.*.kotlin",
 
@@ -391,15 +392,6 @@
                 "storage.type.class.doxygen",
                 "comment.block.documentation",
                 "comment.line.double-slash.documentation"
-            ],
-            "settings": {
-                "foreground": "#5e8163"
-            }
-        },
-        {
-            "name": "documentation words",
-            "scope": [
-                "comment.block.documentation variable.parameter"
             ],
             "settings": {
                 "foreground": "#5e8163"
