@@ -247,18 +247,11 @@
 		"titleBar.inactiveBackground": "#2b2d30",
 		"titleBar.inactiveForeground": "#bcbec4",
 
-        /**
-         * GitHub Extension support
-        */
         "gitDecoration.ignoredResourceForeground": "#bcbec4"
 		
 	},
 	"tokenColors": [
-        
-        /**
-         * Keywords
-        */
-
+    
         {
             "name": "keywords",
             "scope": [
@@ -272,13 +265,11 @@
                 "storage.type.struct",
                 "constant.character.escape",
                 "punctuation.definition.variable",
-
                 "meta.block.kotlin entity.name.function.constructor",
                 "storage.type.kotlin",
                 "keyword.operator.kotlin",
                 "variable.language.kotlin",
 
-                // Generic
                 "constant.language",
                 "storage.modifier",
                 "storage.type.modifier",
@@ -289,15 +280,10 @@
             }
         }, 	
 
-        /**
-         * Text
-        */
-
         {
             "name": "text",
             "scope": [
                 "entity.name.namespace",
-                "variable.other.global",
                 "variable.parameter.preprocessor",
                 "entity.name.type.class.templated",
                 "meta.preprocessor.conditional entity.name.function.preprocessor",
@@ -310,7 +296,6 @@
                 "variable.parameter.function.kotlin",
                 "keyword.operator.*.kotlin",
 
-                // Generic
                 "storage.type",
                 "entity.name.type",
                 "keyword.operator"
@@ -319,10 +304,6 @@
                 "foreground": "#bcbec4"
             }
         },
-
-        /**
-         * Strings
-        */
 
         {
             "name": "strings",
@@ -337,10 +318,6 @@
             }
         },
 
-        /**
-         * Numeric values
-        */
-
         {
             "name": "numeric values",
             "scope": [
@@ -353,26 +330,17 @@
             }
         },
 
-        /**
-         * Variables
-        */
-
         {
             "name": "variables",
             "scope": [
                 "support.type.property-name",
 
-                // Generic
                 "variable"
             ],
             "settings": {
                 "foreground": "#c77dbb"
             }
         },
-
-        /**
-         * Comments
-        */
 
         {
             "name": "comments",
@@ -383,10 +351,6 @@
                 "foreground": "#7d7d7d"
             }
         },
-
-        /**
-         * Documentation
-        */
 
         {
             "name": "documentation",
@@ -409,9 +373,6 @@
             }
         },
 
-        /**
-         * Functions
-        */
 
         {
             "name": "function definition",
@@ -437,9 +398,6 @@
             }
         },
 
-        /**
-         * Other
-        */
 
 		{
 			"scope": "comment.line.number-sign.ignore",
@@ -455,104 +413,113 @@
             }
         },
 
-		/**
-         * Markdown
-        */
-
         {
             "name": "markdown",
             "scope": [
-                "markup.*.markdown"
+                "heading.*.markdown"
             ],
             "settings": {
-				"foreground": "#56a8f5"
+				"foreground": "#c77dbb",
+				"fontStyle": "italic"
 			}
         },
 
         {
             "name": "markdown",
             "scope": [
-                "heading.*.markdown",
-                "punctuation.definition.heading.markdown",
-                "entity.name.section.markdown"
+                "punctuation.definition.*.markdown"
             ],
             "settings": {
-				"foreground": "#56a8f5",
-				"fontStyle": "bold"
+				"foreground": "#cb8c6c"
 			}
         },
 
         {
-            "name": "markdown italic",
+            "name": "markdown",
+            "scope": [
+                "punctuation.definition.heading.markdown"
+            ],
+            "settings": {
+				"foreground": "#cb8c6c",
+                "fontStyle": "italic"
+			}
+        },
+
+        {
+            "name": "markdown",
+            "scope": [
+                "markup.inline.raw.string.markdown"
+            ],
+            "settings": {
+				"foreground": "#65a86d"
+			}
+        },
+
+        {
+            "name": "markdown",
             "scope": [
                 "markup.italic.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "italic"
             }
         },
 
         {
-            "name": "markdown bold",
+            "name": "markdown",
             "scope": [
                 "markup.bold.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "bold"
             }
         },
 
         {
-            "name": "markdown strikethrough",
+            "name": "markdown",
             "scope": [
                 "markup.strikethrough.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
-                "fontStyle": "bold"
+                "fontStyle": "strikethrough"
             }
         },
 
         {
-            "name": "markdown bold italic",
+            "name": "markdown",
             "scope": [
                 "markup.bold.markdown markup.italic.markdown",
                 "markup.italic.markdown markup.bold.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "italic bold"
             }
         },
 
         {
-            "name": "markdown strikethrough bold",
+            "name": "markdown",
             "scope": [
                 "markup.bold.markdown markup.strikethrough.markdown",
                 "markup.strikethrough.markdown markup.bold.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough bold"
             }
         },
 
         {
-            "name": "markdown strikethrough italic",
+            "name": "markdown",
             "scope": [
                 "markup.italic.markdown markup.strikethrough.markdown",
                 "markup.strikethrough.markdown markup.italic.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough italic"
             }
         },
 
         {
-            "name": "markdown strikethrough italic bold",
+            "name": "markdown",
             "scope": [
                 "markup.bold.markdown markup.italic.markdown markup.strikethrough.markdown",
                 "markup.strikethrough.markdown markup.bold.markdown markup.italic.markdown",
@@ -560,14 +527,10 @@
                 "markup.italic.markdown markup.bold.markdown markup.strikethrough.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
                 "fontStyle": "strikethrough italic bold"
             }
         },
-    
-        /**
-         * CMAKE
-        */	
+
 
         {
             "name": "cmake",
@@ -579,10 +542,6 @@
 			}
         },
 
-        /**
-         * HTML
-        */ 
-
         {
             "name": "html",
             "scope": [
@@ -593,10 +552,6 @@
                 "foreground": "#d5b778"
             }
         },
-
-        /**
-         * Geode Extension support
-        */
 
         {
 			"scope": "geode.flalert.blue",
