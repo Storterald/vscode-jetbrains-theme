@@ -1,8 +1,8 @@
 {
   "name": "intellij-idea-theme-for-vs-code",
-  "displayName": "Intellij IDEA Theme for VS Code",
+  "displayName": "Jetbrains themes",
   "icon": "logo.png",
-  "description": "Intellij 'New UI' theme in VS Code!",
+  "description": "Jetbrains themes",
   "version": "1.0.0",
   "publisher": "Storterald",
   "engines": {
@@ -17,6 +17,11 @@
         "label": "New UI",
         "uiTheme": "vs-dark",
         "path": "./themes/New UI.json"
+      },
+      {
+        "label": "CLion New UI",
+        "uiTheme": "vs-dark",
+        "path": "./themes/CLion New UI.json"
       }
     ]
   },
@@ -29,5 +34,4 @@
   "extensionDependencies": [
     "chadalen.vscode-jetbrains-icon-theme"
   ]
-  
 }

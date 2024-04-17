@@ -251,65 +251,30 @@
 		
 	},
 	"tokenColors": [
-    
-        {
-            "name": "keywords",
-            "scope": [
-                "storage.type.class",                
-                "variable.language.this",
-                "storage.type.namespace.directive",
-                "storage.type.enum",
-                "storage.type.extern",
-                "storage.type.namespace.definition",
-                "storage.type.template",
-                "storage.type.struct",
-                "constant.character.escape",
-                "punctuation.definition.variable",
-                "meta.block.kotlin entity.name.function.constructor",
-                "storage.type.kotlin",
-                "keyword.operator.kotlin",
-                "variable.language.kotlin",
-                "storage.type.primitive",
-                "keyword.operator.cast",
 
-                "constant.language",
+        {
+            "name": "GENERIC keywords",
+            "scope": [
+                "keyword",
+                "constant",
+                "storage.type",
                 "storage.modifier",
-                "storage.type.modifier",
-                "keyword"
+                "variable.language.this",
+                "keyword.operator.new"
             ],
             "settings": {
-                "foreground": "#cb8c6c"
+                "foreground": "#cf8e6d"
             }
-        }, 	
-
+        },
         {
-            "name": "text",
-            "scope": [
-                "entity.name.namespace",
-                "variable.parameter.preprocessor",
-                "entity.name.type.class.templated",
-                "meta.preprocessor.conditional entity.name.function.preprocessor",
-                "meta.preprocessor.macro entity.name.function.preprocessor",
-                "storage.modifier.pointer",
-                "storage.modifier.reference.cpp",
-                "markup.changed.git-commit",
-                "storage.modifier.import",
-                "comment.block.documentation variable.parameter",
-                "variable.parameter.function.kotlin",
-                "keyword.operator.*.kotlin",
-                "meta.preprocessor.include string.quoted.double.include.cpp",
-                "meta.preprocessor.include string.quoted.other.lt-gt.include",
-
-                "entity.name.type",
-                "keyword.operator"
-            ],
+            "name": "GENERIC operators",
+            "scope": "keyword.operator",
             "settings": {
                 "foreground": "#bcbec4"
             }
         },
-
         {
-            "name": "strings",
+            "name": "GENERIC strings",
             "scope": [
                 "string.quoted.other.lt-gt.include",
                 "string.quoted.double.include",
@@ -317,12 +282,11 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#65a86d"
+                "foreground": "#6aab73"
             }
         },
-
         {
-            "name": "numeric values",
+            "name": "GENERIC numeric",
             "scope": [
                 "keyword.other.unit.hexadecimal",
                 "keyword.other.unit.suffix.floating-point",
@@ -332,21 +296,8 @@
                 "foreground": "#299fa2"
             }
         },
-
         {
-            "name": "variables",
-            "scope": [
-                "support.type.property-name",
-
-                "variable"
-            ],
-            "settings": {
-                "foreground": "#c77dbb"
-            }
-        },
-
-        {
-            "name": "comments",
+            "name": "GENERIC comments",
             "scope": [
                 "comment"
             ],
@@ -354,62 +305,43 @@
                 "foreground": "#7d7d7d"
             }
         },
-
         {
-            "name": "documentation",
+            "name": "GENERIC documentation",
             "scope": [
                 "storage.type.class.doxygen",
                 "comment.block.documentation",
                 "comment.line.double-slash.documentation"
             ],
             "settings": {
-                "foreground": "#5e8163"
+                "foreground": "#5e8163",
+                "fontStyle": "italic"
             }
         },
         {
-            "name": "doxygen types",
+            "name": "GENERIC doxygen",
             "scope": [
                 "storage.type.class.doxygen"
             ],
             "settings": {
-                "foreground": "#67a37c"
+                "foreground": "#67a37c",
+                "fontStyle": "italic"
             }
         },
-
-
         {
-            "name": "function definition",
+            "name": "GENERIC documentation variable",
             "scope": [
-                "entity.name.function.definition",
-                "meta.method.identifier entity.name.function",
-                "entity.name.function.kotlin"
+                "comment.block.documentation variable.parameter"
             ],
             "settings": {
-                "foreground": "#56a8f5"
-            }
-        },
-        {
-            "name": "function",
-            "scope": [
-                "entity.name.function.call",
-                "entity.name.function.operator.member",
-                "entity.name.function.operator",
-                "meta.function-call entity.name.function"
-            ],
-            "settings": {
-                "foreground": "#bcbec4"
+                "foreground": "#bcbec4",
+                "fontStyle": "italic"
             }
         },
 
-		{
-			"scope": "comment.line.number-sign.ignore",
-			"settings": {
-                "foreground": "#56a8f5"
-            }
-		}, 	
+
 
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "heading.1.markdown",
                 "heading.2.markdown",
@@ -420,9 +352,8 @@
 				"fontStyle": "italic"
 			}
         },
-
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "punctuation.definition.heading.markdown"
             ],
@@ -431,9 +362,8 @@
                 "fontStyle": "italic"
 			}
         },
-
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "markup.inline.raw.string.markdown",
                 "markup.quote.markdown",
@@ -443,9 +373,8 @@
 				"foreground": "#65a86d"
 			}
         },
-
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "punctuation.definition.list.begin.markdown",
                 "punctuation.definition.raw.markdown",
@@ -459,9 +388,8 @@
 				"foreground": "#cb8c6c"
 			}
         },
-
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "punctuation.definition.link.title.begin.markdown",
                 "punctuation.definition.link.title.end.markdown"
@@ -471,9 +399,8 @@
                 "fontStyle": "underline"
             }
         },
-
         {
-            "name": "markdown",
+            "name": "MARKDOWN",
             "scope": [
                 "markup.underline.link.markdown"
             ],
@@ -483,8 +410,10 @@
             }
         },
 
+
+
         {
-            "name": "cmake",
+            "name": "CMAKE source",
             "scope": [
                 "storage.source.cmake"
             ],
@@ -493,8 +422,10 @@
 			}
         },
 
+
+
         {
-            "name": "html",
+            "name": "HTML tags",
             "scope": [
                 "entity.name.tag.html",
                 "punctuation.definition.tag"
@@ -504,73 +435,202 @@
             }
         },
 
+
+
         {
+            "name": "JSON property name",
+            "scope": [
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#c77dbb"
+            }
+        },
+        {
+            "name": "JSON keywords",
+            "scope": [
+                "invalid.illegal.unrecognized-string-escape.json"
+            ],
+            "settings": {
+                "foreground": "#cf8e6d"
+            }
+        },
+
+
+
+        {
+            "name": "C/C++ directive",
+            "scope": [
+                "keyword.control.directive"
+            ],
+            "settings": {
+                "foreground": "#b3ae60"
+            }
+        },
+        {
+            "name": "C/C++ namespace",
+            "scope": "entity.name.namespace.cpp",
+            "settings": {
+                "foreground": "#b5b6e3"
+            }
+        },
+        {
+            "name": "C/C++ enum member",
+            "scope": [
+                "variable.other.enummember.cpp"
+            ],
+            "settings": {
+                "foreground": "#c77dbb"
+            }
+        },
+        {
+            "name": "C/C++ struct tail",
+            "scope": "meta.tail.struct.cpp",
+            "settings": {
+                "foreground": "#b9bcd1"
+            }
+        },
+        {
+            "name": "C/C++ namespace type",
+            "scope": "entity.name.type",
+            "settings": {
+                "foreground": "#b5b6e3"
+            }
+        },
+        {
+            "name": "C/C++ properties",
+            "scope": "variable.other.property",
+            "settings": {
+                "foreground": "#9373a5"
+            }
+        },
+        {
+            "name": "C/C++ keywords",
+            "scope": [
+                "meta.encoding",
+                "keyword.operator.cast"
+            ],
+            "settings": {
+                "foreground": "#cf8e6d"
+            }
+        },
+        {
+            "name": "C/C++ function definition",
+            "scope": [
+                "entity.name.function.definition"
+            ],
+            "settings": {
+                "foreground": "#56a8f5"
+            }
+        },
+        {
+            "name": "C/C++ preprocessor",
+            "scope": "entity.name.function.preprocessor.cpp",
+            "settings": {
+                "foreground": "#908b25"
+            }
+        },
+        {
+            "name": "C/C++ templates",
+            "scope": [
+                "entity.name.type.template.cpp"
+            ],
+            "settings": {
+                "foreground": "#c77dbb"
+            }
+        },
+        {
+            "name": "C/C++ text",
+            "scope": [
+                "storage.modifier.reference.cpp",
+                "storage.modifier.pointer.cpp"
+            ],
+            "settings": {
+                "foreground": "#bcbec4"
+            }
+        },
+
+
+
+        {
+            "name": "GEODE color blue",
 			"scope": "geode.flalert.blue",
 			"settings": {
 				"foreground": "#3a518d"
 			}
 		},
 		{
+            "name": "GEODE color green",
 			"scope": "geode.flalert.green",
 			"settings": {
 				"foreground": "#5d982f"
 			}
 		},
 		{
+            "name": "GEODE color aqua",
 			"scope": "geode.flalert.aqua",
 			"settings": {
 				"foreground": "#3b8b96"
 			}
 		},
 		{
+            "name": "GEODE color cyan",
 			"scope": "geode.flalert.cyan",
 			"settings": {
 				"foreground": "#2f768c"
 			}
 		},
 		{
+            "name": "GEODE color yellow",
 			"scope": "geode.flalert.yellow",
 			"settings": {
 				"foreground": "#b99822"
 			}
 		},
 		{
+            "name": "GEODE color orange",
 			"scope": "geode.flalert.orange",
 			"settings": {
 				"foreground": "#af5832"
 			}
 		},
 		{
+            "name": "GEODE color red",
 			"scope": "geode.flalert.red",
 			"settings": {
 				"foreground": "#a03d3d"
 			}
 		},
 		{
+            "name": "GEODE color pink",
 			"scope": "geode.flalert.pink",
 			"settings": {
 				"foreground": "#883695"
 			}
 		},
 		{
+            "name": "GEODE info token",
 			"scope": "token.info-token",
 			"settings": {
 				"foreground": "#5289f6"
 			}
 		},
 		{
+            "name": "GEODE warn token",
 			"scope": "token.warn-token",
 			"settings": {
 				"foreground": "#6b5b3a"
 			}
 		},
 		{
+            "name": "GEODE error token",
 			"scope": "token.error-token",
 			"settings": {
 				"foreground": "#c25460"
 			}
 		},
 		{
+            "name": "GEODE debug token",
 			"scope": "token.debug-token",
 			"settings": {
 				"foreground": "#B267E6"
