@@ -647,6 +647,43 @@
 
 
         {
+            "name": "XML keywords",
+            "scope": [
+                "punctuation.definition.tag.xml",
+                "keyword.other.doctype.xml",
+                "entity.name.tag.localname.xml",
+                "entity.name.tag.namespace.xml",
+                "entity.other.attribute-name.namespace.xml"
+            ],
+            "settings": {
+                "foreground": "#d5b778"
+            }
+        },
+        {
+            "name": "XML",
+            "scope": [
+                "punctuation.definition.constant.xml",
+                "constant.character.entity.xml"
+            ],
+            "settings": {
+                "foreground": "#56a8f5"
+            }
+        },
+        {
+            "name": "XML text",
+            "scope": [
+                "string.unquoted.cdata.xml punctuation.definition.string.begin.xml",
+                "string.unquoted.cdata.xml punctuation.definition.string.end.xml",
+                "string.unquoted.cdata.xml"
+            ],
+            "settings": {
+                "foreground": "#bcbec4"
+            }
+        },
+
+
+
+        {
             "name": "GEODE color blue",
 			"scope": "geode.flalert.blue",
 			"settings": {

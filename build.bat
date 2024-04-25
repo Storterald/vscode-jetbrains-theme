@@ -1,2 +1,2 @@
-call compiler.bat
-call installer.bat
+call bin/compiler.bat
+call bin/installer.bat
