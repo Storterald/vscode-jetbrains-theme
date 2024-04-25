@@ -362,7 +362,8 @@
                 "variable.other.enummember.cpp"
             ],
             "settings": {
-                "foreground": "#c77dbb"
+                "foreground": "#c77dbb",
+                "fontStyle": "italic"
             }
         },
         {
@@ -431,6 +432,17 @@
                 "foreground": "#bcbec4"
             }
         },
+        {
+            "name": "C/C++ operators",
+            "scope": [
+                "keyword.operator.bitwise.shift.cpp",
+                "source.cpp punctuation.definition.begin.bracket.square",
+                "source.cpp punctuation.definition.end.bracket.square"
+            ],
+            "settings": {
+                "foreground": "#5f8c8a"
+            }
+        },
 
 
 
@@ -467,7 +479,7 @@
                 "entity.name.tag.css",
                 "support.constant.language-range.css",
                 "meta.selector.css entity.other.attribute-name",
-                "keyword.operator.logical"
+                "source.css keyword.operator.logical"
             ],
             "settings": {
                 "foreground": "#d5b778"
@@ -511,7 +523,8 @@
             "name": "HTML tags",
             "scope": [
                 "entity.name.tag.html",
-                "punctuation.definition.tag"
+                "punctuation.definition.tag.begin.html",
+                "punctuation.definition.tag.end.html"
             ],
             "settings": {
                 "foreground": "#d5b778"
