@@ -3,4 +3,7 @@ cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) &&
 
 @echo off
 title Extension installer
-code --install-extension ../intellij-idea-theme-for-vs-code-1.0.0.vsix
+
+for %%a in (../*.vsix) do (
+    code --install-extension "../%%~nxa"
+)
