@@ -23,7 +23,10 @@
         "uiTheme": "vs-dark",
         "path": "./themes/CLion New UI.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "editor.lineHeight": 1.65
+    }
   },
   "devDependencies": {
     "esbuild": "^0.19.11"
