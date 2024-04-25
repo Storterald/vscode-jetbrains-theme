@@ -27,6 +27,7 @@
     "configurationDefaults": {
       "editor.lineHeight": 1.65,
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
+      "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
       "better-comments.tags": [
         {
           "tag": "TODO",
@@ -47,6 +48,7 @@
     "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
   },
   "extensionDependencies": [
-    "chadalen.vscode-jetbrains-icon-theme"
+    "chadalen.vscode-jetbrains-icon-theme",
+    "aaron-bond.better-comments"
   ]
 }
