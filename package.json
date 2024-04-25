@@ -26,7 +26,18 @@
     ],
     "configurationDefaults": {
       "editor.lineHeight": 1.65,
-      "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'"
+      "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
+      "better-comments.tags": [
+        {
+          "tag": "TODO",
+          "color": "#8bb33d",
+          "strikethrough": false,
+          "underline": false,
+          "backgroundColor": "transparent",
+          "bold": false,
+          "italic": true
+        }
+      ]
     }
   },
   "devDependencies": {
