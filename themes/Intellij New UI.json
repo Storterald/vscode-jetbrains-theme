@@ -522,11 +522,37 @@
 
 
         {
-            "name": "MARKDOWN",
+            "name": "MARKDOWN headings",
             "scope": [
-                "heading.1.markdown",
-                "heading.2.markdown",
-                "heading.3.markdown"
+                "markup.heading.markdown",
+                "markup.heading.markdown punctuation.definition.link.title.begin.markdown",
+                "markup.heading.markdown punctuation.definition.link.title.end.markdown",
+                "markup.heading.markdown markup.underline.link.markdown",
+                "markup.heading.markdown markup.inline.raw.string.markdown",
+                "markup.heading.markdown markup.quote.markdown",
+                "markup.heading.markdown punctuation.definition.metadata.markdown",
+                "markup.heading.markdown punctuation.definition.list.begin.markdown",
+                "markup.heading.markdown punctuation.definition.raw.markdown",
+                "markup.heading.markdown punctuation.definition.italic.markdown",
+                "markup.heading.markdown punctuation.definition.bold.markdown",
+                "markup.heading.markdown punctuation.definition.strikethrough.markdown",
+                "markup.heading.markdown punctuation.definition.quote.begin.markdown",
+                "markup.heading.markdown string.other.link.title.markdown",
+                "markup.heading.markdown string.other.link.description.markdown",
+                "markup.heading.markdown punctuation.definition.strikethrough.markdown",
+                "markup.heading.markdown markup.strikethrough.markdown",
+                "markup.heading.markdown punctuation.definition.link.markdown",
+                "markup.heading.markdown punctuation.definition.link.title.begin.markdown",
+                "markup.heading.markdown punctuation.definition.link.title.end.markdown",
+                "markup.heading.markdown punctuation.definition.constant.begin.markdown",
+                "markup.heading.markdown punctuation.definition.metadata.markdown",
+                "markup.heading.markdown punctuation.definition.constant.end.markdown",
+                "markup.heading.markdown punctuation.definition.constant.markdown",
+                "markup.heading.setext.1.markdown",
+                "markup.heading.setext.2.markdown",
+                "markup.heading.markdown markup.fenced_code.block.markdown",
+                "markup.heading.markdown markup.raw.block.markdown",
+                "markup.heading.markdown meta.separator.markdown"
             ],
             "settings": {
 				"foreground": "#c77dbb",
@@ -534,60 +560,69 @@
 			}
         },
         {
-            "name": "MARKDOWN",
-            "scope": [
-                "punctuation.definition.heading.markdown"
-            ],
-            "settings": {
-				"foreground": "#cb8c6c",
-                "fontStyle": "italic"
-			}
-        },
-        {
-            "name": "MARKDOWN",
+            "name": "MARKDOWN strings",
             "scope": [
                 "markup.inline.raw.string.markdown",
                 "markup.quote.markdown",
-                "punctuation.definition.metadata.markdown"
+                "punctuation.definition.raw.markdown",
+                "markup.fenced_code.block.markdown",
+                "markup.raw.block.markdown"
             ],
             "settings": {
-				"foreground": "#65a86d"
+				"foreground": "#6aab73"
 			}
         },
         {
-            "name": "MARKDOWN",
+            "name": "MARKDOWN keywords",
             "scope": [
-                "punctuation.definition.list.begin.markdown",
-                "punctuation.definition.raw.markdown",
+                "punctuation.definition.metadata.markdown",
                 "punctuation.definition.italic.markdown",
                 "punctuation.definition.bold.markdown",
                 "punctuation.definition.strikethrough.markdown",
                 "punctuation.definition.quote.begin.markdown",
-                "string.other.link.title.markdown"
+                "punctuation.definition.constant.begin.markdown",
+                "punctuation.definition.constant.end.markdown",
+                "punctuation.definition.constant.markdown",
+                "punctuation.definition.table.markdown",
+                "punctuation.separator.table.markdown",
+                "meta.separator.markdown"
             ],
             "settings": {
-				"foreground": "#cb8c6c"
-			}
+                "foreground": "#cf8e6d"
+            }
         },
         {
-            "name": "MARKDOWN",
+            "name": "MARKDOWN links",
             "scope": [
+                "markup.underline.link.markdown",
+                "punctuation.definition.link.markdown",
                 "punctuation.definition.link.title.begin.markdown",
+                "string.other.link.title.markdown",
                 "punctuation.definition.link.title.end.markdown"
             ],
             "settings": {
                 "foreground": "#56a8f5",
-                "fontStyle": "underline"
+                "fontStyle": "italic"
             }
         },
         {
-            "name": "MARKDOWN",
+            "name": "MARKDOWN strikethrough",
             "scope": [
-                "markup.underline.link.markdown"
+                "punctuation.definition.strikethrough.markdown",
+                "markup.strikethrough.markdown"
             ],
             "settings": {
-                "foreground": "#56a8f5",
-                "fontStyle": "italic"
+                "foreground": "#bcbec4",
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
+            "name": "MARKDOWN text",
+            "scope": [
+                "punctuation.definition.metadata.markdown"
+            ],
+            "settings": {
+                "foreground": "#bcbec4"
             }
         },
 
