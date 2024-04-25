@@ -14,9 +14,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "New UI",
+        "label": "Intellij New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/New UI.json"
+        "path": "./themes/Intellij New UI.json"
       },
       {
         "label": "CLion New UI",
