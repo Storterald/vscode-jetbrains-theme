@@ -260,7 +260,7 @@
                 "storage.type",
                 "storage.modifier",
                 "variable.language.this",
-                "keyword.operator.new"
+                "keyword.operator.wordlike"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -343,7 +343,7 @@
         {
             "name": "C/C++ enum member",
             "scope": [
-                "variable.other.enummember.cpp"
+                "source.cpp variable.other.enummember.cpp"
             ],
             "settings": {
                 "foreground": "#c77dbb",
@@ -353,8 +353,9 @@
         {
             "name": "C/C++ keywords",
             "scope": [
-                "meta.encoding",
-                "keyword.operator.cast"
+                "source.cpp meta.encoding",
+                "source.cpp keyword.operator.cast",
+                "source.cpp keyword.operator.sizeof"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -363,7 +364,7 @@
         {
             "name": "C/C++ function definition",
             "scope": [
-                "entity.name.function.definition"
+                "source.cpp entity.name.function.definition"
             ],
             "settings": {
                 "foreground": "#56a8f5"
@@ -372,7 +373,7 @@
         {
             "name": "C/C++ templates",
             "scope": [
-                "entity.name.type.template.cpp"
+                "source.cpp entity.name.type.template"
             ],
             "settings": {
                 "foreground": "#16baac"
@@ -381,10 +382,10 @@
         {
             "name": "C/C++ text",
             "scope": [
-                "storage.modifier.reference.cpp",
-                "storage.modifier.pointer.cpp",
-                "string.quoted.other.lt-gt.include.cpp",
-                "string.quoted.double.include.cpp"
+                "source.cpp storage.modifier.reference",
+                "source.cpp storage.modifier.pointer",
+                "source.cpp string.quoted.other.lt-gt.include",
+                "source.cpp string.quoted.double.include"
             ],
             "settings": {
                 "foreground": "#bcbec4"

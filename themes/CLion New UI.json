@@ -260,7 +260,7 @@
                 "storage.type",
                 "storage.modifier",
                 "variable.language.this",
-                "keyword.operator.new"
+                "keyword.operator.wordlike"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -343,23 +343,16 @@
         {
             "name": "C/C++ directive",
             "scope": [
-                "keyword.control.directive"
+                "source.cpp keyword.control.directive"
             ],
             "settings": {
                 "foreground": "#b3ae60"
             }
         },
         {
-            "name": "C/C++ namespace",
-            "scope": "entity.name.namespace.cpp",
-            "settings": {
-                "foreground": "#b5b6e3"
-            }
-        },
-        {
             "name": "C/C++ enum member",
             "scope": [
-                "variable.other.enummember.cpp"
+                "source.cpp variable.other.enummember"
             ],
             "settings": {
                 "foreground": "#c77dbb",
@@ -367,31 +360,11 @@
             }
         },
         {
-            "name": "C/C++ struct tail",
-            "scope": "meta.tail.struct.cpp",
-            "settings": {
-                "foreground": "#b9bcd1"
-            }
-        },
-        {
-            "name": "C/C++ namespace type",
-            "scope": "entity.name.type",
-            "settings": {
-                "foreground": "#b5b6e3"
-            }
-        },
-        {
-            "name": "C/C++ properties",
-            "scope": "variable.other.property",
-            "settings": {
-                "foreground": "#9373a5"
-            }
-        },
-        {
             "name": "C/C++ keywords",
             "scope": [
-                "meta.encoding",
-                "keyword.operator.cast"
+                "source.cpp meta.encoding",
+                "source.cpp keyword.operator.cast",
+                "source.cpp keyword.operator.sizeof"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -400,7 +373,8 @@
         {
             "name": "C/C++ function definition",
             "scope": [
-                "entity.name.function.definition"
+                "source.cpp entity.name.function.definition",
+                "source.cpp entity.name.function.definition.special.constructor"
             ],
             "settings": {
                 "foreground": "#56a8f5"
@@ -408,25 +382,16 @@
         },
         {
             "name": "C/C++ preprocessor",
-            "scope": "entity.name.function.preprocessor.cpp",
+            "scope": "source.cpp entity.name.function.preprocessor",
             "settings": {
                 "foreground": "#908b25"
             }
         },
         {
-            "name": "C/C++ templates",
-            "scope": [
-                "entity.name.type.template.cpp"
-            ],
-            "settings": {
-                "foreground": "#c77dbb"
-            }
-        },
-        {
             "name": "C/C++ text",
             "scope": [
-                "storage.modifier.reference.cpp",
-                "storage.modifier.pointer.cpp"
+                "source.cpp storage.modifier.reference",
+                "source.cpp storage.modifier.pointer"
             ],
             "settings": {
                 "foreground": "#bcbec4"
@@ -435,7 +400,7 @@
         {
             "name": "C/C++ operators",
             "scope": [
-                "keyword.operator.bitwise.shift.cpp",
+                "source.cpp keyword.operator.bitwise.shift",
                 "source.cpp punctuation.definition.begin.bracket.square",
                 "source.cpp punctuation.definition.end.bracket.square"
             ],
@@ -802,5 +767,12 @@
 				"foreground": "#B267E6"
 			}
 		}
-	]
+	],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "type:cpp": "#b5b6e3",
+        "templateType:cpp": "#b5b6e3",
+        "namespace:cpp": "#b5b6e3",
+        "property:cpp": "#9373a5"
+    }
 }
