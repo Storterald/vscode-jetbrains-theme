@@ -1,27 +1,9 @@
 # Compatibility
 
-The extension edits colors of the following extensions: ***GitHub Pull Requests and Issues***, ***Geode***.
+# Languages compatibility
 
-## Updates
+The extension themes work with the following languages: `c++`, `html`, `css`, `xml`, `json`, `cmake`, `markdown`.
 
-The extension is frequently updated to add further support of keywords and languages.
+## Extension compatibility 
 
-## Other Extensions and addons
-
-It's suggested to also use the ***JetBrains Icon Theme*** extension and the ***JetBrains Mono*** font. Furthermore you could use the ***Better Comments*** extension and replace the setting.json part with:
-
-<pre>
-"better-comments.tags": [  
-    {  
-        "tag": "TODO",
-        "color": "#8bb33d",
-        "strikethrough": false,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": true
-    }
-]
-</pre>
-
-to add something similar to the ***TODO()***, *it will still require to be inside a comment*
+The extension edits colors of the following extensions: "***GitHub Pull Requests and Issues***", "***Geode***".

@@ -1,5 +1,6 @@
 {
 	"name": "CLion New UI",
+    "type": "dark",
 	"colors": {
 		"activityBar.background": "#2b2d30",
         "activityBar.border": "#1e1f22",
@@ -413,21 +414,21 @@
 
         {
             "name": "CMAKE keywords",
-            "scope": "keyword.cmake",
+            "scope": "source.cmake keyword",
             "settings": {
 				"foreground": "#ffc66d"
 			}
         },
         {
             "name": "CMAKE argument",
-            "scope": "argument.source.cmake",
+            "scope": "source.cmake argument.source",
             "settings": {
                 "foreground": "#6aab73"
             }
         },
         {
             "name": "CMAKE source",
-            "scope": "entity.source.cmake",
+            "scope": "source.cmake entity.source",
             "settings": {
                 "foreground": "#cf8e6d"
             }
@@ -438,13 +439,13 @@
         {
             "name": "CSS",
             "scope": [
-                "meta.property-value.css",
-                "constant.other.unicode-range.css",
-                "entity.other.attribute-name.pseudo-class.css",
-                "entity.name.tag.css",
-                "support.constant.language-range.css",
-                "meta.selector.css entity.other.attribute-name",
-                "source.css keyword.operator.logical"
+                "source.css meta.property-value",
+                "source.css constant.other.unicode-range",
+                "source.css entity.other.attribute-name.pseudo-class",
+                "source.css entity.name.tag",
+                "source.css support.constant.language-range",
+                "source.css meta.selector.css entity.other.attribute-name",
+                "source.css source.css keyword.operator.logical"
             ],
             "settings": {
                 "foreground": "#d5b778"
@@ -453,8 +454,8 @@
         {
             "name": "CSS",
             "scope": [
-                "variable.parameter.url.css",
-                "constant.other.color.rgb-value.hex.css"
+                "source.css variable.parameter.url",
+                "source.css constant.other.color.rgb-value.hex"
             ],
             "settings": {
                 "foreground": "#5c92ff"
@@ -463,8 +464,8 @@
         {
             "name": "CCS text",
             "scope": [
-                "support.constant.color.w3c-standard-color-name.css",
-                "keyword.other.unit.percentage.css"
+                "source.css support.constant.color.w3c-standard-color-name",
+                "source.css keyword.other.unit.percentage"
             ],
             "settings": {
                 "foreground": "#bcbec4"
@@ -473,9 +474,9 @@
         {
             "name": "CSS",
             "scope": [
-                "keyword.other.unit.deg.css",
-                "keyword.other.unit.px.css",
-                "support.constant.property-value.css"
+                "source.css keyword.other.unit.deg",
+                "source.css keyword.other.unit.px",
+                "source.css support.constant.property-value"
             ],
             "settings": {
                 "foreground": "#6aab73"
@@ -487,9 +488,9 @@
         {
             "name": "HTML tags",
             "scope": [
-                "entity.name.tag.html",
-                "punctuation.definition.tag.begin.html",
-                "punctuation.definition.tag.end.html"
+                "text.html.derivative entity.name.tag",
+                "text.html.derivative punctuation.definition.tag.begin",
+                "text.html.derivative punctuation.definition.tag.end"
             ],
             "settings": {
                 "foreground": "#d5b778"
@@ -498,8 +499,8 @@
         {
             "name": "HTML constants",
             "scope": [
-                "constant.character.entity.numeric.hexadecimal.html",
-                "constant.character.entity.named.Alpha.html"
+                "text.html.derivative constant.character.entity.numeric.hexadecimal",
+                "text.html.derivative constant.character.entity.named.Alpha"
             ],
             "settings": {
                 "foreground": "#56a8f5"
@@ -508,8 +509,8 @@
         {
             "name": "HTML custom tag",
             "scope": [
-                "meta.tag.custom.start.html entity.name.tag.html",
-                "meta.tag.other.unrecognized.html.derivative entity.name.tag.html"
+                "text.html.derivative meta.tag.custom.start.html entity.name.tag",
+                "text.html.derivative meta.tag.other.unrecognized.html.derivative entity.name.tag"
             ],
             "settings": {
                 "foreground": "#2fbaa3"
@@ -521,7 +522,7 @@
         {
             "name": "JSON property name",
             "scope": [
-                "support.type.property-name.json"
+                "source.json support.type.property-name"
             ],
             "settings": {
                 "foreground": "#c77dbb"
@@ -530,7 +531,7 @@
         {
             "name": "JSON keywords",
             "scope": [
-                "invalid.illegal.unrecognized-string-escape.json"
+                "source.json invalid.illegal.unrecognized-string-escape"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -542,35 +543,35 @@
         {
             "name": "MARKDOWN headings",
             "scope": [
-                "markup.heading.markdown",
-                "markup.heading.markdown punctuation.definition.link.title.begin.markdown",
-                "markup.heading.markdown punctuation.definition.link.title.end.markdown",
-                "markup.heading.markdown markup.underline.link.markdown",
-                "markup.heading.markdown markup.inline.raw.string.markdown",
-                "markup.heading.markdown markup.quote.markdown",
-                "markup.heading.markdown punctuation.definition.metadata.markdown",
-                "markup.heading.markdown punctuation.definition.list.begin.markdown",
-                "markup.heading.markdown punctuation.definition.raw.markdown",
-                "markup.heading.markdown punctuation.definition.italic.markdown",
-                "markup.heading.markdown punctuation.definition.bold.markdown",
-                "markup.heading.markdown punctuation.definition.strikethrough.markdown",
-                "markup.heading.markdown punctuation.definition.quote.begin.markdown",
-                "markup.heading.markdown string.other.link.title.markdown",
-                "markup.heading.markdown string.other.link.description.markdown",
-                "markup.heading.markdown punctuation.definition.strikethrough.markdown",
-                "markup.heading.markdown markup.strikethrough.markdown",
-                "markup.heading.markdown punctuation.definition.link.markdown",
-                "markup.heading.markdown punctuation.definition.link.title.begin.markdown",
-                "markup.heading.markdown punctuation.definition.link.title.end.markdown",
-                "markup.heading.markdown punctuation.definition.constant.begin.markdown",
-                "markup.heading.markdown punctuation.definition.metadata.markdown",
-                "markup.heading.markdown punctuation.definition.constant.end.markdown",
-                "markup.heading.markdown punctuation.definition.constant.markdown",
-                "markup.heading.setext.1.markdown",
-                "markup.heading.setext.2.markdown",
-                "markup.heading.markdown markup.fenced_code.block.markdown",
-                "markup.heading.markdown markup.raw.block.markdown",
-                "markup.heading.markdown meta.separator.markdown"
+                "text.html.markdown markup.heading",
+                "text.html.markdown markup.heading.markdown punctuation.definition.link.title.begin",
+                "text.html.markdown markup.heading.markdown punctuation.definition.link.title.end",
+                "text.html.markdown markup.heading.markdown markup.underline.link",
+                "text.html.markdown markup.heading.markdown markup.inline.raw.string",
+                "text.html.markdown markup.heading.markdown markup.quote",
+                "text.html.markdown markup.heading.markdown punctuation.definition.metadata",
+                "text.html.markdown markup.heading.markdown punctuation.definition.list.begin",
+                "text.html.markdown markup.heading.markdown punctuation.definition.raw",
+                "text.html.markdown markup.heading.markdown punctuation.definition.italic",
+                "text.html.markdown markup.heading.markdown punctuation.definition.bold",
+                "text.html.markdown markup.heading.markdown punctuation.definition.strikethrough",
+                "text.html.markdown markup.heading.markdown punctuation.definition.quote.begin",
+                "text.html.markdown markup.heading.markdown string.other.link.title",
+                "text.html.markdown markup.heading.markdown string.other.link.description",
+                "text.html.markdown markup.heading.markdown punctuation.definition.strikethrough",
+                "text.html.markdown markup.heading.markdown markup.strikethrough",
+                "text.html.markdown markup.heading.markdown punctuation.definition.link",
+                "text.html.markdown markup.heading.markdown punctuation.definition.link.title.begin",
+                "text.html.markdown markup.heading.markdown punctuation.definition.link.title.end",
+                "text.html.markdown markup.heading.markdown punctuation.definition.constant.begin",
+                "text.html.markdown markup.heading.markdown punctuation.definition.metadata",
+                "text.html.markdown markup.heading.markdown punctuation.definition.constant.end",
+                "text.html.markdown markup.heading.markdown punctuation.definition.constant",
+                "text.html.markdown markup.heading.setext.1",
+                "text.html.markdown markup.heading.setext.2",
+                "text.html.markdown markup.heading.markdown markup.fenced_code.block",
+                "text.html.markdown markup.heading.markdown markup.raw.block",
+                "text.html.markdown markup.heading.markdown meta.separator"
             ],
             "settings": {
 				"foreground": "#c77dbb",
@@ -580,11 +581,11 @@
         {
             "name": "MARKDOWN strings",
             "scope": [
-                "markup.inline.raw.string.markdown",
-                "markup.quote.markdown",
-                "punctuation.definition.raw.markdown",
-                "markup.fenced_code.block.markdown",
-                "markup.raw.block.markdown"
+                "text.html.markdown markup.inline.raw.string",
+                "text.html.markdown markup.quote",
+                "text.html.markdown punctuation.definition.raw",
+                "text.html.markdown markup.fenced_code.block",
+                "text.html.markdown markup.raw.block"
             ],
             "settings": {
 				"foreground": "#6aab73"
@@ -593,17 +594,17 @@
         {
             "name": "MARKDOWN keywords",
             "scope": [
-                "punctuation.definition.metadata.markdown",
-                "punctuation.definition.italic.markdown",
-                "punctuation.definition.bold.markdown",
-                "punctuation.definition.strikethrough.markdown",
-                "punctuation.definition.quote.begin.markdown",
-                "punctuation.definition.constant.begin.markdown",
-                "punctuation.definition.constant.end.markdown",
-                "punctuation.definition.constant.markdown",
-                "punctuation.definition.table.markdown",
-                "punctuation.separator.table.markdown",
-                "meta.separator.markdown"
+                "text.html.markdown punctuation.definition.metadata",
+                "text.html.markdown punctuation.definition.italic",
+                "text.html.markdown punctuation.definition.bold",
+                "text.html.markdown punctuation.definition.strikethrough",
+                "text.html.markdown punctuation.definition.quote.begin",
+                "text.html.markdown punctuation.definition.constant.begin",
+                "text.html.markdown punctuation.definition.constant.end",
+                "text.html.markdown punctuation.definition.constant",
+                "text.html.markdown punctuation.definition.table",
+                "text.html.markdown punctuation.separator.table",
+                "text.html.markdown meta.separator"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -612,11 +613,11 @@
         {
             "name": "MARKDOWN links",
             "scope": [
-                "markup.underline.link.markdown",
-                "punctuation.definition.link.markdown",
-                "punctuation.definition.link.title.begin.markdown",
-                "string.other.link.title.markdown",
-                "punctuation.definition.link.title.end.markdown"
+                "text.html.markdown markup.underline.link",
+                "text.html.markdown punctuation.definition.link",
+                "text.html.markdown punctuation.definition.link.title.begin",
+                "text.html.markdown string.other.link.title",
+                "text.html.markdown punctuation.definition.link.title.end"
             ],
             "settings": {
                 "foreground": "#56a8f5",
@@ -626,8 +627,8 @@
         {
             "name": "MARKDOWN strikethrough",
             "scope": [
-                "punctuation.definition.strikethrough.markdown",
-                "markup.strikethrough.markdown"
+                "text.html.markdown punctuation.definition.strikethrough",
+                "text.html.markdown markup.strikethrough"
             ],
             "settings": {
                 "foreground": "#bcbec4",
@@ -637,7 +638,7 @@
         {
             "name": "MARKDOWN text",
             "scope": [
-                "punctuation.definition.metadata.markdown"
+                "text.html.markdown punctuation.definition.metadata"
             ],
             "settings": {
                 "foreground": "#bcbec4"
@@ -649,11 +650,11 @@
         {
             "name": "XML keywords",
             "scope": [
-                "punctuation.definition.tag.xml",
-                "keyword.other.doctype.xml",
-                "entity.name.tag.localname.xml",
-                "entity.name.tag.namespace.xml",
-                "entity.other.attribute-name.namespace.xml"
+                "text.xml punctuation.definition.tag",
+                "text.xml keyword.other.doctype",
+                "text.xml entity.name.tag.localname",
+                "text.xml entity.name.tag.namespace",
+                "text.xml entity.other.attribute-name.namespace"
             ],
             "settings": {
                 "foreground": "#d5b778"
@@ -662,8 +663,8 @@
         {
             "name": "XML",
             "scope": [
-                "punctuation.definition.constant.xml",
-                "constant.character.entity.xml"
+                "text.xml punctuation.definition.constant",
+                "text.xml constant.character.entity"
             ],
             "settings": {
                 "foreground": "#56a8f5"
@@ -672,14 +673,13 @@
         {
             "name": "XML text",
             "scope": [
-                "string.unquoted.cdata.xml punctuation.definition.string.begin.xml",
-                "string.unquoted.cdata.xml punctuation.definition.string.end.xml",
-                "string.unquoted.cdata.xml"
+                "text.xml string.unquoted.cdata"
             ],
             "settings": {
                 "foreground": "#bcbec4"
             }
         },
+
 
 
 
