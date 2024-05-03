@@ -248,9 +248,9 @@
 		"titleBar.inactiveBackground": "#2b2d30",
 		"titleBar.inactiveForeground": "#bcbec4",
 
-        "gitDecoration.ignoredResourceForeground": "#cf8e6d",
-        "gitDecoration.modifiedResourceForeground": "#56a8f5",
-        "gitDecoration.untrackedResourceForeground": "#d38075",
+        "gitDecoration.ignoredResourceForeground": "#c48e66",
+        "gitDecoration.modifiedResourceForeground": "#509cf6",
+        "gitDecoration.untrackedResourceForeground": "#d88b83",
 
         "textPreformat.foreground": "#bcbec4"
 		
