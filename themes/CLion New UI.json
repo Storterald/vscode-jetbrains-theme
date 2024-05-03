@@ -57,9 +57,6 @@
         "commandCenter.inactiveBorder": "#43454a",
         "commandCenter.inactiveForeground": "#bcbec4",
 
-        "contrastActiveBorder": "#1e1f22",
-        "contrastBorder": "#393b40",
-
         "debugConsole.errorForeground": "#bcbec4",
         "debugConsole.infoForeground": "#bcbec4",
         "debugConsole.sourceForeground": "#bcbec4",
@@ -181,7 +178,6 @@
         "editorIndentGuide.activeBackground4": "#313438",
         "editorIndentGuide.activeBackground5": "#313438",
         "editorIndentGuide.activeBackground6": "#313438",
-
         "editorIndentGuide.background1": "#1e1f22",
         "editorIndentGuide.background2": "#1e1f22",
         "editorIndentGuide.background3": "#1e1f22",
@@ -203,6 +199,10 @@
         "editorOverviewRuler.border": "#393b40",
         "editorOverviewRuler.errorForeground": "#c25460", 
         "editorOverviewRuler.rangeHighlightForeground": "#00000000",
+
+        "editorStickyScroll.border": "#393b40",
+        "editorStickyScroll.shadow": "#00000000",
+        "editorStickyScrollHover.background": "#26282e",
 
         "editorSuggestWidget.background": "#2b2d30",
         "editorSuggestWidget.border": "#393b40",
@@ -236,17 +236,29 @@
         "focusBorder": "#2b2d30",
         "foreground": "#bcbec4",
 
+        "list.inactiveBorder": "#00000000",
+        "list.inactiveSelectionBackground": "#43454a",
+        "list.activeBorder": "#00000000",
+        "list.activeSelectionBackground": "#2e436e",
+
 		"sideBar.background": "#2b2d30",
 		"sideBar.border": "#393b40",
 		"sideBarSectionHeader.background": "#2b2d30",
 		"sideBarSectionHeader.border": "#1e1f22",
 		"sideBarSectionHeader.foreground": "#bcbec4",
 
+        "tab.border": "#00000000",
+        "tab.inactiveBackground": "#1e1f22",
+        "tab.activeBorder": "#3574f0",
+        "tab.unfocusedActiveBorder": "#5a5d63",
+
 		"titleBar.activeBackground": "#2b2d30",
 		"titleBar.activeForeground": "#bcbec4",
 		"titleBar.border": "#1e1f22",
 		"titleBar.inactiveBackground": "#2b2d30",
 		"titleBar.inactiveForeground": "#bcbec4",
+
+        "tree.indentGuidesStroke": "#00000000",
 
         "gitDecoration.ignoredResourceForeground": "#c48e66",
         "gitDecoration.modifiedResourceForeground": "#6fabf1",
