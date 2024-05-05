@@ -277,8 +277,7 @@
                 "constant",
                 "storage.type",
                 "storage.modifier",
-                "variable.language.this",
-                "keyword.operator.wordlike"
+                "variable.language.this"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -373,7 +372,9 @@
             "scope": [
                 "source.cpp meta.encoding",
                 "source.cpp keyword.operator.cast",
-                "source.cpp keyword.operator.sizeof"
+                "source.cpp keyword.operator.sizeof",
+                "source.cpp keyword.operator.typeid",
+                "keyword.operator.wordlike"
             ],
             "settings": {
                 "foreground": "#cf8e6d"

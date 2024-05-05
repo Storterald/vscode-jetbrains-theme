@@ -277,8 +277,7 @@
                 "constant",
                 "storage.type",
                 "storage.modifier",
-                "variable.language.this",
-                "keyword.operator.wordlike"
+                "variable.language.this"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -378,11 +377,20 @@
             }
         },
         {
+            "name": "C/C++ types",
+            "scope": "entity.name.scope-resolution.cpp",
+            "settings": {
+                "foreground": "#b5b6e3"
+            }
+        },
+        {
             "name": "C/C++ keywords",
             "scope": [
                 "source.cpp meta.encoding",
                 "source.cpp keyword.operator.cast",
-                "source.cpp keyword.operator.sizeof"
+                "source.cpp keyword.operator.sizeof",
+                "source.cpp keyword.operator.typeid",
+                "source.cpp keyword.operator.functionlike"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -790,6 +798,7 @@
         "type:cpp": "#b5b6e3",
         "templateType:cpp": "#b5b6e3",
         "namespace:cpp": "#b5b6e3",
-        "property:cpp": "#9373a5"
+        "property:cpp": "#9373a5",
+        "macro:cpp": "#908b25"
     }
 }

@@ -31,6 +31,8 @@ namespace foo {
       std::vector<int> vec = { 1, 2, 3 };
       this->n = N;
       localVar1 = param1 + param2 + localVar3;
+      sizeof();
+      typeid();
 
     label:
       printf("Formatted string %d\n\g", localVar[0]);
