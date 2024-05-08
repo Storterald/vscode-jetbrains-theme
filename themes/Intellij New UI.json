@@ -264,6 +264,7 @@
         "gitDecoration.modifiedResourceForeground": "#6fabf1",
         "gitDecoration.untrackedResourceForeground": "#d88b83",
         "gitDecoration.renamedResourceForeground": "#6fabf1",
+        "gitDecoration.stageModifiedResourceForeground": "#6fabf1",
 
         "textPreformat.foreground": "#bcbec4"
 		
@@ -374,7 +375,8 @@
                 "source.cpp keyword.operator.cast",
                 "source.cpp keyword.operator.sizeof",
                 "source.cpp keyword.operator.typeid",
-                "keyword.operator.wordlike"
+                "source.cpp keyword.operator.delete",
+                "source.cpp keyword.operator.new"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
