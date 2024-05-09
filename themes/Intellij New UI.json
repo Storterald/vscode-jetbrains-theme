@@ -375,8 +375,7 @@
                 "source.cpp keyword.operator.cast",
                 "source.cpp keyword.operator.sizeof",
                 "source.cpp keyword.operator.typeid",
-                "source.cpp keyword.operator.delete",
-                "source.cpp keyword.operator.new"
+                "source.cpp keyword.operator.delete"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -769,5 +768,9 @@
 				"foreground": "#B267E6"
 			}
 		}
-	]
+	],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "newOperator:cpp": "#cf8e6d"
+    }
 }

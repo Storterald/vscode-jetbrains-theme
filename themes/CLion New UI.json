@@ -391,8 +391,7 @@
                 "source.cpp keyword.operator.cast",
                 "source.cpp keyword.operator.sizeof",
                 "source.cpp keyword.operator.typeid",
-                "source.cpp keyword.operator.delete",
-                "source.cpp keyword.operator.new"
+                "source.cpp keyword.operator.delete"
             ],
             "settings": {
                 "foreground": "#cf8e6d"
@@ -801,6 +800,7 @@
         "templateType:cpp": "#b5b6e3",
         "namespace:cpp": "#b5b6e3",
         "property:cpp": "#9373a5",
-        "macro:cpp": "#908b25"
+        "macro:cpp": "#908b25",
+        "newOperator:cpp": "#cf8e6d"
     }
 }
