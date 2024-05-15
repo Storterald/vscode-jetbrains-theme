@@ -405,7 +405,8 @@
                 "source.cpp storage.modifier.reference",
                 "source.cpp storage.modifier.pointer",
                 "source.cpp string.quoted.other.lt-gt.include",
-                "source.cpp string.quoted.double.include"
+                "source.cpp string.quoted.double.include",
+                "punctuation.separator.colon.access.control.cpp"
             ],
             "settings": {
                 "foreground": "#bcbec4"

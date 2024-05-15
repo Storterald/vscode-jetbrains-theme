@@ -25,7 +25,7 @@
       }
     ],
     "configurationDefaults": {
-      "editor.lineHeight": 1.65,
+      "editor.lineHeight": 1.675,
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
       "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
       "better-comments.tags": [

@@ -418,21 +418,11 @@
             "name": "C/C++ text",
             "scope": [
                 "source.cpp storage.modifier.reference",
-                "source.cpp storage.modifier.pointer"
+                "source.cpp storage.modifier.pointer",
+                "punctuation.separator.colon.access.control.cpp"
             ],
             "settings": {
                 "foreground": "#bcbec4"
-            }
-        },
-        {
-            "name": "C/C++ operators",
-            "scope": [
-                "source.cpp keyword.operator.bitwise.shift",
-                "source.cpp punctuation.definition.begin.bracket.square",
-                "source.cpp punctuation.definition.end.bracket.square"
-            ],
-            "settings": {
-                "foreground": "#5f8c8a"
             }
         },
 
@@ -801,6 +791,8 @@
         "namespace:cpp": "#b5b6e3",
         "property:cpp": "#9373a5",
         "macro:cpp": "#908b25",
-        "newOperator:cpp": "#cf8e6d"
+        "newOperator:cpp": "#cf8e6d",
+        "memberOperatorOverload:cpp": "#5f8c8a",
+        "operatorOverload:cpp": "#5f8c8a"
     }
 }
