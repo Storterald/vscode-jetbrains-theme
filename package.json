@@ -38,7 +38,8 @@
           "bold": false,
           "italic": true
         }
-      ]
+      ],
+      "customvscodeuicss.css": "span.inline-folded{background: #393b40;}"
     }
   },
   "devDependencies": {
@@ -49,6 +50,7 @@
   },
   "extensionDependencies": [
     "chadalen.vscode-jetbrains-icon-theme",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "kencocaceo.customvscodeuicss"
   ]
 }
