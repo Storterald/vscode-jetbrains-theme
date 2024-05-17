@@ -1,12 +1,13 @@
 # VS Code
-**/.vscode
+.vscode/
 
 # Jetbrains
-**/.idea
-**/node_modules
+.idea/
+node_modules/
 
 # .vsix file
 *.vsix
 
 # Other
-**/fonts
+fonts/
+.test_files/
