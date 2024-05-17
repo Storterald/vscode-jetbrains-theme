@@ -306,8 +306,7 @@
         {
             "name": "GENERIC numeric",
             "scope": [
-                "keyword.other.unit.hexadecimal",
-                "keyword.other.unit.suffix.floating-point",
+                "keyword.other.unit",
                 "constant.numeric"
             ],
             "settings": {
@@ -365,16 +364,6 @@
             ],
             "settings": {
                 "foreground": "#b3ae60"
-            }
-        },
-        {
-            "name": "C/C++ enum member",
-            "scope": [
-                "source.cpp variable.other.enummember"
-            ],
-            "settings": {
-                "foreground": "#c77dbb",
-                "fontStyle": "italic"
             }
         },
         {
@@ -793,6 +782,7 @@
         "macro:cpp": "#908b25",
         "newOperator:cpp": "#cf8e6d",
         "memberOperatorOverload:cpp": "#5f8c8a",
-        "operatorOverload:cpp": "#5f8c8a"
+        "operatorOverload:cpp": "#5f8c8a",
+        "enumMember:cpp": "#c77dbb"
     }
 }
