@@ -187,7 +187,8 @@
 
         "editorInfo.foreground": "#bcbec4",  
 
-        "editorInlayHint.typeForeground": "#bcbec4",
+        "editorInlayHint.background": "#2d2e32",
+        "editorInlayHint.typeForeground": "#777b86",
 
         "editorLightBulb.foreground": "#c25460",
         "editorLightBulbAi.foreground": "#c25460",

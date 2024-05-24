@@ -1,0 +1,7 @@
+span.inline-folded{
+        background: #393b40;
+} 
+
+div.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.active {
+        border-bottom: 4px solid var(--tab-border-bottom-color)
+}

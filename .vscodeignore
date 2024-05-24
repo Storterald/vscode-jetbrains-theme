@@ -13,3 +13,4 @@ bin/**
 .test_files/**
 fonts/**
 build.bat
+theme.css
