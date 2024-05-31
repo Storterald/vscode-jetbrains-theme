@@ -305,7 +305,7 @@
 
 
     {
-      "name": "C/C++ keywords",
+      "name": "C++ keywords",
       "scope": [
         "source.cpp meta.encoding",
         "source.cpp keyword.operator.cast",
@@ -318,7 +318,7 @@
       }
     },
     {
-      "name": "C/C++ function definition",
+      "name": "C++ function definition",
       "scope": [
         "source.cpp entity.name.function.definition"
       ],
@@ -327,7 +327,7 @@
       }
     },
     {
-      "name": "C/C++ templates",
+      "name": "C++ templates",
       "scope": [
         "source.cpp entity.name.type.template"
       ],
@@ -336,7 +336,7 @@
       }
     },
     {
-      "name": "C/C++ text",
+      "name": "C++ text",
       "scope": [
         "source.cpp storage.modifier.reference",
         "source.cpp storage.modifier.pointer",
@@ -708,7 +708,8 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "newOperator:cpp": "#cf8e6d",
-    "enumMember:cpp": "#c77dbb"
+    "newOperator": "#cf8e6d",
+    "property": "#c77dbb",
+    "enumMember": "#c77dbb"
   }
 }

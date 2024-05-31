@@ -315,14 +315,16 @@
 
 
     {
-      "name": "C/C++ types",
-      "scope": "entity.name.scope-resolution.cpp",
+      "name": "C++ types",
+      "scope": [
+        "source.cpp entity.name.scope-resolution"
+      ],
       "settings": {
         "foreground": "#b5b6e3"
       }
     },
     {
-      "name": "C/C++ keywords",
+      "name": "C++ keywords",
       "scope": [
         "source.cpp meta.encoding",
         "source.cpp keyword.operator.cast",
@@ -335,7 +337,7 @@
       }
     },
     {
-      "name": "C/C++ function definition",
+      "name": "C++ function definition",
       "scope": [
         "source.cpp entity.name.function.definition",
         "source.cpp entity.name.function.definition.special.constructor"
@@ -345,14 +347,14 @@
       }
     },
     {
-      "name": "C/C++ preprocessor",
+      "name": "C++ preprocessor",
       "scope": "source.cpp entity.name.function.preprocessor",
       "settings": {
         "foreground": "#908b25"
       }
     },
     {
-      "name": "C/C++ text",
+      "name": "C++ text",
       "scope": [
         "source.cpp storage.modifier.reference",
         "source.cpp storage.modifier.pointer",
@@ -722,14 +724,14 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "type:cpp": "#b5b6e3",
-    "templateType:cpp": "#b5b6e3",
-    "namespace:cpp": "#b5b6e3",
-    "property:cpp": "#9373a5",
-    "macro:cpp": "#908b25",
-    "newOperator:cpp": "#cf8e6d",
-    "memberOperatorOverload:cpp": "#5f8c8a",
-    "operatorOverload:cpp": "#5f8c8a",
-    "enumMember:cpp": "#c77dbb"
+    "newOperator": "#cf8e6d",
+    "type": "#b5b6e3",
+    "templateType": "#b5b6e3",
+    "namespace": "#b5b6e3",
+    "property": "#9373a5",
+    "macro": "#908b25",
+    "memberOperatorOverload": "#5f8c8a",
+    "operatorOverload": "#5f8c8a",
+    "enumMember": "#c77dbb"
   }
 }
