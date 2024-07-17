@@ -1,6 +1,6 @@
 # Compatibility
 
-# Languages compatibility
+## Languages compatibility
 
 This extension themes work with the following languages: `c++`, `html`, `css`, `xml`, `json`, `cmake`, `markdown`, `python`.
 
