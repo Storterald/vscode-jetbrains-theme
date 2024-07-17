@@ -1,0 +1,13 @@
+# VS Code
+.vscode/
+
+# Jetbrains
+.idea/
+node_modules/
+
+# .vsix file
+*.vsix
+
+# Other
+fonts/
+.test_files/

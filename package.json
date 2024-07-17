@@ -1,0 +1,51 @@
+{
+  "name": "jetbrains-themes-for-vs-code",
+  "displayName": "Jetbrains themes",
+  "icon": "logo.png",
+  "description": "Jetbrains themes",
+  "version": "1.0.0",
+  "publisher": "Storterald",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Intellij New UI",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Intellij New UI.json"
+      },
+      {
+        "label": "CLion New UI",
+        "uiTheme": "vs-dark",
+        "path": "./themes/CLion New UI.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.lineHeight": 1.675,
+      "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
+      "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+      "better-comments.tags": [
+        {
+          "tag": "TODO",
+          "color": "#8bb33d",
+          "strikethrough": false,
+          "underline": false,
+          "backgroundColor": "transparent",
+          "bold": false,
+          "italic": true
+        }
+      ],
+      "customvscodeuicss.css": "span.inline-folded{background: #393b40;} div.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.active{border-bottom: 4px solid var(--tab-border-bottom-color)}"
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11"
+  },
+  "repository": {
+    "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
+  }
+}

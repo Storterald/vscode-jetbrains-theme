@@ -1,0 +1,16 @@
+# VS Code
+.vscode/**
+
+# Jetbrains
+.idea/**
+node_modules/**
+
+# Git
+.gitignore
+
+# Other
+bin/**
+.test_files/**
+fonts/**
+build.bat
+theme.css
