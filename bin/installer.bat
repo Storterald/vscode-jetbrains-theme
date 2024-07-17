@@ -5,5 +5,5 @@ cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) &&
 title Extension installer
 
 for %%a in (../*.vsix) do (
-    code --install-extension "../%%~nxa"
+        code --install-extension "../%%~nxa"
 )

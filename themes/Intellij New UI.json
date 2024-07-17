@@ -587,6 +587,63 @@
 
 
     {
+      "name": "PYTHON documentation",
+      "scope": [
+        "source.python string.quoted.docstring"
+      ],
+      "settings": {
+        "foreground": "#5e8163"
+      }
+    },
+    {
+      "name": "PYTHON function parameters",
+      "scope": [
+        "source.python variable.parameter.function-call"
+      ],
+      "settings": {
+        "foreground": "#AA4926"
+      }
+    },
+    {
+      "name": "PYTHON arguments[]",
+      "scope": [
+        "source.python punctuation.definition.arguments"
+      ],
+      "settings": {
+        "foreground": "#56A8F5"
+      }
+    },
+    {
+      "name": "PYTHON quoted binary",
+      "scope": [
+        "source.python string.quoted.binary"
+      ],
+      "settings": {
+        "foreground": "#A5C261"
+      }
+    },
+    {
+      "name": "PYTHON keyword",
+      "scope": [
+        "source.python constant.character.format"
+      ],
+      "settings": {
+        "foreground": "#cf8e6d"
+      }
+    },
+    {
+      "name": "PYTHON magic variable",
+      "scope": [
+        "source.python support.variable.magic"
+      ],
+      "settings": {
+        "foreground": "#B200B2"
+      }
+    },
+
+
+
+    {
       "name": "XML keywords",
       "scope": [
         "text.xml punctuation.definition.tag",
@@ -617,99 +674,22 @@
       "settings": {
         "foreground": "#bcbec4"
       }
-    },
-
-
-    
-    {
-      "name": "GEODE color blue",
-      "scope": "geode.flalert.blue",
-      "settings": {
-        "foreground": "#3a518d"
-      }
-    },
-    {
-      "name": "GEODE color green",
-      "scope": "geode.flalert.green",
-      "settings": {
-        "foreground": "#5d982f"
-      }
-    },
-    {
-      "name": "GEODE color aqua",
-      "scope": "geode.flalert.aqua",
-      "settings": {
-        "foreground": "#3b8b96"
-      }
-    },
-    {
-      "name": "GEODE color cyan",
-      "scope": "geode.flalert.cyan",
-      "settings": {
-        "foreground": "#2f768c"
-      }
-    },
-    {
-      "name": "GEODE color yellow",
-      "scope": "geode.flalert.yellow",
-      "settings": {
-        "foreground": "#b99822"
-      }
-    },
-    {
-      "name": "GEODE color orange",
-      "scope": "geode.flalert.orange",
-      "settings": {
-        "foreground": "#af5832"
-      }
-    },
-    {
-      "name": "GEODE color red",
-      "scope": "geode.flalert.red",
-      "settings": {
-        "foreground": "#a03d3d"
-      }
-    },
-    {
-      "name": "GEODE color pink",
-      "scope": "geode.flalert.pink",
-      "settings": {
-        "foreground": "#883695"
-      }
-    },
-    {
-      "name": "GEODE info token",
-      "scope": "token.info-token",
-      "settings": {
-        "foreground": "#5289f6"
-      }
-    },
-    {
-      "name": "GEODE warn token",
-      "scope": "token.warn-token",
-      "settings": {
-        "foreground": "#6b5b3a"
-      }
-    },
-    {
-      "name": "GEODE error token",
-      "scope": "token.error-token",
-      "settings": {
-        "foreground": "#c25460"
-      }
-    },
-    {
-      "name": "GEODE debug token",
-      "scope": "token.debug-token",
-      "settings": {
-        "foreground": "#B267E6"
-      }
     }
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "newOperator": "#cf8e6d",
     "property": "#c77dbb",
-    "enumMember": "#c77dbb"
+    "enumMember": "#c77dbb",
+
+    
+    "class.builtin:python": "#8888C6",
+    "function.builtin:python": "#8888C6",
+    "class.decorator:python": "#B3AE60",
+    "magicFunction.declaration:python": "#B200B2",
+    "property:python": "#bcbec4",
+    "variable.readonly:python": "#bcbec4",
+    "selfParameter:python": "#94558D",
+    "method.declaration:python": "#56A8F5"
   }
 }
