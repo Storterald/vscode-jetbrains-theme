@@ -16,12 +16,12 @@
       {
         "label": "Intellij New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/Intellij New UI.json"
+        "path": "./themes/Intellij New UI-color-theme.json"
       },
       {
         "label": "CLion New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/CLion New UI.json"
+        "path": "./themes/CLion New UI-color-theme.json"
       }
     ],
     "configurationDefaults": {
@@ -46,6 +46,6 @@
     "esbuild": "^0.19.11"
   },
   "repository": {
-    "url": "https://github.com/Storterald/intellij-idea-theme-for-vs-code"
+    "url": "https://github.com/Storterald/jetbrains-themes-for-vscode"
   }
 }

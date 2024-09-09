@@ -1,0 +1,16 @@
+---
+# Most used colors are here
+
+backgrounds: 
+  - "#1e1f22"
+  - "#2b2d30"
+  - "#303135"
+  - "#4e5157"
+text: "#bcbec4"
+blue: "#5182e4"
+keyword: "#cf8e6d"
+string: "#6aab73"
+numeric: "#299fa2"
+comment: "#7d7d7d"
+type: "#b5b6e3"
+error: "#c25460"

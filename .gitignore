@@ -11,3 +11,5 @@ node_modules/
 # Other
 fonts/
 .test_files/
+theme-converter/
+tmp/
