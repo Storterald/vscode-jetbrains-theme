@@ -2,17 +2,46 @@ import os
 import re
 import sys
 import stat
+import json
 import shutil
 import subprocess
 
 from pathlib import Path
+
+def getFileData(path: str) -> str:
+        def removeComments(fileData: str) -> str:
+                return re.sub(r"\/\/ .+", "", fileData)
+        
+        def mergeJson(jsonData: dict, other: dict) -> dict:
+                for key, value in other.items():
+                        if key in jsonData and isinstance(jsonData[key], dict) and isinstance(value, dict):
+                                # If both values are dictionaries, merge them
+                                jsonData[key] = mergeJson(jsonData[key], value)
+                        else:
+                                # Otherwise, overwrite the value
+                                jsonData[key] = value
+                return jsonData
+        
+        def getJsonData(_path: str) -> dict:
+                with open(_path, 'r', encoding="utf-8") as f:
+                        DATA: str = removeComments(f.read())
+
+                jsonData: dict = json.loads(DATA)
+                if "include" in jsonData:
+                        INCLUDED_FILE_PATH: str = os.path.join(os.path.dirname(_path), jsonData["include"])
+                        INCLUDED_JSON: dict = getJsonData(INCLUDED_FILE_PATH)
+                        jsonData = mergeJson(jsonData, INCLUDED_JSON)
+
+                return jsonData
+
+        return json.dumps(getJsonData(path), indent=2)
 
 if __name__ == "__main__":
         # Compile extension
         subprocess.run(["vsce", "package"], shell=True)
 
         # Install the extension
-        FILE: str = [path for path in os.listdir("./") if path.endswith(".vsix")][0]
+        FILE: str = [path for path in os.listdir("./") if path.startswith("jetbrains-themes-for-vs-code") and path.endswith(".vsix")][0] # Not specifying version
         subprocess.run(["code", "--install-extension", FILE], shell=True)
 
         if len(sys.argv) > 1 and sys.argv[1] == "-C":
@@ -26,18 +55,14 @@ if __name__ == "__main__":
                 os.chdir(PATH)
 
                 FILES: list[str] = [file for file in os.listdir("./") if file.endswith(".json")]
-                for file in FILES:
+                for file in FILES:              
                         OUTPUT_FILE: str = Path(file).stem[:-len("-color-theme")] + ".pkgdef"
 
+                        # Clear old converted theme
                         if os.path.exists(OUTPUT_FILE):
-                                print(f"Visual studio conversion for file {file} already exists.")
-                                continue
+                                os.remove(OUTPUT_FILE)
 
-                        with open(file, 'r', encoding="utf-8") as f:
-                                data: str = f.read()
-                        
-                        # Remove all comments
-                        data = re.sub(r"\/\/.+", "", data)
+                        data: str = getFileData(file)                             
 
                         # Create fixed temporary file
                         with open(f"tmp-{file}", 'w', encoding="utf-8") as f:

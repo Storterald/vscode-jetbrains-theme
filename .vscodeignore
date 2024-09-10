@@ -1,6 +1,19 @@
 # VS Code
 .vscode/**
 
+# VS
+.vs/**
+bin/**
+My Project/**
+obj/**
+themes/*.pkgdef
+Jetbrains Themes.sln
+Jetbrains Themes.vbproj
+
+# Symbolic links
+CLion New UI.pkgdef
+Intellij New UI.pkgdef
+
 # Jetbrains
 .idea/**
 node_modules/**
@@ -16,3 +29,4 @@ build.bat
 theme.css
 theme-converter/**
 tmp/**
+colors.yaml

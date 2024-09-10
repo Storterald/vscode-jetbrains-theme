@@ -1,6 +1,16 @@
 # VS Code
 .vscode/
 
+# VS
+.vs/
+bin/
+My Project/
+obj/
+
+# Symbolic links
+CLion New UI.pkgdef
+Intellij New UI.pkgdef
+
 # Jetbrains
 .idea/
 node_modules/
