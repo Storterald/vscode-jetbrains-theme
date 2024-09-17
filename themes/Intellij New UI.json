@@ -1,4 +1,5 @@
 {
+  "$schema": "vscode://schemas/color-theme",
   "name": "Intellij New UI",
   "type": "dark",
   "include": "../common/dark.json",

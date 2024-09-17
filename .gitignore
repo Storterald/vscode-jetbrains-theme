@@ -8,8 +8,8 @@ My Project/
 obj/
 
 # Symbolic links
-CLion New UI.pkgdef
-Intellij New UI.pkgdef
+/CLion New UI.pkgdef
+/Intellij New UI.pkgdef
 
 # Jetbrains
 .idea/
@@ -20,6 +20,6 @@ node_modules/
 
 # Other
 fonts/
-.test_files/
+.tests/
 theme-converter/
 tmp/

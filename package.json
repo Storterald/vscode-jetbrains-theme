@@ -16,12 +16,12 @@
       {
         "label": "Intellij New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/Intellij New UI-color-theme.json"
+        "path": "./themes/Intellij New UI.json"
       },
       {
         "label": "CLion New UI",
         "uiTheme": "vs-dark",
-        "path": "./themes/CLion New UI-color-theme.json"
+        "path": "./themes/CLion New UI.json"
       }
     ],
     "configurationDefaults": {

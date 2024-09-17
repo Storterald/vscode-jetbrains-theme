@@ -15,7 +15,6 @@
 				"keyword.operator.typeid",
 				"keyword.operator.alignas",
 				"keyword.operator.instanceof",
-				"keyword.operator.logical",
 				"keyword.operator.wordlike",
         "keyword.operator.functionlike",
         "meta.encoding"
@@ -270,6 +269,15 @@
     // #               PYTHON
     // # 
 
+    {
+      "name": "PYTHON keywords",
+      "scope": [
+        "source.python keyword.operator.logical"
+      ],
+      "settings": {
+        "foreground": "#cf8e6d"
+      }
+    },
     {
       "name": "PYTHON function parameters",
       "scope": [

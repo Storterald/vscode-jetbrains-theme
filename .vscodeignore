@@ -6,13 +6,9 @@
 bin/**
 My Project/**
 obj/**
-themes/*.pkgdef
-Jetbrains Themes.sln
-Jetbrains Themes.vbproj
-
-# Symbolic links
-CLion New UI.pkgdef
-Intellij New UI.pkgdef
+*.sln
+*.vbproj
+*.pkgdef
 
 # Jetbrains
 .idea/**
