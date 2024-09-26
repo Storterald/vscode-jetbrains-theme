@@ -1,7 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
-  "include": "./dark-tokens.json",
   "colors": {
     // #
     // #               GENERIC

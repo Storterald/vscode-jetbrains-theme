@@ -1,8 +1,12 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "type": "dark",
-  "include": "./dark-semantic.json",
+  "name": "--name",
+  "include": "../common/dark.json",
   "tokenColors": [
+    // #
+    // #               GENERIC
+    // # 
+
     {
       "name": "keywords",
       "scope": [
@@ -24,7 +28,7 @@
       }
     },
     {
-      "name": "types",
+      "name": "builtin types",
       "scope": [
         "storage.type",
         "storage.modifier"
@@ -138,6 +142,60 @@
       ],
       "settings": {
         "foreground": "#d5b778"
+      }
+    },
+    {
+      "name": "preprocessor keyword",
+      "scope": [
+        "keyword.directive.preprocessor",
+        "keyword.control.directive"
+      ],
+      "settings": {
+        "foreground": "--color-preprocessor"
+      }
+    },
+    {
+      "name": "macro",
+      "scope": "entity.name.function.preprocessor",
+      "settings": {
+        "foreground": "--color-macro"
+      }
+    },
+    {
+      "name": "type",
+      "scope": [
+        "source.cpp entity.name.scope-resolution"
+      ],
+      "settings": {
+        "foreground": "--color-type"
+      }
+    },
+    {
+      "name": "template constant",
+      "scope": [
+        "entity.name.type.template"
+      ],
+      "settings": {
+        "foreground": "--color-template-constant"
+      }
+    },
+    {
+      "name": "property",
+      "scope": [
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "--color-property"
+      }
+    },
+    {
+      "name": "included file",
+      "scope": [
+        "string.quoted.other.lt-gt.include",
+        "string.quoted.double.include"
+      ],
+      "settings": {
+        "foreground": "--included-file-color"
       }
     },
 
@@ -520,5 +578,35 @@
         "foreground": "#bcbec4"
       }
     }
-  ]
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    // #
+    // #               GENERIC
+    // # 
+    "newOperator": "#cf8e6d",
+    "enumMember": "#c77dbb",
+    "function.declaration": "#56a8f5",
+    "type": "--color-type",
+    "templateType": "--color-template-type",
+    "namespace": "--color-namespace",
+    "property": "--color-property",
+    "macro": "--color-macro",
+    "memberOperatorOverload": "--color-operator-overload",
+    "operatorOverload": "--color-operator-overload",
+
+    // #
+    // #               PYTHON
+    // # 
+    "class.builtin:python": "#8888C6",
+    "function.builtin:python": "#8888C6",
+    "builtinConstant:python": "#cf8e6d",
+    "class.decorator:python": "#B3AE60",
+    "function.decorator:python": "#B3AE60",
+    "magicFunction.declaration:python": "#B200B2",
+    "property:python": "#bcbec4",
+    "selfParameter:python": "#94558D",
+    "method.declaration:python": "#56A8F5",
+    "module:python": "#bcbec4"
+  }
 }

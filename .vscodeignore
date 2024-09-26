@@ -4,11 +4,9 @@
 # VS
 .vs/**
 bin/**
-My Project/**
 obj/**
 *.sln
-*.vbproj
-*.pkgdef
+*.csproj
 
 # Jetbrains
 .idea/**
@@ -17,12 +15,16 @@ node_modules/**
 # Git
 .gitignore
 
+# Templates
+common/*.yaml
+templates/**
+
 # Other
-bin/**
-.test_files/**
-fonts/**
-build.bat
+.tests/**
+build.py
 theme.css
-theme-converter/**
-tmp/**
 colors.yaml
+
+# TODO Temp stuff
+.vsthemes/**
+fonts/**

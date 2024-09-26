@@ -1,0 +1,15 @@
+---
+# Intellij Colors
+
+--name: "Intellij New UI Dark"
+
+colors:
+  --color-preprocessor: "#bcbec4"
+  --color-macro: "#bcbec4"
+  --color-type: "#bcbec4"
+  --color-template-constant: "#16baac"
+  --color-property: "#bcbec4"
+  --included-file-color: "#bcbec4"
+  --color-template-type: "#16baac"
+  --color-namespace: "#bcbec4"
+  --color-operator-overload: "#bcbec4"

@@ -1,0 +1,15 @@
+---
+# Clion Colors
+
+--name: "CLion New UI Dark"
+
+colors:
+  --color-preprocessor: "#b3ae60"
+  --color-macro: "#908b25"
+  --color-type: "#b5b6e3"
+  --color-template-constant: "#c77dbb"
+  --color-property: "#9373a5"
+  --included-file-color: "#6aab73"
+  --color-template-type: "#b5b6e3"
+  --color-namespace: "#b5b6e3"
+  --color-operator-overload: "#5f8c8a"

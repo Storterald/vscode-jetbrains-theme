@@ -1,96 +1,102 @@
 import os
-import re
 import sys
 import stat
-import json
+import yaml
 import shutil
 import subprocess
 
-from pathlib import Path
+# Load mappings
+with open("./common/clion.yaml", 'r', encoding="utf-8") as f:
+        CLION_MAP: dict = yaml.safe_load(f)
+with open("./common/intellij.yaml", 'r', encoding="utf-8") as f:
+        INTELLIJ_MAP: dict = yaml.safe_load(f)
 
-def getFileData(path: str) -> str:
-        def removeComments(fileData: str) -> str:
-                return re.sub(r"\/\/ .+", "", fileData)
+# Delete fetched headers
+def onerror(func, path: str, _) -> None:
+        if not os.access(path, os.W_OK):
+                # Change file permission
+                os.chmod(path, stat.S_IWUSR)
+                func(path)
+        else:
+                # If error is not due to permission issues, raise
+                assert False, "Could not delete cloned directory."
+
+def getVersion() -> str:
+        os.mkdir("./tmp/")
+        subprocess.run(["git", "clone", "--depth", "1", "--no-checkout", "https://github.com/Storterald/Jetbrains-Themes", "."], cwd="./tmp/", shell=True)
+        subprocess.run(["git", "fetch", "--tags", "--depth", "1"], cwd="./tmp/", shell=True)
         
-        def mergeJson(jsonData: dict, other: dict) -> dict:
-                for key, value in other.items():
-                        if key in jsonData and isinstance(jsonData[key], dict) and isinstance(value, dict):
-                                # If both values are dictionaries, merge them
-                                jsonData[key] = mergeJson(jsonData[key], value)
-                        else:
-                                # Otherwise, overwrite the value
-                                jsonData[key] = value
-                return jsonData
-        
-        def getJsonData(_path: str) -> dict:
-                with open(_path, 'r', encoding="utf-8") as f:
-                        DATA: str = removeComments(f.read())
+        version: str = subprocess.check_output(["git", "for-each-ref", "--sort=-creatordate", "--format", "%(refname:short)", "refs/tags"], cwd="./tmp/", shell=True)
+        version = version.decode("utf-8")
+        version = version[:version.find('\n')]
+        print(f"Current extension version is: {version}")
 
-                jsonData: dict = json.loads(DATA)
-                if "include" in jsonData:
-                        INCLUDED_FILE_PATH: str = os.path.join(os.path.dirname(_path), jsonData["include"])
-                        INCLUDED_JSON: dict = getJsonData(INCLUDED_FILE_PATH)
-                        jsonData = mergeJson(jsonData, INCLUDED_JSON)
+        shutil.rmtree("./tmp/", onexc=onerror)
+        return version
 
-                return jsonData
+def copyTemplate(DIR: str, EXT_SRC: str, EXT_DST: str) -> None:
+        os.mkdir(f"{DIR}")
+        shutil.copyfile(f"./templates/dark-template{EXT_SRC}", f"{DIR}/dark-template{EXT_DST}")
+        shutil.copyfile(f"./{DIR}/dark-template{EXT_DST}", f"{DIR}/CLion New UI Dark{EXT_DST}")
+        os.rename(f"{DIR}/dark-template{EXT_DST}", f"{DIR}/Intellij New UI Dark{EXT_DST}")
 
-        return json.dumps(getJsonData(path), indent=2)
+def fixFiles(DIR: str, EXT: str) -> None:
+        # Fix CLion theme
+        with open(f"{DIR}/CLion New UI Dark{EXT}", 'r', encoding="utf-8") as f:
+                clionData: str = f.read()
+        with open(f"{DIR}/CLion New UI Dark{EXT}", 'w', encoding="utf-8") as f:
+                clionData = clionData.replace("--name", CLION_MAP["--name"])
+                for substitution in CLION_MAP["colors"]:
+                        clionData = clionData.replace(substitution, CLION_MAP["colors"][substitution])
+                f.write(clionData)
 
-def convert() -> None:
-        subprocess.run(["git", "clone", "https://github.com/microsoft/theme-converter-for-vs", "--branch", "main", "--single-branch", "./theme-converter"])
-        subprocess.run(["dotnet", "build"], cwd="./theme-converter/ThemeConverter/ThemeConverter", shell=True)
-
-        EXECUTABLE_DIR: str = "../theme-converter/ThemeConverter/ThemeConverter/bin/debug/net6.0"
-        PATH: str = os.path.abspath("./vsthemes/")
-        THEMES_PATH: str = os.path.abspath("./themes/")
-        
-        # Change working directory
-        os.chdir(PATH)
-
-        # Create complete JSON files
-        for file in [file for file in os.listdir(THEMES_PATH) if file.endswith(".json")]:
-                # Delete converted theme if it exists
-                OUTPUT_FILE: str = Path(file).stem + ".pkgdef"
-                if os.path.exists(OUTPUT_FILE):
-                        os.remove(OUTPUT_FILE)
-
-                # Get full JSON data without comments
-                with open(f"./{Path(file).stem}.json", 'w', encoding="utf-8") as f:
-                        f.write(getFileData(f"{THEMES_PATH}/{file}"))
-        
-        for file in [file for file in os.listdir("./") if file.endswith(".json")]:
-                # Convert all themes
-                subprocess.run(["ThemeConverter.exe", "-i", f"{PATH}/{file}", "-o", PATH], cwd=EXECUTABLE_DIR, shell=True)
-
-                if not os.path.exists(f"{PATH}/{file}"):
-                        assert False, "Error creating converted file"
-
-                # Delete temporary JSONs
-                os.remove(file)
-        
-        # Remove cloned repo
-        def onerror(func, path: str, _):
-                if not os.access(path, os.W_OK):
-                        # Change file permission
-                        os.chmod(path, stat.S_IWUSR)
-                        func(path)
-                else:
-                        # If error is not due to permission issues, raise
-                        assert False, "Could not delete cloned directory."
-
-        # Delete cloned converter
-        shutil.rmtree("../theme-converter/", onexc=onerror)
+        # Fix Intellij theme
+        with open(f"{DIR}/Intellij New UI Dark{EXT}", 'r', encoding="utf-8") as f:
+                intellijData: str = f.read()
+        with open(f"{DIR}/Intellij New UI Dark{EXT}", 'w', encoding="utf-8") as f:
+                intellijData = intellijData.replace("--name", INTELLIJ_MAP["--name"])
+                for substitution in INTELLIJ_MAP["colors"]:
+                        intellijData = intellijData.replace(substitution, INTELLIJ_MAP["colors"][substitution])
+                f.write(intellijData)
 
 if __name__ == "__main__":
-        # Compile extension
-        subprocess.run(["vsce", "package"], shell=True)        
-        
-        # Run through all the flags
+        VERSION: str = getVersion()
+
         for flag in sys.argv[1:]:
                 match flag:
-                        case "-I":
-                                FILE: str = [path for path in os.listdir("./") if path.endswith(".vsix")][0]
-                                subprocess.run(["code", "--install-extension", FILE], shell=True)
-                        case "-C":
-                                convert()
-                
+                        case "--vscode":
+                                copyTemplate("./themes", ".json", ".json")
+                                fixFiles("./themes", ".json")
+
+                                # Replace --version in package.json
+                                with open("./templates/package-template.json", 'r', encoding="utf-8") as f:
+                                        package: str = f.read()
+                                with open("package.json", 'w', encoding="utf-8") as f:
+                                        package = package.replace("--version", VERSION)
+                                        f.write(package)
+
+                                # Replace --version in package-lock.json
+                                with open("./templates/package-lock-template.json", 'r', encoding="utf-8") as f:
+                                        packageLock: str = f.read()
+                                with open("package-lock.json", 'w', encoding="utf-8") as f:
+                                        packageLock = packageLock.replace("--version", VERSION)
+                                        f.write(packageLock)
+
+                                subprocess.run(["vsce", "package"], shell=True)
+
+                                # Clear generated files
+                                shutil.rmtree("./themes/")
+                                os.remove("package.json")
+                                os.remove("package-lock.json")
+                        case "--vs":
+                                copyTemplate("./vsthemes", ".xml", ".vstheme")
+                                fixFiles("./vsthemes", ".vstheme")
+
+                                # TODO subprocess.run(["dotnet", "build"], shell=True)
+
+                                shutil.rmtree("./vsthemes/")
+                        case "--install-vscode":
+                                subprocess.run(["code", "--install-extension", f"jetbrains-themes-{VERSION}.vsix"], shell=True)
+                        case "--install-vs":
+                                # TODO subprocess.run(["code", "--install-extension", f"jetbrains-themes-{VERSION}.vsix"], shell=True)
+                                ""

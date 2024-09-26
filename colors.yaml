@@ -2,15 +2,35 @@
 # Most used colors are here
 
 backgrounds: 
-  - "#1e1f22"
-  - "#2b2d30"
-  - "#303135"
-  - "#4e5157"
-text: "#bcbec4"
-blue: "#5182e4"
-keyword: "#cf8e6d"
-string: "#6aab73"
-numeric: "#299fa2"
-comment: "#7d7d7d"
-type: "#b5b6e3"
-error: "#c25460"
+  main: "#1e1f22"         # FF1E1F22
+  secondary: "#2b2d30"    # FF2B2D30
+  border: "#4e5157"       # FF4E5157
+
+text: 
+  normal: "#bcbec4"       # FFBCBEC4
+  selected: "#214283"     # FF214283
+  error: "#c25460"        # FFC25460
+  blue: "#5182e4"         # FF5182E4
+
+markdown:
+  background: "#303135"   # FF303135
+
+tokens:
+  keyword: "#cf8e6d"      # FFCF8E6D
+  string: "#6aab73"       # FF6AAB73
+  numeric: "#299fa2"      # FF299FA2
+  comment: "#7d7d7d"      # FF7D7D7D
+  doxygen: "#5e8163"      # FF5E8163
+  enum: "#c77dbb"         # FFC77DBB
+  definition: "#56a8f5"   # FF56A8F5
+
+clion:
+  preprocessor: "#b3ae60" # FFB3AE60
+  type: "#b5b6e3"         # FFB5B6E3
+  typedef: "#b9bcd1"      # FFB9BCD1
+  property: "#9373a5"     # FF9373A5
+  macro: "#908b25"        # FF908B25
+  operator: "#5f8c8a"     # FF5F8C8A
+
+css:
+  selector: "#d5b778"     # FFD5B778

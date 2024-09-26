@@ -1,12 +1,12 @@
 {
-  "name": "jetbrains-themes-for-vs-code",
-  "version": "1.0.0",
+  "name": "jetbrains-themes",
+  "version": "--version",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
-      "name": "jetbrains-themes-for-vs-code",
-      "version": "1.0.0",
+      "name": "jetbrains-themes",
+      "version": "--version",
       "devDependencies": {
         "esbuild": "^0.19.11"
       },

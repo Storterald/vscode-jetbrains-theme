@@ -1,9 +1,9 @@
 {
-  "name": "jetbrains-themes-for-vs-code",
+  "name": "jetbrains-themes",
   "displayName": "Jetbrains themes",
   "icon": "logo.png",
   "description": "Jetbrains themes",
-  "version": "1.0.0",
+  "version": "--version",
   "publisher": "Storterald",
   "engines": {
     "vscode": "^1.85.0"
@@ -14,14 +14,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Intellij New UI",
+        "label": "Intellij New UI Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Intellij New UI.json"
+        "path": "./themes/Intellij New UI Dark.json"
       },
       {
-        "label": "CLion New UI",
+        "label": "CLion New UI Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/CLion New UI.json"
+        "path": "./themes/CLion New UI Dark.json"
       }
     ],
     "configurationDefaults": {
