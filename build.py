@@ -42,21 +42,19 @@ def copyTemplate(DIR: str, EXT_SRC: str, EXT_DST: str) -> None:
 
 def fixFiles(DIR: str, EXT: str) -> None:
         # Fix CLion theme
-        with open(f"{DIR}/CLion New UI Dark{EXT}", 'r', encoding="utf-8") as f:
+        with open(f"{DIR}/{CLION_MAP["dark"]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
                 clionData: str = f.read()
-        with open(f"{DIR}/CLion New UI Dark{EXT}", 'w', encoding="utf-8") as f:
-                clionData = clionData.replace("--name", CLION_MAP["--name"])
-                for substitution in CLION_MAP["colors"]:
-                        clionData = clionData.replace(substitution, CLION_MAP["colors"][substitution])
+        with open(f"{DIR}/{CLION_MAP["dark"]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
+                for substitution in CLION_MAP["dark"]:
+                        clionData = clionData.replace(substitution, CLION_MAP["dark"][substitution])
                 f.write(clionData)
 
         # Fix Intellij theme
-        with open(f"{DIR}/Intellij New UI Dark{EXT}", 'r', encoding="utf-8") as f:
+        with open(f"{DIR}/{INTELLIJ_MAP["dark"]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
                 intellijData: str = f.read()
-        with open(f"{DIR}/Intellij New UI Dark{EXT}", 'w', encoding="utf-8") as f:
-                intellijData = intellijData.replace("--name", INTELLIJ_MAP["--name"])
-                for substitution in INTELLIJ_MAP["colors"]:
-                        intellijData = intellijData.replace(substitution, INTELLIJ_MAP["colors"][substitution])
+        with open(f"{DIR}/{INTELLIJ_MAP["dark"]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
+                for substitution in INTELLIJ_MAP["dark"]:
+                        intellijData = intellijData.replace(substitution, INTELLIJ_MAP["dark"][substitution])
                 f.write(intellijData)
 
 if __name__ == "__main__":

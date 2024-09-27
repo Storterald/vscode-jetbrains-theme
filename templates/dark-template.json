@@ -24,7 +24,7 @@
         "meta.encoding"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
     {
@@ -34,7 +34,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-builtin-types"
       }
     },
     {
@@ -44,7 +44,7 @@
         "variable.language"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-language-constant"
       }
     },
     {
@@ -53,7 +53,7 @@
         "entity.name.function.definition"
       ],
       "settings": {
-        "foreground": "#56a8f5"
+        "foreground": "--color-function-definition"
       }
     },
     {
@@ -65,7 +65,7 @@
         "punctuation.separator.colon.access.control"
     ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-operator"
       }
     },
     {
@@ -77,7 +77,7 @@
         "string.quoted.binary"
       ],
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "--color-string"
       }
     },
     {
@@ -87,7 +87,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#299fa2"
+        "foreground": "--color-numeric"
       }
     },
     {
@@ -96,7 +96,7 @@
         "comment"
       ],
       "settings": {
-        "foreground": "#7d7d7d"
+        "foreground": "--color-comment"
       }
     },
     {
@@ -108,7 +108,7 @@
         "comment.line.double-slash.documentation"
       ],
       "settings": {
-        "foreground": "#5e8163",
+        "foreground": "--color-documentation",
         "fontStyle": "italic"
       }
     },
@@ -118,7 +118,7 @@
         "storage.type.class.doxygen"
       ],
       "settings": {
-        "foreground": "#67a37c",
+        "foreground": "--color-doxygen-class",
         "fontStyle": "italic"
       }
     },
@@ -128,7 +128,7 @@
         "comment.block.documentation variable.parameter"
       ],
       "settings": {
-        "foreground": "#bcbec4",
+        "foreground": "--color-doxygen-variable",
         "fontStyle": "italic"
       }
     },
@@ -141,7 +141,7 @@
         "punctuation.definition.tag.end"
       ],
       "settings": {
-        "foreground": "#d5b778"
+        "foreground": "--color-tag"
       }
     },
     {
@@ -207,21 +207,21 @@
       "name": "CMAKE keywords",
       "scope": "source.cmake keyword",
       "settings": {
-        "foreground": "#ffc66d"
+        "foreground": "--color-cmake-keyword"
       }
     },
     {
       "name": "CMAKE argument",
       "scope": "source.cmake argument.source",
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "--color-string"
       }
     },
     {
       "name": "CMAKE source",
       "scope": "source.cmake entity.source",
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
 
@@ -230,7 +230,7 @@
     // # 
 
     {
-      "name": "CSS",
+      "name": "CSS keyword",
       "scope": [
         "source.css meta.property-value",
         "source.css constant.other.unicode-range",
@@ -240,7 +240,7 @@
         "source.css source.css keyword.operator.logical"
       ],
       "settings": {
-        "foreground": "#d5b778"
+        "foreground": "--color-tag"
       }
     },
     {
@@ -250,7 +250,7 @@
         "source.css constant.other.color.rgb-value.hex"
       ],
       "settings": {
-        "foreground": "#5c92ff"
+        "foreground": "--color-css-constant"
       }
     },
     {
@@ -260,18 +260,18 @@
         "source.css keyword.other.unit.percentage"
       ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-foreground"
       }
     },
     {
-      "name": "CSS",
+      "name": "CSS string",
       "scope": [
         "source.css keyword.other.unit.deg",
         "source.css keyword.other.unit.px",
         "source.css support.constant.property-value"
       ],
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "--color-string"
       }
     },
 
@@ -286,7 +286,7 @@
         "text.html.derivative constant.character.entity.named.Alpha"
       ],
       "settings": {
-        "foreground": "#56a8f5"
+        "foreground": "--color-markup-constant"
       }
     },
     {
@@ -296,7 +296,7 @@
         "text.html.derivative meta.tag.other.unrecognized.html.derivative entity.name.tag"
       ],
       "settings": {
-        "foreground": "#2fbaa3"
+        "foreground": "--color-custom-tag"
       }
     },
 
@@ -310,7 +310,7 @@
         "source.json support.type.property-name"
       ],
       "settings": {
-        "foreground": "#c77dbb"
+        "foreground": "--color-json-property"
       }
     },
     {
@@ -319,7 +319,7 @@
         "source.json invalid.illegal.unrecognized-string-escape"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
 
@@ -333,7 +333,7 @@
         "source.python keyword.operator.logical"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
     {
@@ -342,7 +342,7 @@
         "source.python variable.parameter.function-call"
       ],
       "settings": {
-        "foreground": "#AA4926"
+        "foreground": "--color-python-function-parameter"
       }
     },
     {
@@ -351,7 +351,7 @@
         "source.python punctuation.definition.arguments"
       ],
       "settings": {
-        "foreground": "#56A8F5"
+        "foreground": "--color-python-arguments"
       }
     },
     {
@@ -360,7 +360,7 @@
         "source.python support.variable.magic"
       ],
       "settings": {
-        "foreground": "#B200B2"
+        "foreground": "--color-python-magic-variable"
       }
     },
     {
@@ -369,7 +369,7 @@
         "source.python punctuation.definition.decorator"
       ],
       "settings": {
-        "foreground": "#B3AE60"
+        "foreground": "--color-python-decorator"
       }
     },
     {
@@ -378,7 +378,7 @@
         "source.python constant.other.caps"
       ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-foreground"
       }
     },
 
@@ -394,7 +394,7 @@
         "keyword.operator.negation.regexp"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
     {
@@ -403,7 +403,7 @@
         "keyword.operator.quantifier.regexp"
       ],
       "settings": {
-        "foreground": "#299fa2"
+        "foreground": "--color-numeric"
       }
     },
     {
@@ -414,7 +414,7 @@
         "constant.other.set.regexp"
       ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-operator"
       } 
     },
     {
@@ -423,7 +423,7 @@
         "constant.character.escape.regexp"
       ],
       "settings": {
-        "foreground": "#b2ae60"
+        "foreground": "--color-regex-escaped"
       }
     },
     {
@@ -432,7 +432,7 @@
         "constant.character.set.regexp"
       ],
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "--color-string"
       }
     },
 
@@ -447,26 +447,62 @@
         "text.xml entity.other.attribute-name.namespace"
       ],
       "settings": {
-        "foreground": "#d5b778"
+        "foreground": "--color-tag"
       }
     },
     {
-      "name": "XML",
+      "name": "XML constant",
       "scope": [
         "text.xml punctuation.definition.constant",
         "text.xml constant.character.entity"
       ],
       "settings": {
-        "foreground": "#56a8f5"
+        "foreground": "--color-markup-constant"
       }
     },
     {
       "name": "XML text",
       "scope": [
+        "text.xml variable.language.documentroot",
         "text.xml string.unquoted.cdata"
       ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-foreground"
+      }
+    },
+
+    // #
+    // #               XAML
+    // # 
+
+    {
+      "name": "XAML keywords",
+      "scope": [
+        "source.xaml keyword.other.doctype",
+        "source.xaml entity.other.attribute-name.namespace"
+      ],
+      "settings": {
+        "foreground": "--color-tag"
+      }
+    },
+    {
+      "name": "XAML constant",
+      "scope": [
+        "source.xaml punctuation.definition.constant",
+        "source.xaml constant.character.entity"
+      ],
+      "settings": {
+        "foreground": "--color-markup-constant"
+      }
+    },
+    {
+      "name": "XAML text",
+      "scope": [
+        "source.xaml variable.language.documentroot",
+        "source.xaml string.unquoted.cdata"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
       }
     },
 
@@ -508,7 +544,7 @@
         "text.html.markdown markup.heading.markdown meta.separator"
       ],
       "settings": {
-        "foreground": "#c77dbb",
+        "foreground": "--color-markdown-header",
         "fontStyle": "italic"
       }
     },
@@ -522,7 +558,7 @@
         "text.html.markdown markup.raw.block"
       ],
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "--color-string"
       }
     },
     {
@@ -541,7 +577,7 @@
         "text.html.markdown meta.separator"
       ],
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "--color-keyword"
       }
     },
     {
@@ -554,7 +590,7 @@
         "text.html.markdown punctuation.definition.link.title.end"
       ],
       "settings": {
-        "foreground": "#56a8f5",
+        "foreground": "--color-markup-constant",
         "fontStyle": "italic"
       }
     },
@@ -565,7 +601,7 @@
         "text.html.markdown markup.strikethrough"
       ],
       "settings": {
-        "foreground": "#bcbec4",
+        "foreground": "--color-foreground",
         "fontStyle": "strikethrough"
       }
     },
@@ -575,7 +611,7 @@
         "text.html.markdown punctuation.definition.metadata"
       ],
       "settings": {
-        "foreground": "#bcbec4"
+        "foreground": "--color-foreground"
       }
     }
   ],
@@ -584,29 +620,29 @@
     // #
     // #               GENERIC
     // # 
-    "newOperator": "#cf8e6d",
-    "enumMember": "#c77dbb",
-    "function.declaration": "#56a8f5",
+    "newOperator": "--color-keyword",
+    "enumMember": "--color-enum-member",
+    "function.declaration": "--color-function-definition",
     "type": "--color-type",
     "templateType": "--color-template-type",
     "namespace": "--color-namespace",
     "property": "--color-property",
     "macro": "--color-macro",
-    "memberOperatorOverload": "--color-operator-overload",
-    "operatorOverload": "--color-operator-overload",
+    "memberOperatorOverload": "--color-op-overload",
+    "operatorOverload": "--color-op-overload",
 
     // #
     // #               PYTHON
     // # 
-    "class.builtin:python": "#8888C6",
-    "function.builtin:python": "#8888C6",
-    "builtinConstant:python": "#cf8e6d",
-    "class.decorator:python": "#B3AE60",
-    "function.decorator:python": "#B3AE60",
-    "magicFunction.declaration:python": "#B200B2",
-    "property:python": "#bcbec4",
-    "selfParameter:python": "#94558D",
-    "method.declaration:python": "#56A8F5",
-    "module:python": "#bcbec4"
+    "class.builtin:python": "--color-python-builtin",
+    "function.builtin:python": "--color-python-builtin",
+    "builtinConstant:python": "--color-language-constant",
+    "class.decorator:python": "--color-python-decorator",
+    "function.decorator:python": "--color-python-decorator",
+    "magicFunction.declaration:python": "--color-python-magic-variable",
+    "property:python": "--color-python-property",
+    "selfParameter:python": "--color-python-self",
+    "method.declaration:python": "--color-function-definition",
+    "module:python": "--color-python-module"
   }
 }

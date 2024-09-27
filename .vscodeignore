@@ -26,5 +26,5 @@ theme.css
 colors.yaml
 
 # TODO Temp stuff
-.vsthemes/**
+vsthemes/**
 fonts/**

@@ -32,5 +32,5 @@ clion:
   macro: "#908b25"        # FF908B25
   operator: "#5f8c8a"     # FF5F8C8A
 
-css:
-  selector: "#d5b778"     # FFD5B778
+markup:
+  tag: "#d5b778"          # FFD5B778
