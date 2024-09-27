@@ -1,0 +1,19 @@
+---
+# Dark Colors
+
+--color-background-main: "#ffffff"
+--color-background-secondary: "#f7f8fa"
+--color-accent: "#ebecf0"
+--color-foreground: "#080808"
+--color-selected: "#a6d2ff"
+--color-error: "#ff0000"
+--color-color: "#006dcc"
+--color-find-match: "#c47233"
+--color-selection-match: "#d0a1ff"
+--color-line-foreground: "#aeb3c2"
+--color-line-highlight: "#f5f8fe"
+--color-indentation-guide: "#ebecf0"
+--sticky-scroll-hover: "#f5f8fe"
+# Markdown
+--color-markdown-background-secondary: "#f5f7f9"
+--color-markdown-accent: "#f5f7f9"

@@ -22,6 +22,16 @@
         "label": "CLion New UI Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/CLion New UI Dark.json"
+      },
+      {
+        "label": "Intellij New UI Light",
+        "uiTheme": "vs-light",
+        "path": "./themes/Intellij New UI Light.json"
+      },
+      {
+        "label": "CLion New UI Light",
+        "uiTheme": "vs-light",
+        "path": "./themes/CLion New UI Light.json"
       }
     ],
     "configurationDefaults": {

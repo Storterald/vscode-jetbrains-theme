@@ -6,12 +6,15 @@ import shutil
 import subprocess
 
 # Load mappings
-with open("./common/clion.yaml", 'r', encoding="utf-8") as f:
+with open("./colors/CLion.yaml", 'r', encoding="utf-8") as f:
         CLION_MAP: dict = yaml.safe_load(f)
-with open("./common/intellij.yaml", 'r', encoding="utf-8") as f:
+with open("./colors/Intellij.yaml", 'r', encoding="utf-8") as f:
         INTELLIJ_MAP: dict = yaml.safe_load(f)
+with open("./colors/Dark.yaml", 'r', encoding="utf-8") as f:
+        DARK_MAP: dict = yaml.safe_load(f)
+with open("./colors/Light.yaml", 'r', encoding="utf-8") as f:
+        LIGHT_MAP: dict = yaml.safe_load(f)
 
-# Delete fetched headers
 def onerror(func, path: str, _) -> None:
         if not os.access(path, os.W_OK):
                 # Change file permission
@@ -36,25 +39,29 @@ def getVersion() -> str:
 
 def copyTemplate(DIR: str, EXT_SRC: str, EXT_DST: str) -> None:
         os.mkdir(f"{DIR}")
-        shutil.copyfile(f"./templates/dark-template{EXT_SRC}", f"{DIR}/dark-template{EXT_DST}")
-        shutil.copyfile(f"./{DIR}/dark-template{EXT_DST}", f"{DIR}/CLion New UI Dark{EXT_DST}")
-        os.rename(f"{DIR}/dark-template{EXT_DST}", f"{DIR}/Intellij New UI Dark{EXT_DST}")
+        shutil.copyfile(f"./templates/template{EXT_SRC}", f"{DIR}/template{EXT_DST}")
+        shutil.copyfile(f"./{DIR}/template{EXT_DST}", f"{DIR}/CLion New UI Dark{EXT_DST}")
+        shutil.copyfile(f"./{DIR}/template{EXT_DST}", f"{DIR}/Intellij New UI Dark{EXT_DST}")
+        shutil.copyfile(f"./{DIR}/template{EXT_DST}", f"{DIR}/CLion New UI Light{EXT_DST}")
+        os.rename(f"{DIR}/template{EXT_DST}", f"{DIR}/Intellij New UI Light{EXT_DST}")
 
-def fixFiles(DIR: str, EXT: str) -> None:
+def fixFiles(DIR: str, EXT: str, TYPE: str, IDE_MAP: dict) -> None:
         # Fix CLion theme
-        with open(f"{DIR}/{CLION_MAP["dark"]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
+        with open(f"{DIR}/{CLION_MAP[TYPE]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
                 clionData: str = f.read()
-        with open(f"{DIR}/{CLION_MAP["dark"]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
-                for substitution in CLION_MAP["dark"]:
-                        clionData = clionData.replace(substitution, CLION_MAP["dark"][substitution])
+        with open(f"{DIR}/{CLION_MAP[TYPE]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
+                DICT: dict = CLION_MAP[TYPE] | IDE_MAP
+                for substitution in DICT:
+                        clionData = clionData.replace(substitution, DICT[substitution])
                 f.write(clionData)
 
         # Fix Intellij theme
-        with open(f"{DIR}/{INTELLIJ_MAP["dark"]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
+        with open(f"{DIR}/{INTELLIJ_MAP[TYPE]["--name"]}{EXT}", 'r', encoding="utf-8") as f:
                 intellijData: str = f.read()
-        with open(f"{DIR}/{INTELLIJ_MAP["dark"]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
-                for substitution in INTELLIJ_MAP["dark"]:
-                        intellijData = intellijData.replace(substitution, INTELLIJ_MAP["dark"][substitution])
+        with open(f"{DIR}/{INTELLIJ_MAP[TYPE]["--name"]}{EXT}", 'w', encoding="utf-8") as f:
+                DICT: dict = INTELLIJ_MAP[TYPE] | IDE_MAP
+                for substitution in DICT:
+                        intellijData = intellijData.replace(substitution, DICT[substitution])
                 f.write(intellijData)
 
 if __name__ == "__main__":
@@ -64,7 +71,8 @@ if __name__ == "__main__":
                 match flag:
                         case "--vscode":
                                 copyTemplate("./themes", ".json", ".json")
-                                fixFiles("./themes", ".json")
+                                fixFiles("./themes", ".json", "dark", DARK_MAP)
+                                fixFiles("./themes", ".json", "light", LIGHT_MAP)
 
                                 # Replace --version in package.json
                                 with open("./templates/package-template.json", 'r', encoding="utf-8") as f:
