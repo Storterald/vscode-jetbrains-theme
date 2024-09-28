@@ -23,6 +23,7 @@
 --sticky-scroll-hover: "#f5f8fe"
 --color-scrollbar-thumb: "#73737333"
 --color-scrollbar-thumb-active: "#73737347"
+--color-input-box: "#ffffff"
 
 # Language Defaults
 --color-operator: "#000000"
