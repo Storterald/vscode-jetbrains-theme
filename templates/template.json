@@ -687,12 +687,12 @@
     // #               GUTTERS
     // #
     "editorGutter.background": "--color-background-main",
-    "editorGutter.modifiedBackground": "--color-background-main",
-    "editorGutter.addedBackground": "#ff0000", // unknown
-    "editorGutter.deletedBackground": "--color-error",
-    "minimapGutter.modifiedBackground": "--color-background-main",
-    "minimapGutter.addedBackground": "#ff0000", // unknown
-    "minimapGutter.deletedBackground": "--color-error",
+    "editorGutter.modifiedBackground": "--color-merge-changed",
+    "editorGutter.addedBackground": "--color-merge-inserted",
+    "editorGutter.deletedBackground": "--color-merge-deleted",
+    "minimapGutter.modifiedBackground": "--color-merge-changed",
+    "minimapGutter.addedBackground": "--color-merge-inserted",
+    "minimapGutter.deletedBackground": "--color-merge-deleted",
     "editorGutter.commentRangeForeground": "#00000000",
     "editorGutter.commentGlyphForeground": "--color-foreground",
     "editorGutter.commentUnresolvedGlyphForeground": "--color-foreground",

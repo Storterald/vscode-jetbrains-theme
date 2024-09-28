@@ -24,6 +24,7 @@
     ],
     "configurationDefaults": {
       "editor.lineHeight": 1.675,
+      "workbench.tree.indent": 19,
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
       "window.autoDetectColorScheme": true,
       "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
