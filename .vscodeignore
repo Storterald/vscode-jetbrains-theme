@@ -16,14 +16,13 @@ node_modules/**
 .gitignore
 
 # Templates
-common/*.yaml
+colors/**
 templates/**
 
 # Other
 .tests/**
 build.py
 theme.css
-colors.yaml
 
 # TODO Temp stuff
 vsthemes/**

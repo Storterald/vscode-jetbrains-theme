@@ -33,12 +33,12 @@
     // #               SCROLL BAR
     // # 
     "scrollbar.shadow": "#00000000",
-    "scrollbarSlider.background": "--color-accentcc",
-    "scrollbarSlider.hoverBackground": "--color-accentcc",
-    "scrollbarSlider.activeBackground": "--color-accentcc",
+    "scrollbarSlider.background": "--color-scrollbar-thumb",
+    "scrollbarSlider.hoverBackground": "--color-scrollbar-thumb-active",
+    "scrollbarSlider.activeBackground": "--color-scrollbar-thumb-active",
 
     // #
-    // #               SCROLL BAR BACKGROUND
+    // #               OVERVIEW RULER
     // # 
     "editorOverviewRuler.selectionHighlightForeground": "--color-selection-matchcc",
     "editorOverviewRuler.currentContentForeground": "#00000000", // unknown
@@ -206,7 +206,7 @@
     // #               SIDE BAR
     // # 
     "sideBar.background": "--color-background-secondary",
-    "sideBar.border": "--color-accent",
+    "sideBar.border": "--color-siderbar-border",
     "sideBarTitle.background": "--color-background-secondary",
     "sideBar.dropBackground": "--color-background-main",
     "sideBarSectionHeader.background": "--color-background-secondary",
@@ -219,11 +219,11 @@
     // #
     // #               TITLE BAR
     // # 
-    "titleBar.activeForeground": "--color-foreground",
-    "titleBar.inactiveForeground": "--color-foreground",
-    "titleBar.activeBackground": "--color-background-secondary",
-    "titleBar.inactiveBackground": "--color-background-secondary",
-    "titleBar.border": "--color-background-main",
+    "titleBar.activeForeground": "--color-titlebar-foreground",
+    "titleBar.inactiveForeground": "--color-titlebar-foreground",
+    "titleBar.activeBackground": "--color-titlebar-background",
+    "titleBar.inactiveBackground": "--color-titlebar-background",
+    "titleBar.border": "--color-titlebar-border",
 
     // #
     // #               LIST
@@ -363,7 +363,7 @@
     // #               EDITOR LINE
     // # 
     "editorLineNumber.foreground": "--color-line-foreground",
-    "editorLineNumber.activeForeground": "--color-foreground",
+    "editorLineNumber.activeForeground": "--color-current-line-foreground",
     "editor.lineHighlightBackground": "--color-line-highlight",
     "editor.lineHighlightBorder": "--color-line-highlight",
 
@@ -380,14 +380,14 @@
     // # 
     "diffEditor.insertedTextBackground": "#00000000", 
     "diffEditor.removedTextBackground": "#00000000", 
-    "diffEditor.insertedLineBackground": "#00000000", 
-    "diffEditor.removedLineBackground": "#00000000", 
+    "diffEditor.insertedLineBackground": "--color-merge-inserted", 
+    "diffEditor.removedLineBackground": "--color-merge-deleted", 
     "diffEditor.diagonalFill": "--color-background-main",
     "diffEditor.unchangedRegionBackground": "--color-background-secondary",
     "diffEditor.unchangedRegionForeground": "--color-foreground",
     "diffEditor.unchangedCodeBackground": "--color-background-main",
     "diffEditor.move.border": "--color-background-main",
-    "diffEditor.moveActive.border": "#ffa500", // unknown
+    "diffEditor.moveActive.border": "#ff0000", // unknown
     "diffEditor.unchangedRegionShadow": "#000000",
     "multiDiffEditor.headerBackground": "--color-background-main",
     "multiDiffEditor.background": "--color-background-main",
@@ -419,23 +419,23 @@
     // # 
     "merge.currentHeaderBackground": "#00000000", 
     "merge.currentContentBackground": "#00000000", 
-    "merge.incomingHeaderBackground": "#00000000", 
-    "merge.incomingContentBackground": "#00000000", 
+    "merge.incomingHeaderBackground": "#ff0000cc", // unknown
+    "merge.incomingContentBackground": "#ff0000cc", // unknown
     "merge.commonHeaderBackground": "#00000000", 
     "merge.commonContentBackground": "#00000000",
-    "mergeEditor.change.background": "--color-background-main",
-    "mergeEditor.change.word.background": "--color-background-main",
-    "mergeEditor.changeBase.background": "#4b1818", // unknown
-    "mergeEditor.changeBase.word.background": "#6f1313", // unknown
-    "mergeEditor.conflict.unhandledUnfocused.border": "--color-background-main",
-    "mergeEditor.conflict.unhandledFocused.border": "#ffa600",
-    "mergeEditor.conflict.handledUnfocused.border": "--color-background-main",
-    "mergeEditor.conflict.handledFocused.border": "--color-background-main",
-    "mergeEditor.conflict.handled.minimapOverViewRuler": "--color-background-main",
-    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#fcba03", // unknown
-    "mergeEditor.conflictingLines.background": "--color-background-main",
-    "mergeEditor.conflict.input1.background": "--color-background-main",
-    "mergeEditor.conflict.input2.background": "--color-background-main",
+    "mergeEditor.change.background": "#ff0000cc",
+    "mergeEditor.change.word.background": "#ff0000cc", // unknown
+    "mergeEditor.changeBase.background": "#ff0000cc", // unknown
+    "mergeEditor.changeBase.word.background": "#ff0000cc", // unknown
+    "mergeEditor.conflict.unhandledUnfocused.border": "#00000000",
+    "mergeEditor.conflict.unhandledFocused.border": "#00000000",
+    "mergeEditor.conflict.handledUnfocused.border": "#00000000",
+    "mergeEditor.conflict.handledFocused.border": "#00000000",
+    "mergeEditor.conflict.handled.minimapOverViewRuler": "#ff0000cc", // unknown
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000cc", // unknown
+    "mergeEditor.conflictingLines.background": "#ff0000",
+    "mergeEditor.conflict.input1.background": "#ff0000",
+    "mergeEditor.conflict.input2.background": "#ff0000",
 
     // #
     // #               INPUT
@@ -688,12 +688,12 @@
     // #
     "editorGutter.background": "--color-background-main",
     "editorGutter.modifiedBackground": "--color-background-main",
-    "editorGutter.addedBackground": "#487e02", // unknown
+    "editorGutter.addedBackground": "#ff0000", // unknown
     "editorGutter.deletedBackground": "--color-error",
     "minimapGutter.modifiedBackground": "--color-background-main",
-    "minimapGutter.addedBackground": "#487e02", // unknown
+    "minimapGutter.addedBackground": "#ff0000", // unknown
     "minimapGutter.deletedBackground": "--color-error",
-    "editorGutter.commentRangeForeground": "--color-foreground",
+    "editorGutter.commentRangeForeground": "#00000000",
     "editorGutter.commentGlyphForeground": "--color-foreground",
     "editorGutter.commentUnresolvedGlyphForeground": "--color-foreground",
     "editorGutter.foldingControlForeground": "--color-foreground",
@@ -1044,56 +1044,29 @@
   },
   "tokenColors": [
     // #
-    // #               GENERIC
+    // #               LANGUAGE DEFAULTS
     // # 
-
     {
       "name": "keywords",
       "scope": [
         "keyword",
-        "keyword.operator.new",
-				"keyword.operator.expression",
-				"keyword.operator.cast",
-				"keyword.operator.sizeof",
-				"keyword.operator.alignof",
-				"keyword.operator.typeid",
-				"keyword.operator.alignas",
-				"keyword.operator.instanceof",
-				"keyword.operator.wordlike",
-        "keyword.operator.functionlike",
-        "meta.encoding"
+        "meta.encoding",
+        "storage.type",
+        "storage.modifier",
+        "constant",
+        "variable.language",
+        "keyword.operator.wordlike",
+        "keyword.operator.functionlike"
       ],
       "settings": {
         "foreground": "--color-keyword"
       }
     },
     {
-      "name": "builtin types",
-      "scope": [
-        "storage.type",
-        "storage.modifier"
-      ],
+      "name": "function declarations",
+      "scope": "entity.name.function.definition",
       "settings": {
-        "foreground": "--color-builtin-types"
-      }
-    },
-    {
-      "name": "language constants",
-      "scope": [
-        "constant",
-        "variable.language"
-      ],
-      "settings": {
-        "foreground": "--color-language-constant"
-      }
-    },
-    {
-      "name": "function definition",
-      "scope": [
-        "entity.name.function.definition"
-      ],
-      "settings": {
-        "foreground": "--color-function-definition"
+        "foreground": "--color-function-declaration"
       }
     },
     {
@@ -1109,7 +1082,7 @@
       }
     },
     {
-      "name": "strings",
+      "name": "string literals",
       "scope": [
         "string",
         "string.quoted.other.lt-gt.include",
@@ -1121,7 +1094,7 @@
       }
     },
     {
-      "name": "numeric",
+      "name": "numeric literals",
       "scope": [
         "keyword.other.unit",
         "constant.numeric"
@@ -1132,15 +1105,13 @@
     },
     {
       "name": "comments",
-      "scope": [
-        "comment"
-      ],
+      "scope": "comment",
       "settings": {
         "foreground": "--color-comment"
       }
     },
     {
-      "name": "documentation",
+      "name": "documentation comments",
       "scope": [
         "storage.type.class.doxygen",
         "string.quoted.docstring",
@@ -1153,27 +1124,23 @@
       }
     },
     {
-      "name": "doxygen",
-      "scope": [
-        "storage.type.class.doxygen"
-      ],
+      "name": "doxygen classes",
+      "scope": "storage.type.class.doxygen",
       "settings": {
         "foreground": "--color-doxygen-class",
-        "fontStyle": "italic"
+        "fontStyle": "--fontstyle-doxygen-class"
       }
     },
     {
-      "name": "documentation variable",
-      "scope": [
-        "comment.block.documentation variable.parameter"
-      ],
+      "name": "documentation variables",
+      "scope": "comment.block.documentation variable.parameter",
       "settings": {
         "foreground": "--color-doxygen-variable",
         "fontStyle": "italic"
       }
     },
     {
-      "name": "tag",
+      "name": "tags",
       "scope": [
         "entity.name.tag",
         "punctuation.definition.tag",
@@ -1184,250 +1151,347 @@
         "foreground": "--color-tag"
       }
     },
-    {
-      "name": "preprocessor keyword",
-      "scope": [
-        "keyword.directive.preprocessor",
-        "keyword.control.directive"
-      ],
-      "settings": {
-        "foreground": "--color-preprocessor"
-      }
-    },
-    {
-      "name": "macro",
-      "scope": "entity.name.function.preprocessor",
-      "settings": {
-        "foreground": "--color-macro"
-      }
-    },
-    {
-      "name": "type",
-      "scope": [
-        "source.cpp entity.name.scope-resolution"
-      ],
-      "settings": {
-        "foreground": "--color-type"
-      }
-    },
-    {
-      "name": "template constant",
-      "scope": [
-        "entity.name.type.template"
-      ],
-      "settings": {
-        "foreground": "--color-template-constant"
-      }
-    },
-    {
-      "name": "property",
-      "scope": [
-        "variable.other.property"
-      ],
-      "settings": {
-        "foreground": "--color-property"
-      }
-    },
-    {
-      "name": "included file",
-      "scope": [
-        "string.quoted.other.lt-gt.include",
-        "string.quoted.double.include"
-      ],
-      "settings": {
-        "foreground": "--included-file-color"
-      }
-    },
 
+    // #
+    // #               EDITOR CONFIG
+    // # 
+
+    // #
+    // #               ANGULAR
+    // # 
+    
+    // #
+    // #               BATCH
+    // # 
+    {
+      "name": "Batch Keywords",
+      "scope": "source.batchfile keyword.operator.at",
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "Batch variables",
+      "scope": "source.batchfile variable",
+      "settings": {
+        "foreground": "--color-constant"
+      }
+    },
+    
     // #
     // #               CMAKE
     // # 
-
     {
       "name": "CMAKE keywords",
-      "scope": "source.cmake keyword",
+      "scope": [
+        "source.cmake keyword",
+        "source.cmake entity.source"
+      ],
       "settings": {
         "foreground": "--color-cmake-keyword"
       }
     },
     {
-      "name": "CMAKE argument",
+      "name": "CMAKE arguments",
       "scope": "source.cmake argument.source",
       "settings": {
         "foreground": "--color-string"
       }
     },
     {
-      "name": "CMAKE source",
-      "scope": "source.cmake entity.source",
+      "name": "CMAKE sources",
+      "scope": "source.cmake entity.source.",
       "settings": {
         "foreground": "--color-keyword"
       }
     },
-
+    
+    // #
+    // #               C++
+    // # 
+    {
+      "name": "C++ properties",
+      "scope": "source.cpp variable.other.property",
+      "settings": {
+        "foreground": "--color-cpp-struct-field"
+      }
+    },
+    {
+      "name": "C++ preprocessors",
+      "scope": [
+        "source.cpp keyword.directive.preprocessor",
+        "source.cpp keyword.control.directive"
+      ],
+      "settings": {
+        "foreground": "--color-metadata"
+      }
+    },
+    {
+      "name": "C++ macros",
+      "scope": "source.cpp entity.name.function.preprocessor",
+      "settings": {
+        "foreground": "--color-cpp-macro",
+        "fontStyle": "--fontstyle-cpp-macro"
+      }
+    },
+    {
+      "name": "C++ template constants",
+      "scope": "source.cpp entity.name.type.template",
+      "settings": {
+        "foreground": "--color-constant"
+      }
+    },
+    
     // #
     // #               CSS
     // # 
-
     {
-      "name": "CSS keyword",
+      "name": "CSS tag inherited",
       "scope": [
         "source.css meta.property-value",
-        "source.css constant.other.unicode-range",
         "source.css entity.other.attribute-name.pseudo-class",
+        "source.css meta.function",
+        "source.css constant.other.unicode-range",
+        "source.css entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.pseudo-element",
+        "source.css entity.other.attribute-name.id",
+        "source.css entity.other.attribute-name",
         "source.css support.constant.language-range",
-        "source.css meta.selector.css entity.other.attribute-name",
-        "source.css source.css keyword.operator.logical"
+        "source.css keyword.operator.logical"
       ],
       "settings": {
         "foreground": "--color-tag"
       }
     },
     {
-      "name": "CSS",
-      "scope": [
-        "source.css variable.parameter.url",
-        "source.css constant.other.color.rgb-value.hex"
-      ],
+      "name": "CSS urls",
+      "scope": "source.css variable.parameter.url.css",
       "settings": {
-        "foreground": "--color-css-constant"
+        "foreground": "--color-css-url"
       }
     },
     {
-      "name": "CCS text",
-      "scope": [
-        "source.css support.constant.color.w3c-standard-color-name",
-        "source.css keyword.other.unit.percentage"
-      ],
+      "name": "CSS hex colors",
+      "scope": "source.css constant.other.color.rgb-value.hex",
       "settings": {
-        "foreground": "--color-foreground"
+        "foreground": "--color-css-hex"
       }
     },
     {
-      "name": "CSS string",
+      "name": "CSS string inherited",
       "scope": [
-        "source.css keyword.other.unit.deg",
-        "source.css keyword.other.unit.px",
+        "source.css keyword.other.unit",
+        "source.css meta.property-value",
         "source.css support.constant.property-value"
       ],
       "settings": {
         "foreground": "--color-string"
       }
     },
-
+    {
+      "name": "CSS operators",
+      "scope": [
+        "source.css keyword.other.unit.percentage",
+        "source.css punctuation.separator.list.comma"
+      ],
+      "settings": {
+        "foreground": "--color-operator"
+      }
+    },
+    
+    // #
+    // #               DATABASE
+    // # 
+    
+    // #
+    // #               DEVICE TREE
+    // # 
+    
+    // #
+    // #               DOCKERFILE
+    // # 
+    
+    // #
+    // #               GROOVY
+    // # 
+    
     // #
     // #               HTML
     // # 
-
     {
-      "name": "HTML constants",
+      "name": "HTML custom tags",
       "scope": [
-        "text.html.derivative constant.character.entity.numeric.hexadecimal",
-        "text.html.derivative constant.character.entity.named.Alpha"
+        "text.html meta.tag.custom.start.html entity.name.tag",
+        "text.html meta.tag.other.unrecognized.html.derivative entity.name.tag"
       ],
       "settings": {
-        "foreground": "--color-markup-constant"
+        "foreground": "--color-html-custom-tag-name"
       }
     },
     {
-      "name": "HTML custom tag",
-      "scope": [
-        "text.html.derivative meta.tag.custom.start.html entity.name.tag",
-        "text.html.derivative meta.tag.other.unrecognized.html.derivative entity.name.tag"
-      ],
+      "name": "HTML reference",
+      "scope": "text.html constant.character",
       "settings": {
-        "foreground": "--color-custom-tag"
+        "foreground": "--color-html-entity-reference"
       }
     },
+    
+    // #
+    // #               HTTP
+    // # 
+    
+    // #
+    // #               JAVA
+    // # 
+    
+    // #
+    // #               JAVASCRIPT
+    // # 
+    
+    // #
+    // #               JPA
+    // # 
 
     // #
     // #               JSON
     // # 
-
     {
-      "name": "JSON property name",
-      "scope": [
-        "source.json support.type.property-name"
-      ],
+      "name": "JSON property names",
+      "scope": "source.json support.type.property-name",
       "settings": {
-        "foreground": "--color-json-property"
+        "foreground": "--color-instance-field"
       }
     },
     {
-      "name": "JSON keywords",
-      "scope": [
-        "source.json invalid.illegal.unrecognized-string-escape"
-      ],
+      "name": "JSON illegal escapes",
+      "scope": "source.json invalid.illegal.unrecognized-string-escape",
       "settings": {
-        "foreground": "--color-keyword"
+        "foreground": "--color-string-invalid-escape"
       }
     },
 
     // #
-    // #               PYTHON
+    // #               JSONPATH
     // # 
 
+    // #
+    // #               JSP
+    // # 
+    
+    // #
+    // #               KOTLIN
+    // # 
+    
+    // #
+    // #               LESS
+    // # 
+    
+    // #
+    // #               LINKER SCRIPT
+    // # 
+    
+    // #
+    // #               LOMBOK CONFIG
+    // # 
+    
+    // #
+    // #               MAKE
+    // # 
+    
+    // #
+    // #               MARKDOWN
+    // # 
+    
+    // #
+    // #               MESON
+    // # 
+    
+    // #
+    // #               MICRONAUT
+    // # 
+    
+    // #
+    // #               MONGODB
+    // # 
+    
+    // #
+    // #               POST CSS
+    // # 
+    
+    // #
+    // #               PROPERTIES
+    // # 
+    
+    // #
+    // #               PROTOBUF
+    // # 
+    
+    // #
+    // #               PROTOBUF TEXT
+    // # 
+    
+    // #
+    // #               PYTHON
+    // # 
     {
       "name": "PYTHON keywords",
-      "scope": [
-        "source.python keyword.operator.logical"
-      ],
+      "scope": "source.python keyword.operator.logical",
       "settings": {
         "foreground": "--color-keyword"
       }
     },
     {
       "name": "PYTHON function parameters",
-      "scope": [
-        "source.python variable.parameter.function-call"
-      ],
+      "scope": "source.python variable.parameter.function-call",
       "settings": {
-        "foreground": "--color-python-function-parameter"
+        "foreground": "--color-python-keyword-argument"
       }
     },
     {
-      "name": "PYTHON arguments[]",
-      "scope": [
-        "source.python punctuation.definition.arguments"
-      ],
+      "name": "PYTHON declarations",
+      "scope": "source.python punctuation.definition.arguments",
       "settings": {
-        "foreground": "--color-python-arguments"
+        "foreground": "--color-function-declaration"
       }
     },
     {
-      "name": "PYTHON magic variable",
-      "scope": [
-        "source.python support.variable.magic"
-      ],
+      "name": "PYTHON magic variables",
+      "scope": "source.python support.variable.magic",
       "settings": {
         "foreground": "--color-python-magic-variable"
       }
     },
     {
-      "name": "PYTHON decorator",
-      "scope": [
-        "source.python punctuation.definition.decorator"
-      ],
+      "name": "PYTHON decorators",
+      "scope": "source.python punctuation.definition.decorator",
       "settings": {
-        "foreground": "--color-python-decorator"
+        "foreground": "--color-metadata"
       }
     },
     {
       "name": "PYTHON text",
-      "scope": [
-        "source.python constant.other.caps"
-      ],
+      "scope": "source.python constant.other.caps",
       "settings": {
         "foreground": "--color-foreground"
       }
     },
+    {
+      "name": "PYTHON binary strings",
+      "scope": "source.python string.quoted.binary",
+      "settings": {
+        "foreground": "--color-python-binary"
+      }
+    },
+    
+    // #
+    // #               QUTE
+    // # 
 
     // #
     // #               REGEX
     // # 
-
     {
-      "name": "regex keyword",
+      "name": "REGEX keyword",
       "scope": [
         "support.other.match.begin.regexp",
         "support.other.match.end.regexp",
@@ -1438,66 +1502,111 @@
       }
     },
     {
-      "name": "regex quantifier",
-      "scope": [
-        "keyword.operator.quantifier.regexp"
-      ],
+      "name": "REGEX quantifier",
+      "scope": "keyword.operator.quantifier.regexp",
       "settings": {
         "foreground": "--color-numeric"
       }
     },
     {
-      "name": "regex operator",
+      "name": "REGEX text",
       "scope": [
         "support.other.parenthesis.regexp",
         "support.other.match.any.regexp",
-        "constant.other.set.regexp"
+        "constant.other.set.regexp",
+        "storage.modifier.flag.regexp"
       ],
       "settings": {
-        "foreground": "--color-operator"
+        "foreground": "--color-foreground"
       } 
     },
     {
-      "name": "regex escaped", // Should be character class, but it's not tokenized
-      "scope": [
-        "constant.character.escape.regexp"
-      ],
+      "name": "REGEX escaped",
+      "scope": "constant.character.escape.regexp",
       "settings": {
         "foreground": "--color-regex-escaped"
       }
     },
     {
-      "name": "regex string",
-      "scope": [
-        "constant.character.set.regexp"
-      ],
+      "name": "REGEX string",
+      "scope": "constant.character.set.regexp",
       "settings": {
         "foreground": "--color-string"
       }
     },
-
+    
     // #
-    // #               XML
+    // #               RESTRUCTURED TEXT
     // # 
-
+    
+    // #
+    // #               SCSS
+    // # 
+    
+    // #
+    // #               SHELL
+    // # 
     {
-      "name": "XML keywords",
-      "scope": [
-        "text.xml keyword.other.doctype",
-        "text.xml entity.other.attribute-name.namespace"
-      ],
+      "name": "SHELL keywords",
+      "scope": "source.shell punctuation.definition.variable",
       "settings": {
-        "foreground": "--color-tag"
+        "foreground": "--color-keyword"
       }
     },
     {
-      "name": "XML constant",
+      "name": "SHELL commands",
       "scope": [
-        "text.xml punctuation.definition.constant",
-        "text.xml constant.character.entity"
+        "source.shell support.function.builtin",
+        "source.shell entity.name.command",
+        "source.shell punctuation.definition.subshell"
       ],
       "settings": {
-        "foreground": "--color-markup-constant"
+        "foreground": "--color-shell-command"
+      }
+    },
+    {
+      "name": "SHELL text",
+      "scope": [
+        "source.shell punctuation.definition.subshell",
+        "source.shell string.unquoted"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
+      }
+    },
+    
+    // #
+    // #               SPRING EL
+    // # 
+    
+    // #
+    // #               SQL
+    // # 
+    
+    // #
+    // #               TOML
+    // # 
+    
+    // #
+    // #               TYPESCRIPT
+    // # 
+    
+    // #
+    // #               VELOCITY
+    // # 
+    
+    // #
+    // #               XAML
+    // # 
+    
+    // #
+    // #               XML
+    // # 
+    {
+      "name": "XML tags",
+      "scope": "text.xml keyword.other.doctype",
+      "settings": {
+        "foreground": "--color-tag"
       }
     },
     {
@@ -1510,179 +1619,107 @@
         "foreground": "--color-foreground"
       }
     },
-
+    {
+      "name": "XML reference",
+      "scope": "text.xml constant.character",
+      "settings": {
+        "foreground": "--color-xml-entity-reference"
+      }
+    },
+    
     // #
-    // #               XAML
+    // #               XPATH
     // # 
-
+    
+    // #
+    // #               XSLT
+    // # 
+    
+    // #
+    // #               YAML
+    // # 
     {
-      "name": "XAML keywords",
-      "scope": [
-        "source.xaml keyword.other.doctype",
-        "source.xaml entity.other.attribute-name.namespace"
-      ],
+      "name": "YAML tags",
+      "scope": "source.yaml entity.name.tag",
       "settings": {
-        "foreground": "--color-tag"
+        "foreground": "--color-keyword",
       }
     },
     {
-      "name": "XAML constant",
+      "name": "YAML comments",
       "scope": [
-        "source.xaml punctuation.definition.constant",
-        "source.xaml constant.character.entity"
+        "source.yaml comment",
+        "source.yaml punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "--color-markup-constant"
+        "foreground": "--color-documentation"
       }
     },
     {
-      "name": "XAML text",
+      "name": "YAML text",
       "scope": [
-        "source.xaml variable.language.documentroot",
-        "source.xaml string.unquoted.cdata"
+        "source.yaml storage.modifier",
+        "source.yaml keyword.control",
+        "source.yaml constant.language",
+        "source.yaml string.unquoted"
       ],
       "settings": {
         "foreground": "--color-foreground"
       }
     },
-
-    // #
-    // #               MARKDOWN
-    // # 
-
     {
-      "name": "MARKDOWN headings",
+      "name": "YAML operators",
       "scope": [
-        "text.html.markdown markup.heading",
-        "text.html.markdown markup.heading.markdown punctuation.definition.link.title.begin",
-        "text.html.markdown markup.heading.markdown punctuation.definition.link.title.end",
-        "text.html.markdown markup.heading.markdown markup.underline.link",
-        "text.html.markdown markup.heading.markdown markup.inline.raw.string",
-        "text.html.markdown markup.heading.markdown markup.quote",
-        "text.html.markdown markup.heading.markdown punctuation.definition.metadata",
-        "text.html.markdown markup.heading.markdown punctuation.definition.list.begin",
-        "text.html.markdown markup.heading.markdown punctuation.definition.raw",
-        "text.html.markdown markup.heading.markdown punctuation.definition.italic",
-        "text.html.markdown markup.heading.markdown punctuation.definition.bold",
-        "text.html.markdown markup.heading.markdown punctuation.definition.strikethrough",
-        "text.html.markdown markup.heading.markdown punctuation.definition.quote.begin",
-        "text.html.markdown markup.heading.markdown string.other.link.title",
-        "text.html.markdown markup.heading.markdown string.other.link.description",
-        "text.html.markdown markup.heading.markdown punctuation.definition.strikethrough",
-        "text.html.markdown markup.heading.markdown markup.strikethrough",
-        "text.html.markdown markup.heading.markdown punctuation.definition.link",
-        "text.html.markdown markup.heading.markdown punctuation.definition.link.title.begin",
-        "text.html.markdown markup.heading.markdown punctuation.definition.link.title.end",
-        "text.html.markdown markup.heading.markdown punctuation.definition.constant.begin",
-        "text.html.markdown markup.heading.markdown punctuation.definition.metadata",
-        "text.html.markdown markup.heading.markdown punctuation.definition.constant.end",
-        "text.html.markdown markup.heading.markdown punctuation.definition.constant",
-        "text.html.markdown markup.heading.setext.1",
-        "text.html.markdown markup.heading.setext.2",
-        "text.html.markdown markup.heading.markdown markup.fenced_code.block",
-        "text.html.markdown markup.heading.markdown markup.raw.block",
-        "text.html.markdown markup.heading.markdown meta.separator"
+        "source.yaml punctuation"
       ],
       "settings": {
-        "foreground": "--color-markdown-header",
-        "fontStyle": "italic"
+        "foreground": "--color-operator"
       }
     },
     {
-      "name": "MARKDOWN strings",
+      "name": "YAML anchors/aliases",
       "scope": [
-        "text.html.markdown markup.inline.raw.string",
-        "text.html.markdown markup.quote",
-        "text.html.markdown punctuation.definition.raw",
-        "text.html.markdown markup.fenced_code.block",
-        "text.html.markdown markup.raw.block"
+        "source.yaml entity.name.type.anchor",
+        "source.yaml variable.other.alias"
       ],
+      "settings": {
+        "foreground": "--color-yaml-anchor"
+      }
+    },
+    {
+      "name": "YAML strings",
+      "scope": "source.yaml punctuation.definition.string",
       "settings": {
         "foreground": "--color-string"
-      }
-    },
-    {
-      "name": "MARKDOWN keywords",
-      "scope": [
-        "text.html.markdown punctuation.definition.metadata",
-        "text.html.markdown punctuation.definition.italic",
-        "text.html.markdown punctuation.definition.bold",
-        "text.html.markdown punctuation.definition.strikethrough",
-        "text.html.markdown punctuation.definition.quote.begin",
-        "text.html.markdown punctuation.definition.constant.begin",
-        "text.html.markdown punctuation.definition.constant.end",
-        "text.html.markdown punctuation.definition.constant",
-        "text.html.markdown punctuation.definition.table",
-        "text.html.markdown punctuation.separator.table",
-        "text.html.markdown meta.separator"
-      ],
-      "settings": {
-        "foreground": "--color-keyword"
-      }
-    },
-    {
-      "name": "MARKDOWN links",
-      "scope": [
-        "text.html.markdown markup.underline.link",
-        "text.html.markdown punctuation.definition.link",
-        "text.html.markdown punctuation.definition.link.title.begin",
-        "text.html.markdown string.other.link.title",
-        "text.html.markdown punctuation.definition.link.title.end"
-      ],
-      "settings": {
-        "foreground": "--color-markup-constant",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "MARKDOWN strikethrough",
-      "scope": [
-        "text.html.markdown punctuation.definition.strikethrough",
-        "text.html.markdown markup.strikethrough"
-      ],
-      "settings": {
-        "foreground": "--color-foreground",
-        "fontStyle": "strikethrough"
-      }
-    },
-    {
-      "name": "MARKDOWN text",
-      "scope": [
-        "text.html.markdown punctuation.definition.metadata"
-      ],
-      "settings": {
-        "foreground": "--color-foreground"
       }
     }
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
     // #
-    // #               GENERIC
+    // #               CPP
     // # 
-    "newOperator": "--color-keyword",
-    "enumMember": "--color-enum-member",
-    "function.declaration": "--color-function-definition",
-    "type": "--color-type",
-    "templateType": "--color-template-type",
-    "namespace": "--color-namespace",
-    "property": "--color-property",
-    "macro": "--color-macro",
-    "memberOperatorOverload": "--color-op-overload",
-    "operatorOverload": "--color-op-overload",
+    "newOperator:cpp": "--color-keyword",
+    "enumMember:cpp": "--color-constant",
+    "type:cpp": "--color-cpp-type",
+    "templateType:cpp": "--color-cpp-type",
+    "namespace:cpp": "--color-cpp-type",
+    "property:cpp": "--color-cpp-struct-field",
+    "macro:cpp": "--color-cpp-macro",
+    "memberOperatorOverload:cpp": "--color-cpp-operator-overload",
+    "operatorOverload:cpp": "--color-cpp-operator-overload",
 
     // #
     // #               PYTHON
     // # 
     "class.builtin:python": "--color-python-builtin",
     "function.builtin:python": "--color-python-builtin",
-    "builtinConstant:python": "--color-language-constant",
-    "class.decorator:python": "--color-python-decorator",
-    "function.decorator:python": "--color-python-decorator",
+    "builtinConstant:python": "--color-keyword",
+    "class.decorator:python": "--color-metadata",
+    "function.decorator:python": "--color-metadata",
     "magicFunction.declaration:python": "--color-python-magic-variable",
-    "property:python": "--color-python-property",
     "selfParameter:python": "--color-python-self",
-    "method.declaration:python": "--color-function-definition",
-    "module:python": "--color-python-module"
+    "function.declaration:python": "--color-function-declaration",
+    "method.declaration:python": "--color-function-declaration",
   }
 }
