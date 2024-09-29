@@ -219,8 +219,8 @@
     // #
     // #               TITLE BAR
     // # 
-    "titleBar.activeForeground": "--color-titlebar-foreground",
-    "titleBar.inactiveForeground": "--color-titlebar-foreground",
+    "titleBar.activeForeground": "--color-foreground",
+    "titleBar.inactiveForeground": "--color-foreground",
     "titleBar.activeBackground": "--color-titlebar-background",
     "titleBar.inactiveBackground": "--color-titlebar-background",
     "titleBar.border": "--color-titlebar-border",
@@ -233,20 +233,20 @@
     "list.activeSelectionForeground": "--color-foreground",
     "list.inactiveSelectionBackground": "--color-accent",
     "list.hoverBackground": "--color-background-secondary",
-    "list.dropBackground": "--color-background-secondary",
-    "list.dropBetweenBackground": "--color-background-secondary",
+    "list.dropBackground": "--color-drop-background",
+    "list.dropBetweenBackground": "--color-drop-background",
     "list.highlightForeground": "--color-selected",
     "list.focusHighlightForeground": "--color-selected",
     "list.warningForeground": "--color-foreground",
-    "listFilterWidget.background": "--color-background-secondary", // unknown
-    "listFilterWidget.outline": "#00000000", // unknown
+    "listFilterWidget.background": "#FF0000", // unknown
+    "listFilterWidget.outline": "#FF0000", // unknown
     "listFilterWidget.noMatchesOutline": "--color-error",
     "listFilterWidget.shadow": "#00000000",
     "list.filterMatchBackground": "--color-selected",
     "list.filterMatchBorder": "--color-selected",
     "list.deemphasizedForeground": "--color-foreground",
     "editorActionList.foreground": "--color-foreground",
-    "editorActionList.background": "--color-background-secondary", // unknown
+    "editorActionList.background": "#FF0000", // unknown
     "editorActionList.focusForeground": "--color-foreground",
     "editorActionList.focusBackground": "--color-selected",
 
@@ -380,15 +380,15 @@
     // # 
     "diffEditor.insertedTextBackground": "#00000000", 
     "diffEditor.removedTextBackground": "#00000000", 
-    "diffEditor.insertedLineBackground": "--color-merge-inserted", 
-    "diffEditor.removedLineBackground": "--color-merge-deleted", 
+    "diffEditor.insertedLineBackground": "--color-merge-insertedcc", 
+    "diffEditor.removedLineBackground": "--color-merge-deletedcc", 
     "diffEditor.diagonalFill": "--color-background-main",
     "diffEditor.unchangedRegionBackground": "--color-background-secondary",
     "diffEditor.unchangedRegionForeground": "--color-foreground",
     "diffEditor.unchangedCodeBackground": "--color-background-main",
     "diffEditor.move.border": "--color-background-main",
     "diffEditor.moveActive.border": "#ff0000", // unknown
-    "diffEditor.unchangedRegionShadow": "#000000",
+    "diffEditor.unchangedRegionShadow": "#00000000",
     "multiDiffEditor.headerBackground": "--color-background-main",
     "multiDiffEditor.background": "--color-background-main",
     "multiDiffEditor.border": "--color-background-main",
@@ -423,7 +423,7 @@
     "merge.incomingContentBackground": "#ff0000cc", // unknown
     "merge.commonHeaderBackground": "#00000000", 
     "merge.commonContentBackground": "#00000000",
-    "mergeEditor.change.background": "#ff0000cc",
+    "mergeEditor.change.background": "#ff0000cc", // unknown
     "mergeEditor.change.word.background": "#ff0000cc", // unknown
     "mergeEditor.changeBase.background": "#ff0000cc", // unknown
     "mergeEditor.changeBase.word.background": "#ff0000cc", // unknown
@@ -433,9 +433,9 @@
     "mergeEditor.conflict.handledFocused.border": "#00000000",
     "mergeEditor.conflict.handled.minimapOverViewRuler": "#ff0000cc", // unknown
     "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000cc", // unknown
-    "mergeEditor.conflictingLines.background": "#ff0000",
-    "mergeEditor.conflict.input1.background": "#ff0000",
-    "mergeEditor.conflict.input2.background": "#ff0000",
+    "mergeEditor.conflictingLines.background": "#ff0000", // unknown
+    "mergeEditor.conflict.input1.background": "#ff0000", // unknown
+    "mergeEditor.conflict.input2.background": "#ff0000", // unknown
 
     // #
     // #               INPUT

@@ -9,7 +9,6 @@
 --color-background-secondary: "#2b2d30"
 --color-accent: "#4e5157"
 --color-siderbar-border: "#1e1f22"
---color-titlebar-foreground: "#bcbec4"
 --color-titlebar-background: "#2b2d30"
 --color-titlebar-border: "#1e1f22"
 --color-selected: "#214283"
@@ -24,6 +23,7 @@
 --color-scrollbar-thumb: "#A6A6A647"
 --color-scrollbar-thumb-active: "#A6A6A659"
 --color-input-box: "#2b2d30"
+--color-drop-background: "#2d374d"
 
 # Language Defaults
 --color-operator: "#bcbec4"
@@ -47,7 +47,7 @@
 --color-cpp-type: "#b5b6e3"
 --color-cpp-struct-field: "#9373a5"
 --color-cpp-macro: "#908b25"
---fontstyle-cpp-macro: "None"
+--fontstyle-cpp-macro: ""
 --color-cpp-operator-overload: "#5f8c8a"
 --color-css-url: "#5c92ff"
 --color-css-hex: "#56a8f5"

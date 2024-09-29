@@ -9,8 +9,7 @@
 --color-background-secondary: "#f7f8fa"
 --color-accent: "#ebecf0"
 --color-siderbar-border: "#ebecf0"
---color-titlebar-foreground: "#bcbec4"
---color-titlebar-background: "#2b2d30"
+--color-titlebar-background: "#ebecf0"
 --color-titlebar-border: "#00000000"
 --color-selected: "#a6d2ff"
 --color-color: "#006dcc"
@@ -24,6 +23,7 @@
 --color-scrollbar-thumb: "#73737333"
 --color-scrollbar-thumb-active: "#73737347"
 --color-input-box: "#ffffff"
+--color-drop-background: "#dae4f9"
 
 # Language Defaults
 --color-operator: "#000000"
