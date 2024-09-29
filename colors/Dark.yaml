@@ -19,11 +19,17 @@
 --color-current-line-foreground: "#a1a3ab"
 --color-line-highlight: "#26282e"
 --color-indentation-guide: "#313438"
---sticky-scroll-hover: "#26282e"
+--color-sticky-scroll-hover: "#26282e"
+--color-sticky-scroll-shadow: "#191a1c"
 --color-scrollbar-thumb: "#A6A6A647"
 --color-scrollbar-thumb-active: "#A6A6A659"
 --color-input-box: "#2b2d30"
 --color-drop-background: "#2d374d"
+--color-git-modified: "#6fabf1"
+--color-git-added: "#6aab73"
+--color-git-deleted: "#7d7d7d"
+--color-git-untracked: "#d88b83"
+--color-git-ignored: "#c48e66"
 
 # Language Defaults
 --color-operator: "#bcbec4"

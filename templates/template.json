@@ -120,14 +120,14 @@
     // #
     // #               GITHUB
     // # 
-    "gitDecoration.addedResourceForeground": "#6aab73",
-    "gitDecoration.modifiedResourceForeground": "#6fabf1",
-    "gitDecoration.deletedResourceForeground": "#7d7d7d",
-    "gitDecoration.renamedResourceForeground": "#6fabf1",
-    "gitDecoration.untrackedResourceForeground": "#d88b83",
-    "gitDecoration.ignoredResourceForeground": "#c48e66",
-    "gitDecoration.stageModifiedResourceForeground": "#6fabf1",
-    "gitDecoration.stageDeletedResourceForeground": "#6fabf1",
+    "gitDecoration.addedResourceForeground": "--color-git-added",
+    "gitDecoration.modifiedResourceForeground": "--color-git-modified",
+    "gitDecoration.deletedResourceForeground": "--color-git-deleted",
+    "gitDecoration.renamedResourceForeground": "--color-git-modified",
+    "gitDecoration.untrackedResourceForeground": "--color-git-untracked",
+    "gitDecoration.ignoredResourceForeground": "--color-git-ignored",
+    "gitDecoration.stageModifiedResourceForeground": "--color-git-modified",
+    "gitDecoration.stageDeletedResourceForeground": "--color-git-modified",
     "gitDecoration.conflictingResourceForeground": "--color-foreground",
     "gitDecoration.submoduleResourceForeground": "--color-foreground",
     "gitlens.trailingLineForegroundColor": "--color-foregroundcc",
@@ -235,9 +235,9 @@
     "list.hoverBackground": "--color-background-secondary",
     "list.dropBackground": "--color-drop-background",
     "list.dropBetweenBackground": "--color-drop-background",
-    "list.highlightForeground": "--color-selected",
-    "list.focusHighlightForeground": "--color-selected",
-    "list.warningForeground": "--color-foreground",
+    "list.highlightForeground": "--color-foreground",
+    "list.focusHighlightForeground": "--color-foreground",
+    "list.warningForeground": "--color-error",
     "listFilterWidget.background": "#FF0000", // unknown
     "listFilterWidget.outline": "#FF0000", // unknown
     "listFilterWidget.noMatchesOutline": "--color-error",
@@ -246,7 +246,7 @@
     "list.filterMatchBorder": "--color-selected",
     "list.deemphasizedForeground": "--color-foreground",
     "editorActionList.foreground": "--color-foreground",
-    "editorActionList.background": "#FF0000", // unknown
+    "editorActionList.background": "--color-background-secondary",
     "editorActionList.focusForeground": "--color-foreground",
     "editorActionList.focusBackground": "--color-selected",
 
@@ -371,15 +371,16 @@
     // #               STICKY SCROLL
     // # 
     "editorStickyScroll.background": "--color-background-main",
-    "editorStickyScrollHover.background": "--sticky-scroll-hover",
+    "editorStickyScrollHover.background": "--color-sticky-scroll-hover",
     "editorStickyScroll.border": "--color-accent",
-    "editorStickyScroll.shadow": "#00000000",
+    "editorStickyScroll.shadow": "--color-sticky-scroll-shadow",
 
     // #
     // #               DIFF EDITOR
     // # 
-    "diffEditor.insertedTextBackground": "#00000000", 
-    "diffEditor.removedTextBackground": "#00000000", 
+    "diffEditor.border": "--color-accent",
+    "diffEditor.insertedTextBackground": "--color-merge-insertedcc",
+    "diffEditor.removedTextBackground": "--color-merge-deletedcc",
     "diffEditor.insertedLineBackground": "--color-merge-insertedcc", 
     "diffEditor.removedLineBackground": "--color-merge-deletedcc", 
     "diffEditor.diagonalFill": "--color-background-main",
@@ -391,7 +392,7 @@
     "diffEditor.unchangedRegionShadow": "#00000000",
     "multiDiffEditor.headerBackground": "--color-background-main",
     "multiDiffEditor.background": "--color-background-main",
-    "multiDiffEditor.border": "--color-background-main",
+    "multiDiffEditor.border": "--color-accent",
 
     // #
     // #               TAB
@@ -404,18 +405,18 @@
     "tab.inactiveForeground": "--color-foreground",
     "tab.unfocusedActiveForeground": "--color-foreground",
     "tab.unfocusedInactiveForeground": "--color-foreground",
-    "tab.border": "--color-background-main",
-    "tab.lastPinnedBorder": "--color-background-main",
+    "tab.border": "#00000000",
+    "tab.lastPinnedBorder": "#00000000",
     "tab.activeBorder": "--color-color",
-    "tab.unfocusedActiveBorder": "--color-background-main",
-    "tab.dragAndDropBorder": "--color-background-main",
+    "tab.unfocusedActiveBorder": "#00000000",
+    "tab.dragAndDropBorder": "#00000000",
     "tab.activeModifiedBorder": "--color-color",
-    "tab.inactiveModifiedBorder": "--color-background-main",
-    "tab.unfocusedActiveModifiedBorder": "--color-background-main",
-    "tab.unfocusedInactiveModifiedBorder": "--color-background-main",
+    "tab.inactiveModifiedBorder": "#00000000",
+    "tab.unfocusedActiveModifiedBorder": "#00000000",
+    "tab.unfocusedInactiveModifiedBorder": "#00000000",
 
     // #
-    // #               MARGE
+    // #               MERGE
     // # 
     "merge.currentHeaderBackground": "#00000000", 
     "merge.currentContentBackground": "#00000000", 
@@ -423,16 +424,16 @@
     "merge.incomingContentBackground": "#ff0000cc", // unknown
     "merge.commonHeaderBackground": "#00000000", 
     "merge.commonContentBackground": "#00000000",
-    "mergeEditor.change.background": "#ff0000cc", // unknown
-    "mergeEditor.change.word.background": "#ff0000cc", // unknown
-    "mergeEditor.changeBase.background": "#ff0000cc", // unknown
-    "mergeEditor.changeBase.word.background": "#ff0000cc", // unknown
+    "mergeEditor.change.background": "#ff0000", // unknown
+    "mergeEditor.change.word.background": "#ff0000", // unknown
+    "mergeEditor.changeBase.background": "#ff0000", // unknown
+    "mergeEditor.changeBase.word.background": "#ff0000", // unknown
     "mergeEditor.conflict.unhandledUnfocused.border": "#00000000",
     "mergeEditor.conflict.unhandledFocused.border": "#00000000",
     "mergeEditor.conflict.handledUnfocused.border": "#00000000",
     "mergeEditor.conflict.handledFocused.border": "#00000000",
-    "mergeEditor.conflict.handled.minimapOverViewRuler": "#ff0000cc", // unknown
-    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000cc", // unknown
+    "mergeEditor.conflict.handled.minimapOverViewRuler": "#ff0000", // unknown
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#ff0000", // unknown
     "mergeEditor.conflictingLines.background": "#ff0000", // unknown
     "mergeEditor.conflict.input1.background": "#ff0000", // unknown
     "mergeEditor.conflict.input2.background": "#ff0000", // unknown
@@ -744,10 +745,10 @@
     // #
     "editorGroup.emptyBackground": "--color-background-main",
     "editorGroupHeader.tabsBackground": "--color-background-main",
-    "editorGroupHeader.tabsBorder": "--color-background-main",
+    "editorGroupHeader.tabsBorder": "--color-accent",
     "editorGroupHeader.noTabsBackground": "--color-background-main",
-    "editorGroupHeader.border": "--color-background-main",
-    "editorGroup.border": "--color-background-main",
+    "editorGroupHeader.border": "--color-accent",
+    "editorGroup.border": "--color-accent",
     "editorGroup.dropBackground": "--color-background-main",
     "editorGroup.dropIntoPromptForeground": "--color-foreground",
     "editorGroup.dropIntoPromptBackground": "--color-background-main",
@@ -879,7 +880,7 @@
     "testing.coveredBackground": "--color-background-main",
     "testing.coveredBorder": "--color-background-main",
     "testing.coveredGutterBackground": "--color-background-main",
-    "testing.uncoveredBranchBackground": "#781214",
+    "testing.uncoveredBranchBackground": "#781214", // unknown
     "testing.uncoveredBackground": "--color-background-main",
     "testing.uncoveredBorder": "--color-background-main",
     "testing.uncoveredGutterBackground": "--color-background-main",
