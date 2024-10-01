@@ -626,12 +626,12 @@
     // #
     // #               EDITOR INDENT
     // # 
-    "editorIndentGuide.background1": "--color-background-main",
-    "editorIndentGuide.background2": "--color-background-main",
-    "editorIndentGuide.background3": "--color-background-main",
-    "editorIndentGuide.background4": "--color-background-main",
-    "editorIndentGuide.background5": "--color-background-main",
-    "editorIndentGuide.background6": "--color-background-main",
+    "editorIndentGuide.background1": "--color-indentation-guide",
+    "editorIndentGuide.background2": "--color-indentation-guide",
+    "editorIndentGuide.background3": "--color-indentation-guide",
+    "editorIndentGuide.background4": "--color-indentation-guide",
+    "editorIndentGuide.background5": "--color-indentation-guide",
+    "editorIndentGuide.background6": "--color-indentation-guide",
     "editorIndentGuide.activeBackground1": "--color-indentation-guide",
     "editorIndentGuide.activeBackground2": "--color-indentation-guide",
     "editorIndentGuide.activeBackground3": "--color-indentation-guide",

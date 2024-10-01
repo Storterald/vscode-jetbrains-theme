@@ -14,32 +14,38 @@
   "contributes": {
     "themes": [
       {
+        "id": "Jetbrains New UI Dark",
         "label": "Jetbrains New UI Dark",
+        "uiTheme": "vs-dark",
         "path": "./themes/Jetbrains New UI Dark.json"
       },
       {
+        "id": "Jetbrains New UI Light",
         "label": "Jetbrains New UI Light",
+        "uiTheme": "vs",
         "path": "./themes/Jetbrains New UI Light.json"
       }
     ],
     "configurationDefaults": {
       "editor.lineHeight": 1.675,
       "workbench.tree.indent": 19,
+      "editor.rulers": [ 120 ],
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
-      "window.autoDetectColorScheme": true,
-      "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-      "better-comments.tags": [
-        {
-          "tag": "TODO",
-          "color": "#8bb33d",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": true
-        }
-      ],
-      "[light]": {
+      "[Jetbrains New UI Dark]": {
+        "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+        "better-comments.tags": [
+          {
+            "tag": "TODO",
+            "color": "#8bb33d",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+          }
+        ]
+      },
+      "[Jetbrains New UI Light]": {
         "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
         "better-comments.tags": [
           {
@@ -63,6 +69,6 @@
     "esbuild": "^0.19.11"
   },
   "repository": {
-    "url": "https://github.com/Storterald/jetbrains-themes-for-vscode"
+    "url": "https://github.com/Storterald/Jetbrains-Themes"
   }
 }
