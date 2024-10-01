@@ -17,6 +17,9 @@ general:
       --color-hard-wrap-guide: "#393b40"
       --color-indent-guide: "#313438"
     --color-selected: "#214283"
+    tabs:
+      --color-selected-tab: "#3574f0"
+      --color-selected-tab-inactive: "#595c62"
     vertical-scrollbar:
       --color-scrollbar-thumb: "#A6A6A647"
       --color-scrollbar-thumb-active: "#A6A6A659"
