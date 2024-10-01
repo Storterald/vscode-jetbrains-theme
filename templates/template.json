@@ -1183,27 +1183,26 @@
     // #               CMAKE
     // # 
     {
+      "name": "CMAKE commands",
+      "scope": "source.cmake command-identifier",
+      "settings": {
+        "foreground": "--color-cmake-command"
+      }
+    },
+    {
       "name": "CMAKE keywords",
       "scope": [
-        "source.cmake keyword",
-        "source.cmake entity.source"
+        "source.cmake punctuation.definition.template-expression"
       ],
       "settings": {
-        "foreground": "--color-cmake-keyword"
-      }
-    },
-    {
-      "name": "CMAKE arguments",
-      "scope": "source.cmake argument.source",
-      "settings": {
-        "foreground": "--color-string"
-      }
-    },
-    {
-      "name": "CMAKE sources",
-      "scope": "source.cmake entity.source.",
-      "settings": {
         "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "CMAKE text",
+      "scope": "source.cmake variable",
+      "settings": {
+        "foreground": "--color-foreground"
       }
     },
     
@@ -1732,7 +1731,13 @@
     "xmlDocCommentAttributeQuotes": "--color-foreground",
 
     // #
-    // #               CPP
+    // #               CMAKE
+    // # 
+    "type:cmake": "--color-keyword",
+    "function:cmake": "--color-cmake-command",
+
+    // #
+    // #               C++
     // # 
     "newOperator:cpp": "--color-keyword",
     "enumMember:cpp": "--color-constant",

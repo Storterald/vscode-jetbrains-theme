@@ -76,7 +76,7 @@ C/C++:
   --color-cpp-operator-overload: "#008080"
 
 CMake:
-  --color-cmake-keyword: "#00627a"
+  --color-cmake-command: "#00627a"
 
 CSS:
   --color-css-url: "#067d17"
