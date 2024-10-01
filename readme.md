@@ -2,8 +2,18 @@
 
 ## Languages compatibility
 
-This extension themes work with the following languages: `c++`, `html`, `css`, `xml`, `json`, `cmake`, `python`, `regex`.
+ - `HTML`
+ - `CSS`
+ - `XML`
+ - `Json`
+ - `Python`
+ - `Regex`
+ - `YAML`,
+ - `Shell`
 
-## Extension compatibility 
+### From CLion:
+ - `C++`
+ - `CMake`
 
-This extension edits colors of the following extension<i>(s)</i>: "***GitHub Pull Requests and Issues***".
+### From Rider:
+ - `C#`

@@ -1117,6 +1117,7 @@
         "storage.type.class.doxygen",
         "string.quoted.docstring",
         "comment.block.documentation",
+        "comment.documentation",
         "comment.line.double-slash.documentation"
       ],
       "settings": {
@@ -1126,7 +1127,11 @@
     },
     {
       "name": "doxygen classes",
-      "scope": "storage.type.class.doxygen",
+      "scope": [
+        "storage.type.class.doxygen",
+        "comment.documentation.name",
+        "comment.documentation.attribute"
+      ],
       "settings": {
         "foreground": "--color-doxygen-class",
         "fontStyle": "--fontstyle-doxygen-class"
@@ -1134,7 +1139,10 @@
     },
     {
       "name": "documentation variables",
-      "scope": "comment.block.documentation variable.parameter",
+      "scope": [
+        "comment.block.documentation variable.parameter",
+        "comment.block.documentation meta.tag string"
+      ],
       "settings": {
         "foreground": "--color-doxygen-variable",
         "fontStyle": "italic"
@@ -1300,6 +1308,34 @@
       }
     },
     
+    // #
+    // #               C#
+    // # 
+    {
+      "name": "C# text",
+      "scope": [
+        "source.cs meta.interpolation",
+        "source.cs punctuation.definition.interpolation"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
+      }
+    },
+    {
+      "name": "C# keywords",
+      "scope": "source.cs punctuation.separator.hash",
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "C# Functions",
+      "scope": "source.cs entity.name.function",
+      "settings": {
+        "foreground": "--color-function-declaration"
+      }
+    },
+
     // #
     // #               DATABASE
     // # 
@@ -1698,6 +1734,12 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     // #
+    // #               GENERIC
+    // # 
+    "xmlDocCommentName": "--color-doxygen-class",
+    "xmlDocCommentAttributeQuotes": "--color-foreground",
+
+    // #
     // #               CPP
     // # 
     "newOperator:cpp": "--color-keyword",
@@ -1709,6 +1751,13 @@
     "macro:cpp": "--color-cpp-macro",
     "memberOperatorOverload:cpp": "--color-cpp-operator-overload",
     "operatorOverload:cpp": "--color-cpp-operator-overload",
+
+    // #
+    // #               C#
+    // # 
+    "property:csharp": "--color-instance-field",
+    "field:csharp": "--color-instance-field",
+    "method:csharp": "--color-function-declaration",
 
     // #
     // #               PYTHON
