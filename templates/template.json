@@ -44,8 +44,8 @@
     "editorOverviewRuler.currentContentForeground": "#00000000", // unknown
     "editorOverviewRuler.incomingContentForeground": "#00000000", // unknown
     "editorOverviewRuler.commonContentForeground": "#00000000", // unknown
-    "editorOverviewRuler.findMatchForeground": "--color-find-matchcc",
-    "editorOverviewRuler.border": "--color-accent",
+    "editorOverviewRuler.findMatchForeground": "--color-search-resultcc",
+    "editorOverviewRuler.border": "#00000000",
     "editorOverviewRuler.background": "--color-background-main",
     "editorOverviewRuler.rangeHighlightForeground": "#00000000", // unknown
     "editorOverviewRuler.infoForeground": "#00000000", // unknown
@@ -64,7 +64,7 @@
     // #
     // #               MINIMAP
     // # 
-    "minimap.findMatchHighlight": "--color-find-matchcc",
+    "minimap.findMatchHighlight": "--color-search-resultcc",
     "minimap.infoHighlight": "--color-foreground",
     "minimap.foregroundOpacity": "#000000ff",
     "minimapSlider.background": "#00000000",
@@ -139,10 +139,10 @@
     "inputValidation.errorBackground": "#00000000",
     "inputValidation.errorBorder": "#00000000",
     "list.invalidItemForeground": "--color-error",
-    "minimap.warningHighlight": "--color-error",
+    "minimap.warningHighlight": "--color-warning",
     "minimap.errorHighlight": "--color-error",
     "editorOverviewRuler.errorForeground": "--color-error",
-    "editorOverviewRuler.warningForeground": "--color-error",
+    "editorOverviewRuler.warningForeground": "--color-warning",
     "statusBarItem.errorBackground": "#00000000",
     "statusBarItem.errorForeground": "--color-error",
     "statusBarItem.errorHoverForeground": "--color-error",
@@ -153,25 +153,25 @@
     "debugTokenExpression.error": "--color-error",
     "debugConsole.errorForeground": "--color-error",
     "problemsErrorIcon.foreground": "--color-error",
-    "problemsWarningIcon.foreground": "--color-error",
+    "problemsWarningIcon.foreground": "--color-warning",
     "editorError.background": "#00000000",
     "editorError.foreground": "--color-error",
     "editorError.border": "#00000000",
     "editorWarning.background": "#00000000",
-    "editorWarning.foreground": "--color-error",
+    "editorWarning.foreground": "--color-warning",
     "editorWarning.border": "#00000000",
     "editorMarkerNavigationError.background": "#00000000",
     "editorMarkerNavigationError.headerBackground": "#00000000",
     "editorMarkerNavigationWarning.background": "#00000000",
     "editorMarkerNavigationWarning.headerBackground": "#00000000",
     "notificationsErrorIcon.foreground": "--color-error",
-    "notificationsWarningIcon.foreground": "--color-error",
+    "notificationsWarningIcon.foreground": "--color-warning",
     "testing.iconFailed": "--color-error",
     "testing.iconErrored": "--color-error",
     "notebookStatusErrorIcon.foreground": "--color-error",
     "statusBarItem.warningBackground": "#00000000",
-    "statusBarItem.warningForeground": "--color-error",
-    "statusBarItem.warningHoverForeground": "--color-error",
+    "statusBarItem.warningForeground": "--color-warning",
+    "statusBarItem.warningHoverForeground": "--color-warning",
     "statusBarItem.warningHoverBackground": "#00000000",
 
     // #
@@ -222,7 +222,7 @@
     "titleBar.activeForeground": "--color-foreground",
     "titleBar.inactiveForeground": "--color-foreground",
     "titleBar.activeBackground": "--color-titlebar-background",
-    "titleBar.inactiveBackground": "--color-titlebar-background",
+    "titleBar.inactiveBackground": "--color-titlebar-inactive",
     "titleBar.border": "--color-titlebar-border",
 
     // #
@@ -237,7 +237,7 @@
     "list.dropBetweenBackground": "--color-drop-background",
     "list.highlightForeground": "--color-foreground",
     "list.focusHighlightForeground": "--color-foreground",
-    "list.warningForeground": "--color-error",
+    "list.warningForeground": "--color-warning",
     "listFilterWidget.background": "#FF0000", // unknown
     "listFilterWidget.outline": "#FF0000", // unknown
     "listFilterWidget.noMatchesOutline": "--color-error",
@@ -299,7 +299,7 @@
     // #
     // #               TERMINAL
     // # 
-    "terminalOverviewRuler.findMatchForeground": "--color-find-matchcc",
+    "terminalOverviewRuler.findMatchForeground": "--color-search-resultcc",
     "terminal.foreground": "--color-foreground",
     "terminal.inactiveSelectionBackground": "--color-background-main",
     "terminalCommandDecoration.defaultBackground": "--color-background-main",
@@ -319,7 +319,7 @@
     "editor.background": "--color-background-main",
     "editor.foreground": "--color-foreground",
     "editorWhitespace.foreground": "#00000000",
-    "editorRuler.foreground": "--color-accent",
+    "editorRuler.foreground": "--color-hard-wrap-guide",
     "focusBorder": "--color-background-main",
     "progressBar.background": "--color-color",
     "editorInfo.foreground": "--color-foreground",
@@ -362,17 +362,17 @@
     // #
     // #               EDITOR LINE
     // # 
-    "editorLineNumber.foreground": "--color-line-foreground",
-    "editorLineNumber.activeForeground": "--color-current-line-foreground",
-    "editor.lineHighlightBackground": "--color-line-highlight",
-    "editor.lineHighlightBorder": "--color-line-highlight",
+    "editorLineNumber.foreground": "--color-line-number",
+    "editorLineNumber.activeForeground": "--color-line-on-caret-row",
+    "editor.lineHighlightBackground": "--color-caret-row",
+    "editor.lineHighlightBorder": "--color-caret-row",
 
     // #
     // #               STICKY SCROLL
     // # 
     "editorStickyScroll.background": "--color-background-main",
-    "editorStickyScrollHover.background": "--color-sticky-scroll-hover",
-    "editorStickyScroll.border": "--color-accent",
+    "editorStickyScrollHover.background": "--color-caret-row",
+    "editorStickyScroll.border": "--color-hard-wrap-guide",
     "editorStickyScroll.shadow": "--color-sticky-scroll-shadow",
 
     // #
@@ -626,18 +626,18 @@
     // #
     // #               EDITOR INDENT
     // # 
-    "editorIndentGuide.background1": "--color-indentation-guide",
-    "editorIndentGuide.background2": "--color-indentation-guide",
-    "editorIndentGuide.background3": "--color-indentation-guide",
-    "editorIndentGuide.background4": "--color-indentation-guide",
-    "editorIndentGuide.background5": "--color-indentation-guide",
-    "editorIndentGuide.background6": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground1": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground2": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground3": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground4": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground5": "--color-indentation-guide",
-    "editorIndentGuide.activeBackground6": "--color-indentation-guide",
+    "editorIndentGuide.background1": "--color-indent-guide",
+    "editorIndentGuide.background2": "--color-indent-guide",
+    "editorIndentGuide.background3": "--color-indent-guide",
+    "editorIndentGuide.background4": "--color-indent-guide",
+    "editorIndentGuide.background5": "--color-indent-guide",
+    "editorIndentGuide.background6": "--color-indent-guide",
+    "editorIndentGuide.activeBackground1": "--color-indent-guide",
+    "editorIndentGuide.activeBackground2": "--color-indent-guide",
+    "editorIndentGuide.activeBackground3": "--color-indent-guide",
+    "editorIndentGuide.activeBackground4": "--color-indent-guide",
+    "editorIndentGuide.activeBackground5": "--color-indent-guide",
+    "editorIndentGuide.activeBackground6": "--color-indent-guide",
 
     // #
     // #               EDITOR BRACKETS
@@ -745,10 +745,10 @@
     // #
     "editorGroup.emptyBackground": "--color-background-main",
     "editorGroupHeader.tabsBackground": "--color-background-main",
-    "editorGroupHeader.tabsBorder": "--color-accent",
+    "editorGroupHeader.tabsBorder": "--color-hard-wrap-guide",
     "editorGroupHeader.noTabsBackground": "--color-background-main",
-    "editorGroupHeader.border": "--color-accent",
-    "editorGroup.border": "--color-accent",
+    "editorGroupHeader.border": "--color-indent-guide",
+    "editorGroup.border": "--color-hard-wrap-guide",
     "editorGroup.dropBackground": "--color-background-main",
     "editorGroup.dropIntoPromptForeground": "--color-foreground",
     "editorGroup.dropIntoPromptBackground": "--color-background-main",
@@ -1033,15 +1033,7 @@
     "gitlens.launchpadIndicatorBlockedColor": "#c74e39",
     "gitlens.launchpadIndicatorBlockedHoverColor": "#c74e39",
     "gitlens.launchpadIndicatorAttentionColor": "#d8af1b",
-    "gitlens.launchpadIndicatorAttentionHoverColor": "#d8af1b",
-    "issues.newIssueDecoration": "--color-background-main",
-    "issues.open": "#3fb950",
-    "issues.closed": "#cb2431",
-    "pullRequests.merged": "#8957e5",
-    "pullRequests.draft": "#6e7681",
-    "pullRequests.open": "#3fb950",
-    "pullRequests.closed": "#cb2431",
-    "pullRequests.notification": "--color-foreground"
+    "gitlens.launchpadIndicatorAttentionHoverColor": "#d8af1b"
   },
   "tokenColors": [
     // #
@@ -1121,7 +1113,7 @@
         "comment.line.double-slash.documentation"
       ],
       "settings": {
-        "foreground": "--color-documentation",
+        "foreground": "--color-doc-text",
         "fontStyle": "italic"
       }
     },
@@ -1133,8 +1125,8 @@
         "comment.documentation.attribute"
       ],
       "settings": {
-        "foreground": "--color-doxygen-class",
-        "fontStyle": "--fontstyle-doxygen-class"
+        "foreground": "--color-doc-tag",
+        "fontStyle": "--fontstyle-doc-tag"
       }
     },
     {
@@ -1144,7 +1136,7 @@
         "comment.block.documentation meta.tag string"
       ],
       "settings": {
-        "foreground": "--color-doxygen-variable",
+        "foreground": "--color-doc-tag-value",
         "fontStyle": "italic"
       }
     },
@@ -1157,7 +1149,7 @@
         "punctuation.definition.tag.end"
       ],
       "settings": {
-        "foreground": "--color-tag"
+        "foreground": "--color-html-tag"
       }
     },
 
@@ -1269,7 +1261,7 @@
         "source.css keyword.operator.logical"
       ],
       "settings": {
-        "foreground": "--color-tag"
+        "foreground": "--color-html-tag"
       }
     },
     {
@@ -1643,7 +1635,7 @@
       "name": "XML tags",
       "scope": "text.xml keyword.other.doctype",
       "settings": {
-        "foreground": "--color-tag"
+        "foreground": "--color-html-tag"
       }
     },
     {
@@ -1689,7 +1681,7 @@
         "source.yaml punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "--color-documentation"
+        "foreground": "--color-doc-text"
       }
     },
     {
@@ -1736,7 +1728,7 @@
     // #
     // #               GENERIC
     // # 
-    "xmlDocCommentName": "--color-doxygen-class",
+    "xmlDocCommentName": "--color-doc-tag",
     "xmlDocCommentAttributeQuotes": "--color-foreground",
 
     // #

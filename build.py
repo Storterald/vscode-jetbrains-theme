@@ -42,11 +42,20 @@ def copyTemplate(DIR: str, EXT_SRC: str, EXT_DST: str) -> None:
 
 def fixFiles(DIR: str, EXT: str, MAP: dict) -> None:
         with open(f"{DIR}/{MAP["--name"]}{EXT}", 'r', encoding="utf-8") as f:
-                clionData: str = f.read()
+                themeData: str = f.read()
+
+        def substitute(item) -> None:
+                nonlocal themeData
+                for key, value in item.items():
+                        if isinstance(value, dict):
+                                substitute(value)
+                        else:
+                                themeData = re.sub(rf"\"{key}(?!-)", '\"' + value, themeData)
+
+        substitute(MAP)
+
         with open(f"{DIR}/{MAP["--name"]}{EXT}", 'w', encoding="utf-8") as f:
-                for substitution in MAP:
-                        clionData = re.sub(rf"\"{substitution}(?!-)", '\"' + MAP[substitution], clionData)
-                f.write(clionData)
+                f.write(themeData)
 
 if __name__ == "__main__":
         VERSION: str = getVersion()

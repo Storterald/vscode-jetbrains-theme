@@ -1,28 +1,121 @@
 ---
 --name: "Jetbrains New UI Light"
 
-# General
---color-foreground: "#000000"
---color-todo: "#008dde"
---color-error: "#ff0000"
---color-background-main: "#ffffff"
---color-background-secondary: "#f7f8fa"
---color-accent: "#ebecf0"
+general:
+  --color-background-main: "#ffffff"
+  --color-background-secondary: "#f7f8fa"
+  --color-accent: "#ebecf0"
+
+  code:
+    --color-todo: "#008dde"
+    --color-line-number: "#4b5059"
+    --color-line-on-caret-row: "#a1a3ab"
+
+  editor:
+    --color-caret-row: "#f5f8fe"
+    guides:
+      --color-hard-wrap-guide: "#eBecf0"
+      --color-indent-guide: "#ebecf0"
+    --color-selected: "#a6d2ff"
+    vertical-scrollbar:
+      --color-scrollbar-thumb: "#73737333"
+      --color-scrollbar-thumb-active: "#73737347"
+
+  errors-and-warnings:
+    --color-error: "#ff0000"
+    --color-warning: "#f2bf57"
+
+  search-result:
+    --color-search-result: "#c47233"
+
+  text:
+    --color-foreground: "#000000"
+
+language-defaults:
+  braces-and-operators:
+    --color-operator: "#000000"
+
+  classes:
+    --color-instance-field: "#871094"
+
+  comments:
+    --color-comment: "#8c8c8c"
+    doc-comment:
+      --color-doc-tag: "#8c8c8c"
+      --fontstyle-doc-tag: "italic underline"
+      --color-doc-tag-value: "#3d3d3d"
+      --color-doc-text: "#8c8c8c"
+
+  identifiers:
+    --color-constant: "#871094"
+    --color-function-declaration: "#00627a"
+
+  --color-keyword: "#0033b3"
+  --color-metadata: "#9e880d"
+  --color-numeric: "#1750eb"
+
+  string:
+    escape-sequence:
+        --color-string-invalid-escape: "#067d17"
+    --color-string: "#067d17"
+
+diff-&-merge:
+  --color-merge-changed: "#c2d8f2"
+  --color-merge-conflict: "#ffd5cc"
+  --color-merge-deleted: "#d6d6d6"
+  --color-merge-inserted: "#bee6be"
+
+C/C++:
+  --color-cpp-type: "#008080"
+  --color-cpp-struct-field: "#660e7a"
+  --color-cpp-macro: "#1f542e"
+  --fontstyle-cpp-macro: "bold"
+  --color-cpp-operator-overload: "#008080"
+
+CMake:
+  --color-cmake-keyword: "#00627a"
+
+CSS:
+  --color-css-url: "#067d17"
+  --color-css-hex: "#0033b3"
+
+HTML:
+  --color-html-custom-tag-name: "#0033b3"
+  --color-html-entity-reference: "#174be6"
+  --color-html-tag: "#0033b3"
+
+Python:
+  --color-python-keyword-argument: "#660099"
+  --color-python-magic-variable: "#b200b2"
+  --color-python-builtin: "#000080"
+  --color-python-self: "#94558d"
+  --color-python-binary: "#8a822d"
+
+Regex:
+  --color-regex-escaped: "#174be6"
+
+Shell:
+  --color-shell-command: "#0073bf"
+
+XML:
+  --color-xml-entity-reference: "#174be6"
+
+YAML:
+  --color-yaml-anchor: "#0000e6"
+
+# Markdown Preview
+--color-markdown-background-secondary: "#f5f7f9"
+--color-markdown-accent: "#f5f7f9"
+
 --color-siderbar-border: "#ebecf0"
---color-titlebar-background: "#ebecf0"
---color-titlebar-border: "#00000000"
---color-selected: "#a6d2ff"
+--color-titlebar-background: "#f7f8fa"
+--color-titlebar-inactive: "#ebecf0"
+--color-titlebar-border: "#ebecf0"
 --color-color: "#006dcc"
---color-find-match: "#c47233"
+
 --color-selection-match: "#d0a1ff"
---color-line-foreground: "#aeb3c2"
---color-current-line-foreground: "#767a8a"
---color-line-highlight: "#f5f8fe"
---color-indentation-guide: "#ebecf0"
---color-sticky-scroll-hover: "#f5f8fe"
+
 --color-sticky-scroll-shadow: "#ebecf0"
---color-scrollbar-thumb: "#73737333"
---color-scrollbar-thumb-active: "#73737347"
 --color-input-box: "#ffffff"
 --color-drop-background: "#dae4f9"
 --color-git-modified: "#1343d0"
@@ -30,51 +123,3 @@
 --color-git-deleted: "#8c8c8c"
 --color-git-untracked: "#c73176"
 --color-git-ignored: "#d48d07"
-
-# Language Defaults
---color-operator: "#000000"
---color-keyword: "#0033b3"
---color-string: "#067d17"
---color-numeric: "#1750eb"
---color-comment: "#8c8c8c"
---color-documentation: "#8c8c8c"
---color-doxygen-class: "#8c8c8c"
---fontstyle-doxygen-class: "italic underline"
---color-doxygen-variable: "#3d3d3d"
---color-tag: "#0033b3"
---color-instance-field: "#871094"
---color-constant: "#871094"
---color-metadata: "#9e880d"
---color-string-invalid-escape: "#067d17"
---color-function-declaration: "#00627a"
-
-# Language Specific
---color-cmake-keyword: "#00627a"
---color-cpp-type: "#008080"
---color-cpp-struct-field: "#660e7a"
---color-cpp-macro: "#1f542e"
---fontstyle-cpp-macro: "bold"
---color-cpp-operator-overload: "#008080"
---color-css-url: "#067d17"
---color-css-hex: "#0033b3"
---color-html-custom-tag-name: "#0033b3"
---color-html-entity-reference: "#174be6"
---color-python-keyword-argument: "#660099"
---color-python-magic-variable: "#b200b2"
---color-python-builtin: "#000080"
---color-python-self: "#94558d"
---color-python-binary: "#8a822d"
---color-regex-escaped: "#174be6"
---color-shell-command: "#0073bf"
---color-xml-entity-reference: "#174be6"
---color-yaml-anchor: "#0000e6"
-
-# Markdown Preview
---color-markdown-background-secondary: "#f5f7f9"
---color-markdown-accent: "#f5f7f9"
-
-# Merge Editor
---color-merge-changed: "#c2d8f2"
---color-merge-conflict: "#ffd5cc"
---color-merge-deleted: "#d6d6d6"
---color-merge-inserted: "#bee6be"
