@@ -53,6 +53,10 @@ language-defaults:
     --color-constant: "#c77dbb"
     --color-function-declaration: "#56a8f5"
 
+  inline-hints:
+    --color-inline-hint-foreground: "#858a94"
+    --color-inline-hint-background: "#393b40"
+
   --color-keyword: "#cf8e6d"
   --color-metadata: "#b3ae60"
   --color-numeric: "#299fa2"

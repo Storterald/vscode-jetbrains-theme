@@ -177,12 +177,12 @@
     // #
     // #               INLAY HINT
     // # 
-    "editorInlayHint.foreground": "--color-foreground",
-    "editorInlayHint.background": "--color-background-secondary",
-    "editorInlayHint.typeForeground": "--color-foreground",
-    "editorInlayHint.typeBackground": "--color-background-secondary",
-    "editorInlayHint.parameterForeground": "--color-foreground",
-    "editorInlayHint.parameterBackground": "--color-background-secondary",
+    "editorInlayHint.foreground": "--color-inline-hint-foreground",
+    "editorInlayHint.background": "--color-inline-hint-background",
+    "editorInlayHint.typeForeground": "--color-inline-hint-foreground",
+    "editorInlayHint.typeBackground": "--color-inline-hint-background",
+    "editorInlayHint.parameterForeground": "--color-inline-hint-foreground",
+    "editorInlayHint.parameterBackground": "--color-inline-hint-background",
 
     // #
     // #               HOVER WIDGET
