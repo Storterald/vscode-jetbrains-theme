@@ -288,7 +288,7 @@
     "panel.border": "--color-accent",
     "panelTitle.activeForeground": "--color-foreground",
     "panelTitle.inactiveForeground": "--color-foreground",
-    "panelTitle.activeBorder": "--color-accent",
+    "panelTitle.activeBorder": "--color-color",
     "panel.dropBorder": "--color-accent",
     "panelSection.dropBackground": "--color-background-main",
     "panelSectionHeader.background": "--color-background-main",
@@ -915,10 +915,10 @@
     "extensionButton.prominentBackground": "--color-accent",
     "extensionButton.prominentForeground": "--color-foreground",
     "extensionButton.prominentHoverBackground": "--color-accent",
-    "extensionIcon.starForeground": "#00000000", 
-    "extensionIcon.verifiedForeground": "#00000000", 
-    "extensionIcon.preReleaseForeground": "#00000000", 
-    "extensionIcon.sponsorForeground": "#00000000", 
+    "extensionIcon.starForeground": "--color-foreground",
+    "extensionIcon.verifiedForeground": "--color-foreground",
+    "extensionIcon.preReleaseForeground": "--color-color",
+    "extensionIcon.sponsorForeground": "--color-foreground",
 
     // #
     // #               NOTEBOOK
