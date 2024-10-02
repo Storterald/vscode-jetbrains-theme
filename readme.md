@@ -16,7 +16,8 @@
 
 ### From CLion:
  - `C++`
- - `CMake`
+ - `CMake`: *josetr.cmake-language-support-vscode*
+ - `Assembly x86`: *maziac.asm-code-lens*
 
 ### From Rider:
  - `C#`

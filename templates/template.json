@@ -1160,6 +1160,17 @@
     // #
     // #               ANGULAR
     // # 
+
+    // #
+    // #               ASSEMBLY
+    // # 
+    {
+      "name": "ASM keywords",
+      "scope": "source.asm variable.parameter.label",
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
     
     // #
     // #               BATCH
