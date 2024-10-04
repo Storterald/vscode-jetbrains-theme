@@ -79,6 +79,10 @@ C/C++:
   --fontstyle-cpp-macro: "bold"
   --color-cpp-operator-overload: "#008080"
 
+C#:
+  --color-escape-character-2: "#295299"
+  --color-csharp-method: "#00627a"
+
 CMake:
   --color-cmake-command: "#00627a"
 
@@ -119,6 +123,7 @@ YAML:
 --color-titlebar-inactive: "#ebecf0"
 --color-titlebar-border: "#ebecf0"
 --color-color: "#006dcc"
+--color-hovered: "#eaebed"
 
 --color-selection-match: "#d0a1ff"
 

@@ -459,7 +459,7 @@
     "button.foreground": "--color-foreground",
     "button.separator": "--color-background-main",
     "button.background": "--color-accent",
-    "button.hoverBackground": "--color-accent",
+    "button.hoverBackground": "--color-hovered",
     "button.border": "--color-accent",
     "button.secondaryForeground": "--color-foreground",
     "button.secondaryBackground": "--color-accent",
@@ -914,7 +914,7 @@
     "extensionButton.separator": "--color-accent",
     "extensionButton.prominentBackground": "--color-accent",
     "extensionButton.prominentForeground": "--color-foreground",
-    "extensionButton.prominentHoverBackground": "--color-accent",
+    "extensionButton.prominentHoverBackground": "--color-hovered",
     "extensionIcon.starForeground": "--color-foreground",
     "extensionIcon.verifiedForeground": "--color-foreground",
     "extensionIcon.preReleaseForeground": "--color-color",
@@ -1334,7 +1334,7 @@
       "name": "C# Functions",
       "scope": "source.cs entity.name.function",
       "settings": {
-        "foreground": "--color-function-declaration"
+        "foreground": "--color-csharp-method"
       }
     },
 
@@ -1740,6 +1740,7 @@
     // # 
     "xmlDocCommentName": "--color-doc-tag",
     "xmlDocCommentAttributeQuotes": "--color-foreground",
+    "enumMember": "--color-constant",
 
     // #
     // #               CMAKE
@@ -1751,7 +1752,6 @@
     // #               C++
     // # 
     "newOperator:cpp": "--color-keyword",
-    "enumMember:cpp": "--color-constant",
     "type:cpp": "--color-cpp-type",
     "templateType:cpp": "--color-cpp-type",
     "namespace:cpp": "--color-cpp-type",
@@ -1765,7 +1765,7 @@
     // # 
     "property:csharp": "--color-instance-field",
     "field:csharp": "--color-instance-field",
-    "method:csharp": "--color-function-declaration",
+    "method:csharp": "--color-csharp-method",
 
     // #
     // #               PYTHON
