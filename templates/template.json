@@ -1197,7 +1197,7 @@
       "name": "CMAKE commands",
       "scope": [
         "source.cmake command-identifier",
-        "entity.name.function"
+        "source.cmake entity.name.function"
       ],
       "settings": {
         "foreground": "--color-cmake-command"
