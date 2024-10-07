@@ -1195,7 +1195,10 @@
     // # 
     {
       "name": "CMAKE commands",
-      "scope": "source.cmake command-identifier",
+      "scope": [
+        "source.cmake command-identifier",
+        "entity.name.function"
+      ],
       "settings": {
         "foreground": "--color-cmake-command"
       }
@@ -1750,6 +1753,7 @@
     // # 
     "type:cmake": "--color-keyword",
     "function:cmake": "--color-cmake-command",
+    "enum:cmake": "--color-keyword",
 
     // #
     // #               C++
