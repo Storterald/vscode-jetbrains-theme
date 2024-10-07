@@ -1211,7 +1211,10 @@
     },
     {
       "name": "CMAKE text",
-      "scope": "source.cmake variable",
+      "scope": [
+        "source.cmake variable",
+        "source.cmake keyword.preprocessor.generator-expression"
+      ],
       "settings": {
         "foreground": "--color-foreground"
       }
@@ -1766,6 +1769,7 @@
     "property:csharp": "--color-instance-field",
     "field:csharp": "--color-instance-field",
     "method:csharp": "--color-csharp-method",
+    "constant:csharp": "--color-constant",
 
     // #
     // #               PYTHON
