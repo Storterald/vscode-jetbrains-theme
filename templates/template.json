@@ -1788,6 +1788,7 @@
     "function.declaration:python": "--color-function-declaration",
     "method.declaration:python": "--color-function-declaration",
     "variable:python": "--color-foreground",
-    "class.typeHint:python": "--color-foreground"
+    "class.typeHint:python": "--color-foreground",
+    "enum.typeHint:python": "--color-foreground"
   }
 }
