@@ -1778,7 +1778,6 @@
     // #
     // #               PYTHON
     // # 
-    "class.builtin:python": "--color-python-builtin",
     "function.builtin:python": "--color-python-builtin",
     "builtinConstant:python": "--color-keyword",
     "class.decorator:python": "--color-metadata",
@@ -1789,6 +1788,7 @@
     "method.declaration:python": "--color-function-declaration",
     "variable:python": "--color-foreground",
     "class.typeHint:python": "--color-foreground",
-    "enum.typeHint:python": "--color-foreground"
+    "enum.typeHint:python": "--color-foreground",
+    "class.builtin:python": "--color-python-builtin",
   }
 }
