@@ -7,6 +7,7 @@
 
  - `CSS`
  - `HTML`
+ - `Javascript`
  - `Json`
  - `Python`
  - `Regex`
