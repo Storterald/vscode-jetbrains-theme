@@ -1398,8 +1398,7 @@
     {
       "name": "JAVASCRIPT keywords",
       "scope": [
-        "source.ts support.type.primitive",
-        "source.ts keyword.operator.expression"
+        "source.js keyword.operator.new"
       ],
       "settings": {
         "foreground": "--color-keyword"
@@ -1445,6 +1444,13 @@
       "scope": "source.js support.class.component",
       "settings": {
         "foreground": "--color-javascript-component"
+      }
+    },
+    {
+      "name": "JAVASCRIPT functions",
+      "scope": "source.js entity.name.function",
+      "settings": {
+        "foreground": "--color-function-declaration"
       }
     },
     
@@ -1694,7 +1700,9 @@
       "name": "TYPESCRIPT keywords",
       "scope": [
         "source.ts support.type.primitive",
-        "source.ts keyword.operator.expression"
+        "source.ts keyword.operator.expression",
+        "source.ts keyword.operator.new",
+        "source.ts support.type.builtin"
       ],
       "settings": {
         "foreground": "--color-keyword"
@@ -1734,6 +1742,13 @@
       "scope": "source.ts punctuation.decorator",
       "settings": {
         "foreground": "--color-metadata"
+      }
+    },
+    {
+      "name": "TYPESCRIPT functions",
+      "scope": "source.ts entity.name.function",
+      "settings": {
+        "foreground": "--color-function-declaration"
       }
     },
     
