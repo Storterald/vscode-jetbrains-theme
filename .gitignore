@@ -1,11 +1,6 @@
 # VS Code
 .vscode/
 
-# VS
-.vs/
-bin/
-obj/
-
 # Jetbrains
 .idea/
 node_modules/
@@ -13,7 +8,12 @@ node_modules/
 # .vsix file
 *.vsix
 
+# Build Files
+.version-getter/
+tsbuild/
+
 # Other
-fonts/
 .tests/
-version-getter/
+
+# TODO Temp stuff
+fonts/

@@ -8,7 +8,9 @@
       "name": "jetbrains-themes",
       "version": "--version",
       "devDependencies": {
-        "esbuild": "^0.19.11"
+        "@types/vscode": "^1.94.0",
+        "esbuild": "^0.19.11",
+        "typescript": "^5.6.3"
       },
       "engines": {
         "vscode": "^1.85.0"
@@ -382,6 +384,12 @@
         "node": ">=12"
       }
     },
+    "node_modules/@types/vscode": {
+      "version": "1.94.0",
+      "resolved": "https://registry.npmjs.org/@types/vscode/-/vscode-1.94.0.tgz",
+      "integrity": "sha512-UyQOIUT0pb14XSqJskYnRwD2aG0QrPVefIfrW1djR+/J4KeFQ0i1+hjZoaAmeNf3Z2jleK+R2hv+EboG/m8ruw==",
+      "dev": true
+    },
     "node_modules/esbuild": {
       "version": "0.19.11",
       "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.19.11.tgz",
@@ -418,6 +426,19 @@
         "@esbuild/win32-arm64": "0.19.11",
         "@esbuild/win32-ia32": "0.19.11",
         "@esbuild/win32-x64": "0.19.11"
+      }
+    },
+    "node_modules/typescript": {
+      "version": "5.6.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.6.3.tgz",
+      "integrity": "sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==",
+      "dev": true,
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=14.17"
       }
     }
   }

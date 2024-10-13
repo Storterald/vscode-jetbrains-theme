@@ -1,13 +1,6 @@
 # VS Code
 .vscode/**
 
-# VS
-.vs/**
-bin/**
-obj/**
-*.sln
-*.csproj
-
 # Jetbrains
 .idea/**
 node_modules/**
@@ -19,12 +12,13 @@ node_modules/**
 colors/**
 templates/**
 
-# Other
+# Build Files
 .version-getter/**
-.tests/**
 build.py
+
+# Other
+.tests/**
 
 # TODO Temp stuff
 vsthemes/**
 fonts/**
-Jetbrains New UI.vstheme.xml

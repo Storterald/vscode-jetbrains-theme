@@ -6,8 +6,15 @@
   "version": "--version",
   "publisher": "Storterald",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.94.0"
   },
+  "main": "./tsbuild/extension.js",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "activationEvents": [
+    "onCommand:workbench.action.selectTheme"
+  ],
   "categories": [
     "Themes"
   ],
@@ -29,7 +36,9 @@
     "configurationDefaults": {
       "editor.lineHeight": 1.675,
       "workbench.tree.indent": 19,
-      "editor.rulers": [ 120 ],
+      "editor.rulers": [
+        120
+      ],
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
       "workbench.layoutControl.enabled": false,
       "[Jetbrains New UI Dark]": {
@@ -67,7 +76,9 @@
     "aaron-bond.better-comments"
   ],
   "devDependencies": {
-    "esbuild": "^0.19.11"
+    "@types/vscode": "^1.94.0",
+    "esbuild": "^0.19.11",
+    "typescript": "^5.6.3"
   },
   "repository": {
     "url": "https://github.com/Storterald/Jetbrains-Themes"

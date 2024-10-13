@@ -76,6 +76,7 @@ if __name__ == "__main__":
                                         packageLock = packageLock.replace("--version", VERSION)
                                         f.write(packageLock)
 
+                                subprocess.run(["npx", "tsc"], shell=True)
                                 subprocess.run(["vsce", "package"], shell=True)
 
                                 # Clear generated files
