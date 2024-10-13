@@ -36,39 +36,9 @@
     "configurationDefaults": {
       "editor.lineHeight": 1.675,
       "workbench.tree.indent": 19,
-      "editor.rulers": [
-        120
-      ],
+      "editor.rulers": [ 120 ],
       "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New'",
-      "workbench.layoutControl.enabled": false,
-      "[Jetbrains New UI Dark]": {
-        "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-        "better-comments.tags": [
-          {
-            "tag": "TODO",
-            "color": "#8bb33d",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-          }
-        ]
-      },
-      "[Jetbrains New UI Light]": {
-        "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-light",
-        "better-comments.tags": [
-          {
-            "tag": "TODO",
-            "color": "#008dde",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-          }
-        ]
-      }
+      "workbench.layoutControl.enabled": false
     }
   },
   "extensionDependencies": [

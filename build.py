@@ -63,26 +63,30 @@ if __name__ == "__main__":
                                 fixFiles("./themes", ".json", LIGHT_MAP)
 
                                 # Replace --version in package.json
-                                with open("./templates/package-template.json", 'r', encoding="utf-8") as f:
-                                        package: str = f.read()
+                                with open("package.json", 'r', encoding="utf-8") as f:
+                                        PACKAGE: str = f.read()
                                 with open("package.json", 'w', encoding="utf-8") as f:
-                                        package = package.replace("--version", VERSION)
-                                        f.write(package)
+                                        fixedPackage: str = PACKAGE.replace("--version", VERSION)
+                                        f.write(fixedPackage)
 
                                 # Replace --version in package-lock.json
-                                with open("./templates/package-lock-template.json", 'r', encoding="utf-8") as f:
-                                        packageLock: str = f.read()
+                                with open("package-lock.json", 'r', encoding="utf-8") as f:
+                                        PACKAGE_LOCK: str = f.read()
                                 with open("package-lock.json", 'w', encoding="utf-8") as f:
-                                        packageLock = packageLock.replace("--version", VERSION)
-                                        f.write(packageLock)
+                                        fixedPackageLock: str = PACKAGE_LOCK.replace("--version", VERSION)
+                                        f.write(fixedPackageLock)
 
                                 subprocess.run(["npx", "tsc"], shell=True)
                                 subprocess.run(["vsce", "package"], shell=True)
 
                                 # Clear generated files
                                 shutil.rmtree("./themes/")
-                                os.remove("package.json")
-                                os.remove("package-lock.json")
+
+                                # Reset package.json and package-lock.json
+                                with open("package.json", 'w', encoding="utf-8") as f:
+                                        f.write(PACKAGE)
+                                with open("package-lock.json", 'w', encoding="utf-8") as f:
+                                        f.write(PACKAGE_LOCK)
                         case "--vs":
                                 copyTemplate("./vsthemes", ".xml", ".vstheme")
                                 fixFiles("./vsthemes", ".vstheme")

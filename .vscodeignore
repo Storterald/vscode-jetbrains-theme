@@ -12,6 +12,10 @@ node_modules/**
 colors/**
 templates/**
 
+# Typescript
+src/**
+tsconfig.json
+
 # Build Files
 .version-getter/**
 build.py
