@@ -20,10 +20,11 @@ colors/**
 templates/**
 
 # Other
+.version-getter/**
 .tests/**
 build.py
-theme.css
 
 # TODO Temp stuff
 vsthemes/**
 fonts/**
+Jetbrains New UI.vstheme.xml

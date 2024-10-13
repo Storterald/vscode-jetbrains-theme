@@ -4,7 +4,6 @@
 # VS
 .vs/
 bin/
-My Project/
 obj/
 
 # Jetbrains
@@ -17,5 +16,4 @@ node_modules/
 # Other
 fonts/
 .tests/
-theme-converter/
-tmp/
+version-getter/

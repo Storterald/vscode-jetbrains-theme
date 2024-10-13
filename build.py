@@ -6,6 +6,8 @@ import yaml
 import shutil
 import subprocess
 
+VERSION_DIR: str = "./.version-getter/"
+
 # Load mappings
 with open("./colors/Dark.yaml", 'r', encoding="utf-8") as f:
         DARK_MAP: dict = yaml.safe_load(f)
@@ -13,25 +15,18 @@ with open("./colors/Light.yaml", 'r', encoding="utf-8") as f:
         LIGHT_MAP: dict = yaml.safe_load(f)
 
 def getVersion() -> str:
-        os.mkdir("./tmp/")
-        subprocess.run(["git", "clone", "--depth", "1", "--no-checkout", "https://github.com/Storterald/Jetbrains-Themes", "."], cwd="./tmp/", shell=True)
-        subprocess.run(["git", "fetch", "--tags", "--depth", "1"], cwd="./tmp/", shell=True)
-        
-        version: str = subprocess.check_output(["git", "for-each-ref", "--sort=-creatordate", "--format", "%(refname:short)", "refs/tags"], cwd="./tmp/", shell=True)
+        if not os.path.exists(VERSION_DIR):
+                os.mkdir(VERSION_DIR)
+                subprocess.run(["git", "clone", "--depth", "1", "--no-checkout", "https://github.com/Storterald/Jetbrains-Themes", "."], cwd=VERSION_DIR, shell=True)
+                subprocess.run(["git", "fetch", "--tags", "--depth", "1"], cwd=VERSION_DIR, shell=True)
+        else:
+                subprocess.run(["git", "pull", "--depth", "1"], cwd=VERSION_DIR, shell=True)
+
+        version: str = subprocess.check_output(["git", "for-each-ref", "--sort=-creatordate", "--format", "%(refname:short)", "refs/tags"], cwd=VERSION_DIR, shell=True)
         version = version.decode("utf-8")
         version = version[:version.find('\n')]
         print(f"Current extension version is: {version}")
 
-        def onerror(func, path: str, _) -> None:
-                if not os.access(path, os.W_OK):
-                        # Change file permission
-                        os.chmod(path, stat.S_IWUSR)
-                        func(path)
-                else:
-                        # If error is not due to permission issues, raise
-                        assert False, "Could not delete cloned directory."
-
-        shutil.rmtree("./tmp/", onexc=onerror)
         return version
 
 def copyTemplate(DIR: str, EXT_SRC: str, EXT_DST: str) -> None:
