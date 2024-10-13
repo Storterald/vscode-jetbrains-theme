@@ -21,13 +21,13 @@
   "contributes": {
     "themes": [
       {
-        "id": "Jetbrains New UI Dark",
+        "id": "jetbrains-new-ui-dark",
         "label": "Jetbrains New UI Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Jetbrains New UI Dark.json"
       },
       {
-        "id": "Jetbrains New UI Light",
+        "id": "jetbrains-new-ui-light",
         "label": "Jetbrains New UI Light",
         "uiTheme": "vs",
         "path": "./themes/Jetbrains New UI Light.json"
