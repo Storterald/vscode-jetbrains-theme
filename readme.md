@@ -5,14 +5,15 @@
 
 # Languages compatibility
 
- - `HTML`
  - `CSS`
- - `XML`
+ - `HTML`
  - `Json`
  - `Python`
  - `Regex`
- - `YAML`,
  - `Shell`
+ - `Typescript`
+ - `XML`
+ - `YAML`,
 
 ### From CLion:
  - `C++`
