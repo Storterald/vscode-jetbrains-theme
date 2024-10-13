@@ -25,7 +25,6 @@ function handleThemeChange(theme: vscode.ColorTheme) {
         }
 }
 
-
 function getDarkCommentTags() {
         return [
                 {

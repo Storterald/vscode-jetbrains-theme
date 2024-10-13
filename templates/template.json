@@ -1704,7 +1704,8 @@
       "name": "TYPESCRIPT text",
       "scope": [
         "source.ts storage.type.function.arrow",
-        "source.ts punctuation.definition.template-expression"
+        "source.ts punctuation.definition.template-expression",
+        "source.ts constant.language.import-export-all"
       ],
       "settings": {
         "foreground": "--color-foreground"
