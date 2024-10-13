@@ -1395,6 +1395,58 @@
     // #
     // #               JAVASCRIPT
     // # 
+    {
+      "name": "JAVASCRIPT keywords",
+      "scope": [
+        "source.ts support.type.primitive",
+        "source.ts keyword.operator.expression"
+      ],
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "JAVASCRIPT text",
+      "scope": [
+        "source.js storage.type.function.arrow",
+        "source.js punctuation.definition.template-expression"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
+      }
+    },
+    {
+      "name": "JAVASCRIPT properties",
+      "scope": "source.js variable.object.property",
+      "settings": {
+        "foreground": "--color-instance-field"
+      }
+    },
+    {
+      "name": "JAVASCRIPT regexes",
+      "scope": [
+        "string.regexp.js",
+        "string.regexp.js constant",
+        "string.regexp.js keyword"
+      ],
+      "settings": {
+        "foreground": "--color-javascript-regexp"
+      }
+    },
+    {
+      "name": "JAVASCRIPT decorators",
+      "scope": "source.js punctuation.decorator",
+      "settings": {
+        "foreground": "--color-metadata"
+      }
+    },
+    {
+      "name": "JAVASCRIPT components",
+      "scope": "source.js support.class.component",
+      "settings": {
+        "foreground": "--color-javascript-component"
+      }
+    },
     
     // #
     // #               JPA
@@ -1824,6 +1876,14 @@
     "constant:csharp": "--color-constant",
 
     // #
+    // #               JAVASCRIPT
+    // # 
+    "function:javascript": "--color-function-declaration",
+    "method:javascript": "--color-function-declaration",
+    "property:javascript": "--color-instance-field",
+    "variable:javascript": "--color-javascript-local-variable",
+
+    // #
     // #               PYTHON
     // # 
     "function.builtin:python": "--color-python-builtin",
@@ -1846,6 +1906,6 @@
     "method:typescript": "--color-function-declaration",
     "property:typescript": "--color-instance-field",
     "typeParameter:typescript": "--color-ts-type-parameter",
-    "variable:typescript": "--color-foreground"
+    "variable:typescript": "--color-javascript-local-variable"
   }
 }

@@ -73,11 +73,13 @@ diff-&-merge:
   --color-merge-inserted: "#bee6be"
 
 C/C++:
+  braces-and-operators:
+    --color-cpp-operator-overload: "#008080"
+  
   --color-cpp-type: "#008080"
-  --color-cpp-struct-field: "#660e7a"
   --color-cpp-macro: "#1f542e"
   --fontstyle-cpp-macro: "bold"
-  --color-cpp-operator-overload: "#008080"
+  --color-cpp-struct-field: "#660e7a"
 
 C#:
   --color-escape-character-2: "#295299"
@@ -87,8 +89,8 @@ CMake:
   --color-cmake-command: "#00627a"
 
 CSS:
-  --color-css-url: "#067d17"
   --color-css-hex: "#0033b3"
+  --color-css-url: "#067d17"
 
 HTML:
   --color-html-custom-tag-name: "#0033b3"
@@ -96,23 +98,35 @@ HTML:
   --color-html-tag: "#0033b3"
 
 Javascript:
+  identifiers:
+    --color-javascript-local-variable: "#2a8c7c"
+  
+  --color-javascript-component: "#ad6339"
   --color-javascript-regexp: "#264eff"
 
 Python:
-  --color-python-keyword-argument: "#660099"
-  --color-python-magic-variable: "#b200b2"
   --color-python-builtin: "#000080"
-  --color-python-self: "#94558d"
-  --color-python-binary: "#8a822d"
+  --color-python-keyword-argument: "#660099"
+  parameters:
+    --color-python-self: "#94558d"
+  
+  special-names:
+    --color-python-magic-variable: "#b200b2"
+  
+  strings:
+    --color-python-binary: "#8a822d"
+  
 
 Regex:
   --color-regex-escaped: "#174be6"
 
 Shell:
-  --color-shell-command: "#0073bf"
+  commands:
+    --color-shell-command: "#0073bf"
 
 Typescript:
-  --color-ts-type-parameter: "#20999d"
+  types:
+    --color-ts-type-parameter: "#20999d"
 
 XML:
   --color-xml-entity-reference: "#174be6"
