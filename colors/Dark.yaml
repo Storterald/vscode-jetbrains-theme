@@ -95,6 +95,9 @@ HTML:
   --color-html-entity-reference: "#56a8f5"
   --color-html-tag: "#d5b778"
 
+Javascript:
+  --color-javascript-regexp: "#42c3d4"
+
 Python:
   --color-python-keyword-argument: "#aa4926"
   --color-python-magic-variable: "#b200b2"
@@ -107,6 +110,9 @@ Regex:
 
 Shell:
   --color-shell-command: "#c57633"
+
+Typescript:
+  --color-ts-type-parameter: "#507874"
 
 XML:
   --color-xml-entity-reference: "#56a8f5"

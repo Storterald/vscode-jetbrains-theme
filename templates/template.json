@@ -1120,7 +1120,8 @@
     {
       "name": "doxygen classes",
       "scope": [
-        "storage.type.class.doxygen",
+        "comment.block.documentation storage.type.class.doxygen",
+        "comment.block.documentation storage.type.class.jsdoc",
         "comment.documentation.name",
         "comment.documentation.attribute"
       ],
@@ -1133,7 +1134,9 @@
       "name": "documentation variables",
       "scope": [
         "comment.block.documentation variable.parameter",
-        "comment.block.documentation meta.tag string"
+        "comment.block.documentation meta.tag string",
+        "comment.block.documentation entity.name.type.instance.jsdoc",
+        "comment.block.documentation variable.other.jsdoc"
       ],
       "settings": {
         "foreground": "--color-doc-tag-value",
@@ -1635,6 +1638,51 @@
     // #
     // #               TYPESCRIPT
     // # 
+    {
+      "name": "TYPESCRIPT keywords",
+      "scope": [
+        "source.ts support.type.primitive",
+        "source.ts keyword.operator.expression"
+      ],
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "TYPESCRIPT text",
+      "scope": [
+        "source.ts storage.type.function.arrow",
+        "source.ts punctuation.definition.template-expression"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
+      }
+    },
+    {
+      "name": "TYPESCRIPT properties",
+      "scope": "source.ts variable.object.property",
+      "settings": {
+        "foreground": "--color-instance-field"
+      }
+    },
+    {
+      "name": "TYPESCRIPT regexes",
+      "scope": [
+        "string.regexp.ts",
+        "string.regexp.ts constant",
+        "string.regexp.ts keyword"
+      ],
+      "settings": {
+        "foreground": "--color-javascript-regexp"
+      }
+    },
+    {
+      "name": "TYPESCRIPT decorators",
+      "scope": "source.ts punctuation.decorator",
+      "settings": {
+        "foreground": "--color-metadata"
+      }
+    },
     
     // #
     // #               VELOCITY
@@ -1790,5 +1838,14 @@
     "class.typeHint:python": "--color-foreground",
     "enum.typeHint:python": "--color-foreground",
     "class.builtin:python": "--color-python-builtin",
+
+    // #
+    // #               TYPESCRIPT
+    // # 
+    "function:typescript": "--color-function-declaration",
+    "method:typescript": "--color-function-declaration",
+    "property:typescript": "--color-instance-field",
+    "typeParameter:typescript": "--color-ts-type-parameter",
+    "variable:typescript": "--color-foreground"
   }
 }
