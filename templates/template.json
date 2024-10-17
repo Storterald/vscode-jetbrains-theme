@@ -1721,7 +1721,10 @@
     },
     {
       "name": "TYPESCRIPT properties",
-      "scope": "source.ts variable.object.property",
+      "scope": [
+        "source.ts variable.object.property",
+        "source.ts variable.other.property"
+      ],
       "settings": {
         "foreground": "--color-instance-field"
       }
