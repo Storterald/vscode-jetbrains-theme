@@ -1898,6 +1898,7 @@
     "method:javascript": "--color-function-declaration",
     "property:javascript": "--color-instance-field",
     "variable:javascript": "--color-javascript-local-variable",
+    "parameter:javascript": "--color-foreground",
 
     // #
     // #               PYTHON
@@ -1922,6 +1923,7 @@
     "method:typescript": "--color-function-declaration",
     "property:typescript": "--color-instance-field",
     "typeParameter:typescript": "--color-ts-type-parameter",
-    "variable:typescript": "--color-javascript-local-variable"
+    "variable:typescript": "--color-javascript-local-variable",
+    "parameter:typescript": "--color-foreground"
   }
 }
