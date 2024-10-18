@@ -1,7 +1,12 @@
+# Infos
+
+A theme with languages support from across all [Jetbrains](https://www.jetbrains.com) IDEs. You can view the full changelog [here](./CHANGELOG.md).
+
 # Extension Incompatibilities
 
-- `twxs.cmake`:<br>
-  `CMake` semantic token highlighting depends on `josetr.cmake-language-support-vscode`, **not** `twxs.cmake`. This because the latter has a *worse* and sometimes *broken* tokenization.
+- [`twxs.cmake`](https://marketplace.visualstudio.com/items?itemName=twxs.cmake):<br>
+  `CMake` semantic token highlighting depends on `josetr.cmake-language-support-vscode`, **not** `twxs.cmake`.
+  This because the latter has a *worse* and sometimes *broken* tokenization.
 
 # Languages compatibility
 
@@ -18,8 +23,8 @@
 
 ### From CLion:
  - `C++`
- - `CMake`: *josetr.cmake-language-support-vscode*
- - `Assembly x86`: *maziac.asm-code-lens*
+ - `CMake`: requires [*josetr.cmake-language-support-vscode*](https://marketplace.visualstudio.com/items?itemName=josetr.cmake-language-support-vscode)
+ - `Assembly x86`: requires [*maziac.asm-code-lens*](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens)
 
 ### From Rider:
  - `C#`
