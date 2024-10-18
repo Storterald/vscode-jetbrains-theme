@@ -70,11 +70,12 @@ if __name__ == "__main__":
                                         f.write(fixedPackage)
 
                                 # Replace --version in package-lock.json
-                                with open("package-lock.json", 'r', encoding="utf-8") as f:
-                                        PACKAGE_LOCK: str = f.read()
-                                with open("package-lock.json", 'w', encoding="utf-8") as f:
-                                        fixedPackageLock: str = PACKAGE_LOCK.replace("--version", VERSION)
-                                        f.write(fixedPackageLock)
+                                if (os.path.exists("package-lock.json")):
+                                        with open("package-lock.json", 'r', encoding="utf-8") as f:
+                                                PACKAGE_LOCK: str = f.read()
+                                        with open("package-lock.json", 'w', encoding="utf-8") as f:
+                                                fixedPackageLock: str = PACKAGE_LOCK.replace("--version", VERSION)
+                                                f.write(fixedPackageLock)
 
                                 subprocess.run(["npx", "tsc"], shell=True)
                                 subprocess.run(["vsce", "package"], shell=True)
@@ -85,8 +86,9 @@ if __name__ == "__main__":
                                 # Reset package.json and package-lock.json
                                 with open("package.json", 'w', encoding="utf-8") as f:
                                         f.write(PACKAGE)
-                                with open("package-lock.json", 'w', encoding="utf-8") as f:
-                                        f.write(PACKAGE_LOCK)
+                                if (os.path.exists("package-lock.json")):
+                                        with open("package-lock.json", 'w', encoding="utf-8") as f:
+                                                f.write(PACKAGE_LOCK)
                         case "--vs":
                                 copyTemplate("./vsthemes", ".xml", ".vstheme")
                                 fixFiles("./vsthemes", ".vstheme")
