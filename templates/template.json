@@ -1408,7 +1408,8 @@
       "name": "JAVASCRIPT text",
       "scope": [
         "source.js storage.type.function.arrow",
-        "source.js punctuation.definition.template-expression"
+        "source.js punctuation.definition.template-expression",
+        "source.js punctuation"
       ],
       "settings": {
         "foreground": "--color-foreground"
@@ -1426,7 +1427,8 @@
       "scope": [
         "string.regexp.js",
         "string.regexp.js constant",
-        "string.regexp.js keyword"
+        "string.regexp.js keyword",
+        "string.regexp.js punctuation.definition.string"
       ],
       "settings": {
         "foreground": "--color-javascript-regexp"
@@ -1451,6 +1453,13 @@
       "scope": "source.js entity.name.function",
       "settings": {
         "foreground": "--color-function-declaration"
+      }
+    },
+    {
+      "name": "JAVASCRIPT strings",
+      "scope": "source.js punctuation.definition.string",
+      "settings": {
+        "foreground": "--color-string"
       }
     },
     
@@ -1713,7 +1722,8 @@
       "scope": [
         "source.ts storage.type.function.arrow",
         "source.ts punctuation.definition.template-expression",
-        "source.ts constant.language.import-export-all"
+        "source.ts constant.language.import-export-all",
+        "source.ts punctuation"
       ],
       "settings": {
         "foreground": "--color-foreground"
@@ -1734,7 +1744,8 @@
       "scope": [
         "string.regexp.ts",
         "string.regexp.ts constant",
-        "string.regexp.ts keyword"
+        "string.regexp.ts keyword",
+        "string.regexp.ts punctuation.definition.string"
       ],
       "settings": {
         "foreground": "--color-javascript-regexp"
@@ -1752,6 +1763,13 @@
       "scope": "source.ts entity.name.function",
       "settings": {
         "foreground": "--color-function-declaration"
+      }
+    },
+    {
+      "name": "TYPESCRIPT strings",
+      "scope": "source.ts punctuation.definition.string",
+      "settings": {
+        "foreground": "--color-string"
       }
     },
     
