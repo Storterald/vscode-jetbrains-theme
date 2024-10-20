@@ -1936,6 +1936,7 @@
     "class.typeHint:python": "--color-foreground",
     "enum.typeHint:python": "--color-foreground",
     "class.builtin:python": "--color-python-builtin",
+    "enumMember": "--color-foreground",
 
     // #
     // #               TYPESCRIPT
