@@ -1,0 +1,86 @@
+{
+  "fonts": [
+    {
+      "id": "jetbrains-new-ui-product-icons",
+      "src": [
+        {
+          "path": "./product-icons.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "account": {
+      "fontCharacter": "\\E000"
+    },
+    "case-sensitive": {
+      "fontCharacter": "\\E001"
+    },
+    "chevron-down": {
+      "fontCharacter": "\\E002"
+    },
+    "chevron-left": {
+      "fontCharacter": "\\E003"
+    },
+    "chevron-right": {
+      "fontCharacter": "\\E004"
+    },
+    "chevron-up": {
+      "fontCharacter": "\\E005"
+    },
+    "collapse-all": {
+      "fontCharacter": "\\E006"
+    },
+    "files": {
+      "fontCharacter": "\\E007"
+    },
+    "gear": {
+      "fontCharacter": "\\E008"
+    },
+    "more": {
+      "fontCharacter": "\\E009"
+    },
+    "new-file": {
+      "fontCharacter": "\\E00A"
+    },
+    "new-folder": {
+      "fontCharacter": "\\E00B"
+    },
+    "play": {
+      "fontCharacter": "\\E00C"
+    },
+    "preserve-case": {
+      "fontCharacter": "\\E00D"
+    },
+    "refresh": {
+      "fontCharacter": "\\E00E"
+    },
+    "regex": {
+      "fontCharacter": "\\E00F"
+    },
+    "search": {
+      "fontCharacter": "\\E010"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\E011"
+    },
+    "source-control": {
+      "fontCharacter": "\\E012"
+    },
+    "split-horizontal": {
+      "fontCharacter": "\\E013"
+    },
+    "split-vertical": {
+      "fontCharacter": "\\E014"
+    },
+    "tools": {
+      "fontCharacter": "\\E015"
+    },
+    "whole-word": {
+      "fontCharacter": "\\E016"
+    }
+  }
+}

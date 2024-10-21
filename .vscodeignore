@@ -20,9 +20,9 @@ tsconfig.json
 .version-getter/**
 build.py
 
+# Product icons
+resources/product/**
+icons/product-icons-test.html
+
 # Other
 .tests/**
-
-# TODO Temp stuff
-vsthemes/**
-fonts/**
