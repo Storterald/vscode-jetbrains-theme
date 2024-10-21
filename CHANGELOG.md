@@ -1,5 +1,18 @@
 # Changelog
 
+## [Release 1.6.0](https://github.com/Storterald/Jetbrains-Themes/releases/tag/1.6.0)
+
+### New Features
+ - Added `Product Icons` theme
+
+### Changes
+ - `build.py` improvements
+
+### Bug Fixes
+ - Fixes for **javascript** and **typescript**
+ - Python `enumMember` fix
+ - removed useless compiler call in `build.py`
+
 ## [Release 1.5.1](https://github.com/Storterald/Jetbrains-Themes/releases/tag/1.5.1)
 
 ### Changes
