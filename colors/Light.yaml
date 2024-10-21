@@ -63,7 +63,7 @@ language-defaults:
 
   string:
     escape-sequence:
-        --color-string-invalid-escape: "#067d17"
+      --color-string-invalid-escape: "#067d17"
     --color-string: "#067d17"
 
 diff-&-merge:
@@ -75,7 +75,7 @@ diff-&-merge:
 C/C++:
   braces-and-operators:
     --color-cpp-operator-overload: "#008080"
-  
+
   --color-cpp-type: "#008080"
   --color-cpp-macro: "#1f542e"
   --fontstyle-cpp-macro: "bold"
@@ -100,7 +100,7 @@ HTML:
 Javascript:
   identifiers:
     --color-javascript-local-variable: "#2a8c7c"
-  
+
   --color-javascript-component: "#ad6339"
   --color-javascript-regexp: "#264eff"
 
@@ -109,13 +109,12 @@ Python:
   --color-python-keyword-argument: "#660099"
   parameters:
     --color-python-self: "#94558d"
-  
+
   special-names:
     --color-python-magic-variable: "#b200b2"
-  
+
   strings:
     --color-python-binary: "#8a822d"
-  
 
 Regex:
   --color-regex-escaped: "#174be6"

@@ -7,6 +7,8 @@ import shutil
 import subprocess
 
 VERSION_DIR: str = "./.version-getter/"
+PACKAGE: str = ""
+PACKAGE_LOCK: str = ""
 
 # Load mappings
 with open("./colors/Dark.yaml", 'r', encoding="utf-8") as f:
@@ -52,43 +54,51 @@ def fixFiles(DIR: str, EXT: str, MAP: dict) -> None:
         with open(f"{DIR}/{MAP["--name"]}{EXT}", 'w', encoding="utf-8") as f:
                 f.write(themeData)
 
+def fixPackages() -> None:
+        # Update global variables for restorePackages()
+        global PACKAGE, PACKAGE_LOCK
+
+        # Replace --version in package.json
+        with open("package.json", 'r', encoding="utf-8") as f:
+                PACKAGE = f.read()
+        with open("package.json", 'w', encoding="utf-8") as f:
+                fixedPackage: str = PACKAGE.replace("--version", VERSION)
+                f.write(fixedPackage)
+
+        # Replace --version in package-lock.json
+        if (os.path.exists("package-lock.json")):
+                with open("package-lock.json", 'r', encoding="utf-8") as f:
+                        PACKAGE_LOCK = f.read()
+                with open("package-lock.json", 'w', encoding="utf-8") as f:
+                        fixedPackageLock: str = PACKAGE_LOCK.replace("--version", VERSION)
+                        f.write(fixedPackageLock)
+
+def restorePackages() -> None:
+        with open("package.json", 'w', encoding="utf-8") as f:
+                f.write(PACKAGE)
+        if (os.path.exists("package-lock.json")):
+                with open("package-lock.json", 'w', encoding="utf-8") as f:
+                        f.write(PACKAGE_LOCK)
+
 if __name__ == "__main__":
         VERSION: str = getVersion()
 
         for flag in sys.argv[1:]:
                 match flag:
                         case "--vscode":
+                                # Clear old themes
+                                if (os.path.exists("./themes/")):
+                                        shutil.rmtree("./themes/")
                                 copyTemplate("./themes", ".json", ".json")
+
                                 fixFiles("./themes", ".json", DARK_MAP)
                                 fixFiles("./themes", ".json", LIGHT_MAP)
-
-                                # Replace --version in package.json
-                                with open("package.json", 'r', encoding="utf-8") as f:
-                                        PACKAGE: str = f.read()
-                                with open("package.json", 'w', encoding="utf-8") as f:
-                                        fixedPackage: str = PACKAGE.replace("--version", VERSION)
-                                        f.write(fixedPackage)
-
-                                # Replace --version in package-lock.json
-                                if (os.path.exists("package-lock.json")):
-                                        with open("package-lock.json", 'r', encoding="utf-8") as f:
-                                                PACKAGE_LOCK: str = f.read()
-                                        with open("package-lock.json", 'w', encoding="utf-8") as f:
-                                                fixedPackageLock: str = PACKAGE_LOCK.replace("--version", VERSION)
-                                                f.write(fixedPackageLock)
-
+                                fixPackages()
+                                
                                 subprocess.run(["npx", "tsc"], shell=True)
                                 subprocess.run(["vsce", "package"], shell=True)
 
-                                # Clear generated files
-                                shutil.rmtree("./themes/")
-
-                                # Reset package.json and package-lock.json
-                                with open("package.json", 'w', encoding="utf-8") as f:
-                                        f.write(PACKAGE)
-                                if (os.path.exists("package-lock.json")):
-                                        with open("package-lock.json", 'w', encoding="utf-8") as f:
-                                                f.write(PACKAGE_LOCK)
+                                restorePackages()
                         case "--vs":
                                 copyTemplate("./vsthemes", ".xml", ".vstheme")
                                 fixFiles("./vsthemes", ".vstheme")

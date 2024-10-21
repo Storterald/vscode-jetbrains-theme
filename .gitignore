@@ -10,10 +10,7 @@ node_modules/
 
 # Build Files
 .version-getter/
-tsbuild/
+build/
 
 # Other
 .tests/
-
-# TODO Temp stuff
-fonts/

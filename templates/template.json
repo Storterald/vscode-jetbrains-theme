@@ -726,15 +726,8 @@
     // #
     // #               SCM
     // #
-    "scm.historyItemAdditionsForeground": "--color-foreground",
-    "scm.historyItemDeletionsForeground": "--color-foreground",
-    "scm.historyItemStatisticsBorder": "--color-background-main",
-    "scm.historyItemSelectedStatisticsBorder": "--color-background-main",
     "scmGraph.historyItemHoverAdditionsForeground": "--color-foreground",
     "scmGraph.historyItemHoverDeletionsForeground": "--color-foreground",
-    "scmGraph.historyItemGroupLocal": "#3b4496", // unknown
-    "scmGraph.historyItemGroupRemote": "#3f307b", // unknown
-    "scmGraph.historyItemGroupBase": "#af5832", // unknown
     "scmGraph.historyItemHoverLabelForeground": "--color-foreground",
     "scmGraph.foreground1": "--color-foreground",
     "scmGraph.foreground2": "--color-foreground",
@@ -915,10 +908,10 @@
     "extensionButton.prominentBackground": "--color-accent",
     "extensionButton.prominentForeground": "--color-foreground",
     "extensionButton.prominentHoverBackground": "--color-hovered",
-    "extensionIcon.starForeground": "--color-foreground",
-    "extensionIcon.verifiedForeground": "--color-foreground",
-    "extensionIcon.preReleaseForeground": "--color-color",
-    "extensionIcon.sponsorForeground": "--color-foreground",
+    "extensionIcon.starForeground": "--color-foregroundcc",
+    "extensionIcon.verifiedForeground": "--color-foregroundcc",
+    "extensionIcon.preReleaseForeground": "--color-colorcc",
+    "extensionIcon.sponsorForeground": "--color-foregroundcc",
 
     // #
     // #               NOTEBOOK
@@ -1965,7 +1958,7 @@
     "class.typeHint:python": "--color-foreground",
     "enum.typeHint:python": "--color-foreground",
     "class.builtin:python": "--color-python-builtin",
-    "enumMember": "--color-foreground",
+    "enumMember:python": "--color-foreground",
 
     // #
     // #               TYPESCRIPT
