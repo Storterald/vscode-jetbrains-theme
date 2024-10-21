@@ -95,7 +95,6 @@ if __name__ == "__main__":
                                 fixFiles("./themes", ".json", LIGHT_MAP)
                                 fixPackages()
                                 
-                                subprocess.run(["npx", "tsc"], shell=True)
                                 subprocess.run(["vsce", "package"], shell=True)
 
                                 restorePackages()
