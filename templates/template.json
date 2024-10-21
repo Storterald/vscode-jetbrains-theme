@@ -1409,6 +1409,7 @@
       "scope": [
         "source.js storage.type.function.arrow",
         "source.js punctuation.definition.template-expression",
+        "source.js constant.language.import-export-all",
         "source.js punctuation"
       ],
       "settings": {
@@ -1460,6 +1461,20 @@
       "scope": "source.js punctuation.definition.string",
       "settings": {
         "foreground": "--color-string"
+      }
+    },
+    {
+      "name": "JAVASCRIPT comments",
+      "scope": "source.js punctuation.definition.comment",
+      "settings": {
+        "foreground": "--color-comment"
+      }
+    },
+    {
+      "name": "JAVASCRIPT docs",
+      "scope": "comment.block.documentation.js punctuation.definition.comment",
+      "settings": {
+        "foreground": "--color-doc-text"
       }
     },
     
@@ -1770,6 +1785,20 @@
       "scope": "source.ts punctuation.definition.string",
       "settings": {
         "foreground": "--color-string"
+      }
+    },
+    {
+      "name": "TYPESCRIPT comments",
+      "scope": "source.ts punctuation.definition.comment",
+      "settings": {
+        "foreground": "--color-comment"
+      }
+    },
+    {
+      "name": "TYPESCRIPT docs",
+      "scope": "comment.block.documentation.ts punctuation.definition.comment",
+      "settings": {
+        "foreground": "--color-doc-text"
       }
     },
     
