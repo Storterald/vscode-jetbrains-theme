@@ -16,71 +16,131 @@
     "account": {
       "fontCharacter": "\\E000"
     },
-    "case-sensitive": {
+    "add": {
       "fontCharacter": "\\E001"
     },
-    "chevron-down": {
+    "alert": {
       "fontCharacter": "\\E002"
     },
-    "chevron-left": {
+    "arrow-both": {
       "fontCharacter": "\\E003"
     },
-    "chevron-right": {
+    "arrow-down": {
       "fontCharacter": "\\E004"
     },
-    "chevron-up": {
+    "arrow-left": {
       "fontCharacter": "\\E005"
     },
-    "collapse-all": {
+    "arrow-right": {
       "fontCharacter": "\\E006"
     },
-    "files": {
+    "arrow-up": {
       "fontCharacter": "\\E007"
     },
-    "gear": {
+    "case-sensitive": {
       "fontCharacter": "\\E008"
     },
-    "more": {
+    "check": {
       "fontCharacter": "\\E009"
     },
-    "new-file": {
+    "chevron-down": {
       "fontCharacter": "\\E00A"
     },
-    "new-folder": {
+    "chevron-left": {
       "fontCharacter": "\\E00B"
     },
-    "play": {
+    "chevron-right": {
       "fontCharacter": "\\E00C"
     },
-    "preserve-case": {
+    "chevron-up": {
       "fontCharacter": "\\E00D"
     },
-    "refresh": {
+    "collapse-all": {
       "fontCharacter": "\\E00E"
     },
-    "regex": {
+    "database": {
       "fontCharacter": "\\E00F"
     },
-    "search": {
+    "debug-alt-small": {
       "fontCharacter": "\\E010"
     },
-    "settings-gear": {
+    "debug-alt": {
       "fontCharacter": "\\E011"
     },
-    "source-control": {
+    "debug-ll": {
       "fontCharacter": "\\E012"
     },
-    "split-horizontal": {
+    "debug": {
       "fontCharacter": "\\E013"
     },
-    "split-vertical": {
+    "ellipsis": {
       "fontCharacter": "\\E014"
     },
-    "tools": {
+    "file-add": {
       "fontCharacter": "\\E015"
     },
-    "whole-word": {
+    "file-directory-create": {
       "fontCharacter": "\\E016"
+    },
+    "file": {
+      "fontCharacter": "\\E017"
+    },
+    "files": {
+      "fontCharacter": "\\E018"
+    },
+    "gear": {
+      "fontCharacter": "\\E019"
+    },
+    "more": {
+      "fontCharacter": "\\E01A"
+    },
+    "new-file": {
+      "fontCharacter": "\\E01B"
+    },
+    "new-folder": {
+      "fontCharacter": "\\E01C"
+    },
+    "pass-filled": {
+      "fontCharacter": "\\E01D"
+    },
+    "pass": {
+      "fontCharacter": "\\E01E"
+    },
+    "play": {
+      "fontCharacter": "\\E01F"
+    },
+    "preserve-case": {
+      "fontCharacter": "\\E020"
+    },
+    "refresh": {
+      "fontCharacter": "\\E021"
+    },
+    "regex": {
+      "fontCharacter": "\\E022"
+    },
+    "remove": {
+      "fontCharacter": "\\E023"
+    },
+    "search": {
+      "fontCharacter": "\\E024"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\E025"
+    },
+    "source-control": {
+      "fontCharacter": "\\E026"
+    },
+    "split-horizontal": {
+      "fontCharacter": "\\E027"
+    },
+    "split-vertical": {
+      "fontCharacter": "\\E028"
+    },
+    "tools": {
+      "fontCharacter": "\\E029"
+    },
+    "whole-word": {
+      "fontCharacter": "\\E02A"
     }
   }
 }
