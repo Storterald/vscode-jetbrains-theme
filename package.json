@@ -6,11 +6,11 @@
   "version": "--version",
   "publisher": "Storterald",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.0.0"
   },
   "main": "./build/extension.js",
   "scripts": {
-    "vscode:prepublish": "node ./src/createFontFiles.js && tsc -p ./"
+    "vscode:prepublish": "tsc -p ./"
   },
   "activationEvents": [
     "onCommand:workbench.action.selectTheme"
@@ -33,13 +33,6 @@
         "path": "./themes/Jetbrains New UI Light.json"
       }
     ],
-    "productIconThemes": [
-      {
-        "id": "jetbrains-new-ui-product-icons",
-        "label": "Jetbrains New UI Product Icons",
-        "path": "./icons/product-icon-theme.json"
-      }
-    ],
     "configurationDefaults": {
       "editor.lineHeight": 1.675,
       "workbench.tree.indent": 19,
@@ -57,12 +50,9 @@
   ],
   "devDependencies": {
     "@types/node": "^22.7.5",
-    "@types/vscode": "^1.70.0",
+    "@types/vscode": "^1.0.0",
     "esbuild": "^0.19.11",
-    "svg-path-properties": "^1.3.0",
-    "typescript": "^5.6.3",
-    "webfont": "^11.2.26",
-    "glob": "^11.0.0"
+    "typescript": "^5.6.3"
   },
   "repository": {
     "url": "https://github.com/Storterald/Jetbrains-Themes"
