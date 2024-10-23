@@ -6,6 +6,7 @@
     // #               GENERIC
     // # 
     "foreground": "#bcbec4",
+    "focusBorder": "#00000000",
     "disabledForeground": "#bcbec4",
     "errorForeground": "#c25460",
     "descriptionForeground": "#bcbec4",
@@ -320,7 +321,6 @@
     "editor.foreground": "#bcbec4",
     "editorWhitespace.foreground": "#00000000",
     "editorRuler.foreground": "#393b40",
-    "focusBorder": "#1e1f22",
     "progressBar.background": "#5182e4",
     "editorInfo.foreground": "#bcbec4",
     "editorHint.foreground": "#bcbec4",
@@ -443,6 +443,7 @@
     // # 
     "input.background": "#2b2d30",
     "input.foreground": "#bcbec4",
+    "input.border": "#4e5157",
     "inputOption.activeBorder": "#4e5157",
     "inputOption.hoverBackground": "#1e1f22",
     "inputOption.activeBackground": "#1e1f22",

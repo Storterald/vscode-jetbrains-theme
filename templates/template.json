@@ -6,6 +6,7 @@
     // #               GENERIC
     // # 
     "foreground": "--color-foreground",
+    "focusBorder": "#00000000",
     "disabledForeground": "--color-foreground",
     "errorForeground": "--color-error",
     "descriptionForeground": "--color-foreground",
@@ -320,7 +321,6 @@
     "editor.foreground": "--color-foreground",
     "editorWhitespace.foreground": "#00000000",
     "editorRuler.foreground": "--color-hard-wrap-guide",
-    "focusBorder": "--color-background-main",
     "progressBar.background": "--color-color",
     "editorInfo.foreground": "--color-foreground",
     "editorHint.foreground": "--color-foreground",
@@ -443,6 +443,7 @@
     // # 
     "input.background": "--color-background-secondary",
     "input.foreground": "--color-foreground",
+    "input.border": "--color-accent",
     "inputOption.activeBorder": "--color-accent",
     "inputOption.hoverBackground": "--color-background-main",
     "inputOption.activeBackground": "--color-background-main",
