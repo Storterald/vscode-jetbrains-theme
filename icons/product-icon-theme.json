@@ -73,74 +73,155 @@
     "debug": {
       "fontCharacter": "\\E013"
     },
-    "ellipsis": {
+    "discard": {
       "fontCharacter": "\\E014"
     },
-    "file-add": {
+    "ellipsis": {
       "fontCharacter": "\\E015"
     },
-    "file-directory-create": {
+    "error": {
       "fontCharacter": "\\E016"
     },
-    "file": {
+    "extensions": {
       "fontCharacter": "\\E017"
     },
-    "files": {
+    "file-add": {
       "fontCharacter": "\\E018"
     },
-    "gear": {
+    "file-directory-create": {
       "fontCharacter": "\\E019"
     },
-    "more": {
+    "file": {
       "fontCharacter": "\\E01A"
     },
-    "new-file": {
+    "files": {
       "fontCharacter": "\\E01B"
     },
-    "new-folder": {
+    "gear": {
       "fontCharacter": "\\E01C"
     },
-    "pass-filled": {
+    "git-branch-create": {
       "fontCharacter": "\\E01D"
     },
-    "pass": {
+    "git-branch-delete": {
       "fontCharacter": "\\E01E"
     },
-    "play": {
+    "git-branch": {
       "fontCharacter": "\\E01F"
     },
-    "preserve-case": {
+    "git-commit": {
       "fontCharacter": "\\E020"
     },
-    "refresh": {
+    "git-compare": {
       "fontCharacter": "\\E021"
     },
-    "regex": {
+    "git-fetch": {
       "fontCharacter": "\\E022"
     },
-    "remove": {
+    "git-merge": {
       "fontCharacter": "\\E023"
     },
-    "search": {
+    "git-pull-request": {
       "fontCharacter": "\\E024"
     },
-    "settings-gear": {
+    "history": {
       "fontCharacter": "\\E025"
     },
-    "source-control": {
+    "keyboard": {
       "fontCharacter": "\\E026"
     },
-    "split-horizontal": {
+    "layout": {
       "fontCharacter": "\\E027"
     },
-    "split-vertical": {
+    "library": {
       "fontCharacter": "\\E028"
     },
-    "tools": {
+    "list-tree": {
       "fontCharacter": "\\E029"
     },
-    "whole-word": {
+    "lock": {
       "fontCharacter": "\\E02A"
+    },
+    "merge": {
+      "fontCharacter": "\\E02B"
+    },
+    "more": {
+      "fontCharacter": "\\E02C"
+    },
+    "new-file": {
+      "fontCharacter": "\\E02D"
+    },
+    "new-folder": {
+      "fontCharacter": "\\E02E"
+    },
+    "pass-filled": {
+      "fontCharacter": "\\E02F"
+    },
+    "pass": {
+      "fontCharacter": "\\E030"
+    },
+    "pencil": {
+      "fontCharacter": "\\E031"
+    },
+    "play": {
+      "fontCharacter": "\\E032"
+    },
+    "preserve-case": {
+      "fontCharacter": "\\E033"
+    },
+    "record-keys": {
+      "fontCharacter": "\\E034"
+    },
+    "refresh": {
+      "fontCharacter": "\\E035"
+    },
+    "regex": {
+      "fontCharacter": "\\E036"
+    },
+    "remove": {
+      "fontCharacter": "\\E037"
+    },
+    "search": {
+      "fontCharacter": "\\E038"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\E039"
+    },
+    "source-control": {
+      "fontCharacter": "\\E03A"
+    },
+    "split-horizontal": {
+      "fontCharacter": "\\E03B"
+    },
+    "split-vertical": {
+      "fontCharacter": "\\E03C"
+    },
+    "tools": {
+      "fontCharacter": "\\E03D"
+    },
+    "trash": {
+      "fontCharacter": "\\E03E"
+    },
+    "trashcan": {
+      "fontCharacter": "\\E03F"
+    },
+    "type-hierarchy-sub": {
+      "fontCharacter": "\\E040"
+    },
+    "type-hierarchy-super": {
+      "fontCharacter": "\\E041"
+    },
+    "type-hierarchy": {
+      "fontCharacter": "\\E042"
+    },
+    "unlock": {
+      "fontCharacter": "\\E043"
+    },
+    "warning": {
+      "fontCharacter": "\\E044"
+    },
+    "whole-word": {
+      "fontCharacter": "\\E045"
     }
   }
 }
