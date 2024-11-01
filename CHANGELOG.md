@@ -3,7 +3,8 @@
 ## [Release 1.7.0](https://github.com/Storterald/Jetbrains-Themes/releases/tag/1.7.0)
 
 ### Changes
- - Moved `Product Icons` to its own extension [`storterald.build-and-run`](https://github.com/Storterald/Jetbrains-Product-Icons)
+ - Moved `Product Icons` to its own extension [`storterald.jetbrains-product-icons`](https://github.com/Storterald/Jetbrains-Product-Icons)
+ - New icon.png
 
 ### Bug Fixes
  - `Python` builtin variable fix
