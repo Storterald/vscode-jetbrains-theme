@@ -1165,7 +1165,7 @@
       "name": "ASM keywords",
       "scope": "source.asm variable.parameter.label",
       "settings": {
-        "foreground": "--color-keyword"
+        "foreground": "--color-foreground"
       }
     },
     
@@ -1948,14 +1948,16 @@
     // #               PYTHON
     // # 
     "function.builtin:python": "--color-python-builtin",
-    "builtinConstant:python": "--color-keyword",
     "class.decorator:python": "--color-metadata",
     "function.decorator:python": "--color-metadata",
     "magicFunction.declaration:python": "--color-python-magic-variable",
     "selfParameter:python": "--color-python-self",
     "function.declaration:python": "--color-function-declaration",
     "method.declaration:python": "--color-function-declaration",
+    "builtinConstant.builtin:python": "--color-keyword",
+    "variable.builtin:python": "--color-python-magic-variable",
     "variable:python": "--color-foreground",
+    "builtinConstant:python": "--color-keyword",
     "class.typeHint:python": "--color-foreground",
     "enum.typeHint:python": "--color-foreground",
     "class.builtin:python": "--color-python-builtin",

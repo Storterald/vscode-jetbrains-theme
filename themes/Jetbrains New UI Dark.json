@@ -1165,7 +1165,7 @@
       "name": "ASM keywords",
       "scope": "source.asm variable.parameter.label",
       "settings": {
-        "foreground": "#cf8e6d"
+        "foreground": "#bcbec4"
       }
     },
     
@@ -1948,14 +1948,16 @@
     // #               PYTHON
     // # 
     "function.builtin:python": "#8888c6",
-    "builtinConstant:python": "#cf8e6d",
     "class.decorator:python": "#b3ae60",
     "function.decorator:python": "#b3ae60",
     "magicFunction.declaration:python": "#b200b2",
     "selfParameter:python": "#94558d",
     "function.declaration:python": "#56a8f5",
     "method.declaration:python": "#56a8f5",
+    "builtinConstant.builtin:python": "#cf8e6d",
+    "variable.builtin:python": "#b200b2",
     "variable:python": "#bcbec4",
+    "builtinConstant:python": "#cf8e6d",
     "class.typeHint:python": "#bcbec4",
     "enum.typeHint:python": "#bcbec4",
     "class.builtin:python": "#8888c6",
