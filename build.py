@@ -83,30 +83,20 @@ def restorePackages() -> None:
 if __name__ == "__main__":
         VERSION: str = getVersion()
 
+        # Clear old themes
+        if (os.path.exists("./themes/")):
+                shutil.rmtree("./themes/")
+        copyTemplate("./themes", ".json", ".json")
+
+        fixFiles("./themes", ".json", DARK_MAP)
+        fixFiles("./themes", ".json", LIGHT_MAP)
+        fixPackages()
+        
+        subprocess.run(["vsce", "package"], shell=True)
+
+        restorePackages()
+
         for flag in sys.argv[1:]:
                 match flag:
-                        case "--vscode":
-                                # Clear old themes
-                                if (os.path.exists("./themes/")):
-                                        shutil.rmtree("./themes/")
-                                copyTemplate("./themes", ".json", ".json")
-
-                                fixFiles("./themes", ".json", DARK_MAP)
-                                fixFiles("./themes", ".json", LIGHT_MAP)
-                                fixPackages()
-                                
-                                subprocess.run(["vsce", "package"], shell=True)
-
-                                restorePackages()
-                        case "--vs":
-                                copyTemplate("./vsthemes", ".xml", ".vstheme")
-                                fixFiles("./vsthemes", ".vstheme")
-
-                                # TODO subprocess.run(["dotnet", "build"], shell=True)
-
-                                shutil.rmtree("./vsthemes/")
-                        case "--install-vscode":
+                        case "--install":
                                 subprocess.run(["code", "--install-extension", f"jetbrains-themes-{VERSION}.vsix"], shell=True)
-                        case "--install-vs":
-                                # TODO subprocess.run(["code", "--install-extension", f"jetbrains-themes-{VERSION}.vsix"], shell=True)
-                                ""
