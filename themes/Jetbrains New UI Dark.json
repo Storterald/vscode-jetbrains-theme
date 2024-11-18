@@ -315,6 +315,12 @@
     "terminalStickyScrollHover.background": "#2b2d30",
 
     // #
+    // #               WIDGET
+    // # 
+    "widget.border": "#393b40",
+    "widget.shadow": "#00000000",
+
+    // #
     // #               EDITOR
     // # 
     "editor.background": "#1e1f22",
@@ -330,7 +336,6 @@
     "editor.snippetTabstopHighlightBackground": "#4e5157",
     "editor.snippetTabstopHighlightBorder": "#4e5157",
     "editor.snippetFinalTabstopHighlightBorder": "#1e1f22",
-    "widget.shadow": "#00000000",
     "toolbar.hoverBackground": "#1e1f22",
     "toolbar.activeBackground": "#1e1f22",
     "actionBar.toggledBackground": "#2b2d30",

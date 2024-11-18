@@ -315,6 +315,12 @@
     "terminalStickyScrollHover.background": "--color-background-secondary",
 
     // #
+    // #               WIDGET
+    // # 
+    "widget.border": "--color-hard-wrap-guide",
+    "widget.shadow": "#00000000",
+
+    // #
     // #               EDITOR
     // # 
     "editor.background": "--color-background-main",
@@ -330,7 +336,6 @@
     "editor.snippetTabstopHighlightBackground": "--color-accent",
     "editor.snippetTabstopHighlightBorder": "--color-accent",
     "editor.snippetFinalTabstopHighlightBorder": "--color-background-main",
-    "widget.shadow": "#00000000",
     "toolbar.hoverBackground": "--color-background-main",
     "toolbar.activeBackground": "--color-background-main",
     "actionBar.toggledBackground": "--color-background-secondary",
