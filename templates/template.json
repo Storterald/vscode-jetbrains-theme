@@ -93,7 +93,7 @@
     "menu.selectionForeground": "--color-foreground",
     "menu.selectionBackground": "--color-selected",
     "menubar.selectionForeground": "--color-foreground",
-    "menubar.selectionBackground": "--color-selected",
+    "menubar.selectionBackground": "--color-hovered",
     "editorSuggestWidget.selectedForeground": "--color-foreground",
     "editorSuggestWidget.selectedBackground": "--color-selectedcc",
     "tab.selectedBackground": "--color-selected",
@@ -1221,19 +1221,24 @@
     },
     
     // #
-    // #               C++
+    // #               C/C++
     // # 
     {
-      "name": "C++ properties",
-      "scope": "source.cpp variable.other.property",
+      "name": "C/C++ properties",
+      "scope": [
+        "source.c variable.other.property",
+        "source.cpp variable.other.property"
+      ],
       "settings": {
         "foreground": "--color-cpp-struct-field"
       }
     },
     {
-      "name": "C++ preprocessors",
+      "name": "C/C++ preprocessors",
       "scope": [
+        "source.c keyword.directive.preprocessor",
         "source.cpp keyword.directive.preprocessor",
+        "source.c keyword.control.directive",
         "source.cpp keyword.control.directive"
       ],
       "settings": {
@@ -1241,8 +1246,11 @@
       }
     },
     {
-      "name": "C++ macros",
-      "scope": "source.cpp entity.name.function.preprocessor",
+      "name": "C/C++ macros",
+      "scope": [
+        "source.c entity.name.function.preprocessor",
+        "source.cpp entity.name.function.preprocessor"
+      ],
       "settings": {
         "foreground": "--color-cpp-macro",
         "fontStyle": "--fontstyle-cpp-macro"
