@@ -1173,6 +1173,17 @@
         "foreground": "#000000"
       }
     },
+
+    // #
+    // #               AUTOHOTKEY
+    // # 
+    {
+      "name": "AHK Functions",
+      "scope": "source.ahk entity.name.function",
+      "settings": {
+        "foreground": "#00627a"
+      }
+    },
     
     // #
     // #               BATCH
@@ -1619,6 +1630,15 @@
         "foreground": "#8a822d"
       }
     },
+    {
+      "name": "PYTHON numbers",
+      "scope": [
+        "source.python storage.type.number"
+      ],
+      "settings": {
+        "foreground": "#1750eb"
+      }
+    },
     
     // #
     // #               QUTE
@@ -1927,6 +1947,13 @@
     "type:cmake": "#0033b3",
     "function:cmake": "#00627a",
     "enum:cmake": "#0033b3",
+
+    // #
+    // #               C
+    // # 
+    "type:c": "#008080",
+    "macro:c": "#1f542e",
+    "property:c": "#660e7a",
 
     // #
     // #               C++

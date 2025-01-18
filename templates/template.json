@@ -1173,6 +1173,17 @@
         "foreground": "--color-foreground"
       }
     },
+
+    // #
+    // #               AUTOHOTKEY
+    // # 
+    {
+      "name": "AHK Functions",
+      "scope": "source.ahk entity.name.function",
+      "settings": {
+        "foreground": "--color-function-declaration"
+      }
+    },
     
     // #
     // #               BATCH
@@ -1619,6 +1630,15 @@
         "foreground": "--color-python-binary"
       }
     },
+    {
+      "name": "PYTHON numbers",
+      "scope": [
+        "source.python storage.type.number"
+      ],
+      "settings": {
+        "foreground": "--color-numeric"
+      }
+    },
     
     // #
     // #               QUTE
@@ -1927,6 +1947,13 @@
     "type:cmake": "--color-keyword",
     "function:cmake": "--color-cmake-command",
     "enum:cmake": "--color-keyword",
+
+    // #
+    // #               C
+    // # 
+    "type:c": "--color-cpp-type",
+    "macro:c": "--color-cpp-macro",
+    "property:c": "--color-cpp-struct-field",
 
     // #
     // #               C++
