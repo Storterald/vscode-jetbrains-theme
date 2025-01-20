@@ -180,11 +180,11 @@
     // #               INLAY HINT
     // # 
     "editorInlayHint.foreground": "#7a7a7a",
-    "editorInlayHint.background": "#ededed",
+    "editorInlayHint.background": "#ffffff",
     "editorInlayHint.typeForeground": "#7a7a7a",
-    "editorInlayHint.typeBackground": "#ededed",
+    "editorInlayHint.typeBackground": "#ffffff",
     "editorInlayHint.parameterForeground": "#7a7a7a",
-    "editorInlayHint.parameterBackground": "#ededed",
+    "editorInlayHint.parameterBackground": "#ffffff",
 
     // #
     // #               HOVER WIDGET
@@ -1179,6 +1179,15 @@
       ],
       "settings": {
         "foreground": "#660e7a"
+      }
+    },
+    {
+      "name": "C/C++ keywords",
+      "scope": [
+        "source.c keyword.operator.sizeof"
+      ],
+      "settings": {
+        "foreground": "#0033b3"
       }
     },
     {

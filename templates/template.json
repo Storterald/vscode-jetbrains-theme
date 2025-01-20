@@ -1182,6 +1182,15 @@
       }
     },
     {
+      "name": "C/C++ keywords",
+      "scope": [
+        "source.c keyword.operator.sizeof"
+      ],
+      "settings": {
+        "foreground": "--color-keyword"
+      }
+    },
+    {
       "name": "C/C++ preprocessors",
       "scope": [
         "source.c keyword.directive.preprocessor",

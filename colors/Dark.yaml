@@ -55,7 +55,7 @@ language-defaults:
 
   inline-hints:
     --color-inline-hint-foreground: "#858a94"
-    --color-inline-hint-background: "#393b40"
+    --color-inline-hint-background: "#2b2d30"
 
   --color-keyword: "#cf8e6d"
   --color-metadata: "#b3ae60"
