@@ -134,7 +134,26 @@ XML:
 YAML:
   --color-yaml-anchor: "#e8bf6a"
 
-# Markdown Preview
+codicons:
+  --color-codicon-class: "#548af7"
+  --color-codicon-constant: "#c77d55"
+  --color-codicon-constructor: "#db5c5c"
+  --color-codicon-enum: "#548af7"
+  --color-codicon-field: "#a571e6"
+  --color-codicon-function: "#db5c5c"
+  --color-codicon-interface: "#57965c"
+  --color-codicon-method: "#db5c5c"
+  --color-codicon-module: "#b589ec"
+  --color-codicon-namespace: "#548af7"
+  --color-codicon-operator: "#548af7"
+  --color-codicon-property: "#b589ec"
+  --color-codicon-struct: "#b589ec"
+  # --color-codicon-value: "#c77d55"
+  --color-codicon-variable: "#c77d55"
+
+--color-list-selection: "#2e436e"
+--color-list-inactive-selection: "#43454a"
+
 --color-markdown-background-secondary: "#303135"
 --color-markdown-accent: "#485b84"
 

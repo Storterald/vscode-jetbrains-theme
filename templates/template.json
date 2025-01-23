@@ -231,9 +231,9 @@
     // #               LIST
     // # 
     "list.focusOutline": "--color-background-secondary",
-    "list.activeSelectionBackground": "--color-selected",
+    "list.activeSelectionBackground": "--color-list-selection",
     "list.activeSelectionForeground": "--color-foreground",
-    "list.inactiveSelectionBackground": "--color-accent",
+    "list.inactiveSelectionBackground": "--color-list-inactive-selection",
     "list.hoverBackground": "--color-background-secondary",
     "list.dropBackground": "--color-drop-background",
     "list.dropBetweenBackground": "--color-drop-background",
@@ -244,8 +244,8 @@
     "listFilterWidget.outline": "#FF0000", // unknown
     "listFilterWidget.noMatchesOutline": "--color-error",
     "listFilterWidget.shadow": "#00000000",
-    "list.filterMatchBackground": "--color-selected",
-    "list.filterMatchBorder": "--color-selected",
+    "list.filterMatchBackground": "--color-list-selection",
+    "list.filterMatchBorder": "--color-list-selection",
     "list.deemphasizedForeground": "--color-foreground",
     "editorActionList.foreground": "--color-foreground",
     "editorActionList.background": "--color-background-secondary",
@@ -261,11 +261,15 @@
     "dropdown.border": "--color-accent",
     "pickerGroup.foreground": "--color-foreground",
     "pickerGroup.border": "--color-accent",
+
+    // #
+    // #               QUICKINPUT
+    // # 
     "quickInput.foreground": "--color-foreground",
-    "quickInput.background": "--color-background-main",
+    "quickInput.background": "--color-background-secondary",
     "quickInputTitle.background": "--color-background-secondary",
     "quickInputList.focusForeground": "--color-foreground",
-    "quickInputList.focusBackground": "--color-background-secondary",
+    "quickInputList.focusBackground": "--color-list-selection",
 
     // #
     // #               EDITOR WIDGET
@@ -521,42 +525,45 @@
     "searchEditor.findMatchBorder": "--color-background-main",
 
     // #
-    // #               ICONS
+    // #               SYMBOL ICONS
     // # 
-    "symbolIcon.arrayForeground": "--color-foreground",
-    "symbolIcon.booleanForeground": "--color-foreground",
-    "symbolIcon.classForeground": "--color-foreground",
-    "symbolIcon.colorForeground": "--color-foreground",
-    "symbolIcon.constantForeground": "--color-foreground",
-    "symbolIcon.constructorForeground": "--color-foreground",
-    "symbolIcon.enumeratorForeground": "--color-foreground",
-    "symbolIcon.enumeratorMemberForeground": "--color-foreground",
-    "symbolIcon.eventForeground": "--color-foreground",
-    "symbolIcon.fieldForeground": "--color-foreground",
     "symbolIcon.fileForeground": "--color-foreground",
     "symbolIcon.folderForeground": "--color-foreground",
-    "symbolIcon.functionForeground": "--color-foreground",
+    "symbolIcon.arrayForeground": "--color-foreground",
+    "symbolIcon.booleanForeground": "--color-foreground",
+    "symbolIcon.classForeground": "--color-codicon-class",
+    "symbolIcon.colorForeground": "--color-foreground",
+    "symbolIcon.constantForeground": "--color-codicon-constant",
+    "symbolIcon.constructorForeground": "--color-codicon-constructor",
+    "symbolIcon.enumeratorForeground": "--color-codicon-enum",
+    "symbolIcon.enumeratorMemberForeground": "--color-foreground",
+    "symbolIcon.eventForeground": "--color-foreground",
+    "symbolIcon.fieldForeground": "--color-codicon-field",
+    "symbolIcon.functionForeground": "--color-codicon-function",
     "symbolIcon.interfaceForeground": "--color-foreground",
     "symbolIcon.keyForeground": "--color-foreground",
     "symbolIcon.keywordForeground": "--color-foreground",
-    "symbolIcon.methodForeground": "--color-foreground",
-    "symbolIcon.moduleForeground": "--color-foreground",
-    "symbolIcon.namespaceForeground": "--color-foreground",
+    "symbolIcon.methodForeground": "--color-codicon-interface",
+    "symbolIcon.moduleForeground": "--color-codicon-module",
+    "symbolIcon.namespaceForeground": "--color-codicon-namespace",
     "symbolIcon.nullForeground": "--color-foreground",
     "symbolIcon.numberForeground": "--color-foreground",
     "symbolIcon.objectForeground": "--color-foreground",
-    "symbolIcon.operatorForeground": "--color-foreground",
+    "symbolIcon.operatorForeground": "--color-codicon-operator",
     "symbolIcon.packageForeground": "--color-foreground",
-    "symbolIcon.propertyForeground": "--color-foreground",
+    "symbolIcon.propertyForeground": "--color-codicon-property",
     "symbolIcon.referenceForeground": "--color-foreground",
     "symbolIcon.snippetForeground": "--color-foreground",
     "symbolIcon.stringForeground": "--color-foreground",
-    "symbolIcon.structForeground": "--color-foreground",
+    "symbolIcon.structForeground": "--color-codicon-struct",
     "symbolIcon.textForeground": "--color-foreground",
     "symbolIcon.typeParameterForeground": "--color-foreground",
     "symbolIcon.unitForeground": "--color-foreground",
-    "symbolIcon.variableForeground": "--color-foreground",
-    "problemsInfoIcon.foreground": "--color-foreground",
+    "symbolIcon.variableForeground": "--color-codicon-variable",
+
+    // #
+    // #               ICONS
+    // # 
     "debugIcon.pauseForeground": "--color-foreground",
     "debugIcon.stopForeground": "--color-foreground",
     "debugIcon.disconnectForeground": "--color-foreground",
@@ -566,12 +573,13 @@
     "debugIcon.stepOutForeground": "--color-foreground",
     "debugIcon.continueForeground": "--color-foreground",
     "debugIcon.stepBackForeground": "--color-foreground",
-    "banner.iconForeground": "--color-foreground",
     "debugIcon.breakpointForeground": "--color-foreground",
     "debugIcon.breakpointDisabledForeground": "--color-foreground",
     "debugIcon.breakpointUnverifiedForeground": "--color-foreground",
     "debugIcon.breakpointCurrentStackframeForeground": "--color-foreground",
     "debugIcon.breakpointStackframeForeground": "--color-foreground",
+    "problemsInfoIcon.foreground": "--color-foreground",
+    "banner.iconForeground": "--color-foreground",
 
     // #
     // #               CURSORS

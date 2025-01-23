@@ -231,9 +231,9 @@
     // #               LIST
     // # 
     "list.focusOutline": "#2b2d30",
-    "list.activeSelectionBackground": "#214283",
+    "list.activeSelectionBackground": "#2e436e",
     "list.activeSelectionForeground": "#bcbec4",
-    "list.inactiveSelectionBackground": "#4e5157",
+    "list.inactiveSelectionBackground": "#43454a",
     "list.hoverBackground": "#2b2d30",
     "list.dropBackground": "#2d374d",
     "list.dropBetweenBackground": "#2d374d",
@@ -244,8 +244,8 @@
     "listFilterWidget.outline": "#FF0000", // unknown
     "listFilterWidget.noMatchesOutline": "#c25460",
     "listFilterWidget.shadow": "#00000000",
-    "list.filterMatchBackground": "#214283",
-    "list.filterMatchBorder": "#214283",
+    "list.filterMatchBackground": "#2e436e",
+    "list.filterMatchBorder": "#2e436e",
     "list.deemphasizedForeground": "#bcbec4",
     "editorActionList.foreground": "#bcbec4",
     "editorActionList.background": "#2b2d30",
@@ -261,11 +261,15 @@
     "dropdown.border": "#4e5157",
     "pickerGroup.foreground": "#bcbec4",
     "pickerGroup.border": "#4e5157",
+
+    // #
+    // #               QUICKINPUT
+    // # 
     "quickInput.foreground": "#bcbec4",
-    "quickInput.background": "#1e1f22",
+    "quickInput.background": "#2b2d30",
     "quickInputTitle.background": "#2b2d30",
     "quickInputList.focusForeground": "#bcbec4",
-    "quickInputList.focusBackground": "#2b2d30",
+    "quickInputList.focusBackground": "#2e436e",
 
     // #
     // #               EDITOR WIDGET
@@ -521,42 +525,45 @@
     "searchEditor.findMatchBorder": "#1e1f22",
 
     // #
-    // #               ICONS
+    // #               SYMBOL ICONS
     // # 
-    "symbolIcon.arrayForeground": "#bcbec4",
-    "symbolIcon.booleanForeground": "#bcbec4",
-    "symbolIcon.classForeground": "#bcbec4",
-    "symbolIcon.colorForeground": "#bcbec4",
-    "symbolIcon.constantForeground": "#bcbec4",
-    "symbolIcon.constructorForeground": "#bcbec4",
-    "symbolIcon.enumeratorForeground": "#bcbec4",
-    "symbolIcon.enumeratorMemberForeground": "#bcbec4",
-    "symbolIcon.eventForeground": "#bcbec4",
-    "symbolIcon.fieldForeground": "#bcbec4",
     "symbolIcon.fileForeground": "#bcbec4",
     "symbolIcon.folderForeground": "#bcbec4",
-    "symbolIcon.functionForeground": "#bcbec4",
+    "symbolIcon.arrayForeground": "#bcbec4",
+    "symbolIcon.booleanForeground": "#bcbec4",
+    "symbolIcon.classForeground": "#548af7",
+    "symbolIcon.colorForeground": "#bcbec4",
+    "symbolIcon.constantForeground": "#c77d55",
+    "symbolIcon.constructorForeground": "#db5c5c",
+    "symbolIcon.enumeratorForeground": "#548af7",
+    "symbolIcon.enumeratorMemberForeground": "#bcbec4",
+    "symbolIcon.eventForeground": "#bcbec4",
+    "symbolIcon.fieldForeground": "#a571e6",
+    "symbolIcon.functionForeground": "#db5c5c",
     "symbolIcon.interfaceForeground": "#bcbec4",
     "symbolIcon.keyForeground": "#bcbec4",
     "symbolIcon.keywordForeground": "#bcbec4",
-    "symbolIcon.methodForeground": "#bcbec4",
-    "symbolIcon.moduleForeground": "#bcbec4",
-    "symbolIcon.namespaceForeground": "#bcbec4",
+    "symbolIcon.methodForeground": "#57965c",
+    "symbolIcon.moduleForeground": "#b589ec",
+    "symbolIcon.namespaceForeground": "#548af7",
     "symbolIcon.nullForeground": "#bcbec4",
     "symbolIcon.numberForeground": "#bcbec4",
     "symbolIcon.objectForeground": "#bcbec4",
-    "symbolIcon.operatorForeground": "#bcbec4",
+    "symbolIcon.operatorForeground": "#548af7",
     "symbolIcon.packageForeground": "#bcbec4",
-    "symbolIcon.propertyForeground": "#bcbec4",
+    "symbolIcon.propertyForeground": "#b589ec",
     "symbolIcon.referenceForeground": "#bcbec4",
     "symbolIcon.snippetForeground": "#bcbec4",
     "symbolIcon.stringForeground": "#bcbec4",
-    "symbolIcon.structForeground": "#bcbec4",
+    "symbolIcon.structForeground": "#b589ec",
     "symbolIcon.textForeground": "#bcbec4",
     "symbolIcon.typeParameterForeground": "#bcbec4",
     "symbolIcon.unitForeground": "#bcbec4",
-    "symbolIcon.variableForeground": "#bcbec4",
-    "problemsInfoIcon.foreground": "#bcbec4",
+    "symbolIcon.variableForeground": "#c77d55",
+
+    // #
+    // #               ICONS
+    // # 
     "debugIcon.pauseForeground": "#bcbec4",
     "debugIcon.stopForeground": "#bcbec4",
     "debugIcon.disconnectForeground": "#bcbec4",
@@ -566,12 +573,13 @@
     "debugIcon.stepOutForeground": "#bcbec4",
     "debugIcon.continueForeground": "#bcbec4",
     "debugIcon.stepBackForeground": "#bcbec4",
-    "banner.iconForeground": "#bcbec4",
     "debugIcon.breakpointForeground": "#bcbec4",
     "debugIcon.breakpointDisabledForeground": "#bcbec4",
     "debugIcon.breakpointUnverifiedForeground": "#bcbec4",
     "debugIcon.breakpointCurrentStackframeForeground": "#bcbec4",
     "debugIcon.breakpointStackframeForeground": "#bcbec4",
+    "problemsInfoIcon.foreground": "#bcbec4",
+    "banner.iconForeground": "#bcbec4",
 
     // #
     // #               CURSORS
