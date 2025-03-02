@@ -221,8 +221,8 @@
     // #
     // #               TITLE BAR
     // # 
-    "titleBar.activeForeground": "#bcbec4",
-    "titleBar.inactiveForeground": "#bcbec4",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#ffffff",
     "titleBar.activeBackground": "#2b2d30",
     "titleBar.inactiveBackground": "#3c3f41",
     "titleBar.border": "#1e1f22",
@@ -536,13 +536,13 @@
     "symbolIcon.constantForeground": "#c77d55",
     "symbolIcon.constructorForeground": "#db5c5c",
     "symbolIcon.enumeratorForeground": "#548af7",
-    "symbolIcon.enumeratorMemberForeground": "#bcbec4",
+    "symbolIcon.enumeratorMemberForeground": "#c77d55",
     "symbolIcon.eventForeground": "#bcbec4",
     "symbolIcon.fieldForeground": "#a571e6",
     "symbolIcon.functionForeground": "#db5c5c",
-    "symbolIcon.interfaceForeground": "#bcbec4",
+    "symbolIcon.interfaceForeground": "#57965c",
     "symbolIcon.keyForeground": "#bcbec4",
-    "symbolIcon.keywordForeground": "#bcbec4",
+    "symbolIcon.keywordForeground": "#00000000",
     "symbolIcon.methodForeground": "#57965c",
     "symbolIcon.moduleForeground": "#b589ec",
     "symbolIcon.namespaceForeground": "#548af7",
@@ -553,11 +553,11 @@
     "symbolIcon.packageForeground": "#bcbec4",
     "symbolIcon.propertyForeground": "#b589ec",
     "symbolIcon.referenceForeground": "#bcbec4",
-    "symbolIcon.snippetForeground": "#bcbec4",
+    "symbolIcon.snippetForeground": "#00000000",
     "symbolIcon.stringForeground": "#bcbec4",
     "symbolIcon.structForeground": "#b589ec",
     "symbolIcon.textForeground": "#bcbec4",
-    "symbolIcon.typeParameterForeground": "#bcbec4",
+    "symbolIcon.typeParameterForeground": "#b589ec",
     "symbolIcon.unitForeground": "#bcbec4",
     "symbolIcon.variableForeground": "#c77d55",
 
@@ -1196,6 +1196,16 @@
       ],
       "settings": {
         "foreground": "#cf8e6d"
+      }
+    },
+    {
+      "name": "C/C++ text",
+      "scope": [
+        "source.c constant.character",
+        "source.cpp constant.character"
+      ],
+      "settings": {
+        "foreground": "#bcbec4"
       }
     },
     {

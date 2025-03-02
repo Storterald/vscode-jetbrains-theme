@@ -31,6 +31,7 @@ extension to have both **icon theme** and **product icon theme**.
  - `YAML`,
 
 ### From CLion:
+ - `C`
  - `C++`
  - `CMake`: requires [*josetr.cmake-language-support-vscode*](https://marketplace.visualstudio.com/items?itemName=josetr.cmake-language-support-vscode)
  - `Assembly x86`: requires [*maziac.asm-code-lens*](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens)

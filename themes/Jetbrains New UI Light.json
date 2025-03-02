@@ -536,13 +536,13 @@
     "symbolIcon.constantForeground": "#e66d17",
     "symbolIcon.constructorForeground": "#db3b4b",
     "symbolIcon.enumeratorForeground": "#3574f0",
-    "symbolIcon.enumeratorMemberForeground": "#000000",
+    "symbolIcon.enumeratorMemberForeground": "#e66d17",
     "symbolIcon.eventForeground": "#000000",
     "symbolIcon.fieldForeground": "#834df0",
     "symbolIcon.functionForeground": "#db3b4b",
-    "symbolIcon.interfaceForeground": "#000000",
+    "symbolIcon.interfaceForeground": "#208a3c",
     "symbolIcon.keyForeground": "#000000",
-    "symbolIcon.keywordForeground": "#000000",
+    "symbolIcon.keywordForeground": "#00000000",
     "symbolIcon.methodForeground": "#208a3c",
     "symbolIcon.moduleForeground": "#834df0",
     "symbolIcon.namespaceForeground": "#3574f0",
@@ -553,11 +553,11 @@
     "symbolIcon.packageForeground": "#000000",
     "symbolIcon.propertyForeground": "#834df0",
     "symbolIcon.referenceForeground": "#000000",
-    "symbolIcon.snippetForeground": "#000000",
+    "symbolIcon.snippetForeground": "#00000000",
     "symbolIcon.stringForeground": "#000000",
     "symbolIcon.structForeground": "#834df0",
     "symbolIcon.textForeground": "#000000",
-    "symbolIcon.typeParameterForeground": "#000000",
+    "symbolIcon.typeParameterForeground": "#834df0",
     "symbolIcon.unitForeground": "#000000",
     "symbolIcon.variableForeground": "#e66d17",
 
@@ -1196,6 +1196,16 @@
       ],
       "settings": {
         "foreground": "#0033b3"
+      }
+    },
+    {
+      "name": "C/C++ text",
+      "scope": [
+        "source.c constant.character",
+        "source.cpp constant.character"
+      ],
+      "settings": {
+        "foreground": "#000000"
       }
     },
     {

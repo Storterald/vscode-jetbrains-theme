@@ -221,8 +221,8 @@
     // #
     // #               TITLE BAR
     // # 
-    "titleBar.activeForeground": "--color-foreground",
-    "titleBar.inactiveForeground": "--color-foreground",
+    "titleBar.activeForeground": "--color-titlebar-foreground",
+    "titleBar.inactiveForeground": "--color-titlebar-foreground",
     "titleBar.activeBackground": "--color-titlebar-background",
     "titleBar.inactiveBackground": "--color-titlebar-inactive",
     "titleBar.border": "--color-titlebar-border",
@@ -536,13 +536,13 @@
     "symbolIcon.constantForeground": "--color-codicon-constant",
     "symbolIcon.constructorForeground": "--color-codicon-constructor",
     "symbolIcon.enumeratorForeground": "--color-codicon-enum",
-    "symbolIcon.enumeratorMemberForeground": "--color-foreground",
+    "symbolIcon.enumeratorMemberForeground": "--color-codicon-enum-member",
     "symbolIcon.eventForeground": "--color-foreground",
     "symbolIcon.fieldForeground": "--color-codicon-field",
     "symbolIcon.functionForeground": "--color-codicon-function",
-    "symbolIcon.interfaceForeground": "--color-foreground",
+    "symbolIcon.interfaceForeground": "--color-codicon-interface",
     "symbolIcon.keyForeground": "--color-foreground",
-    "symbolIcon.keywordForeground": "--color-foreground",
+    "symbolIcon.keywordForeground": "#00000000",
     "symbolIcon.methodForeground": "--color-codicon-interface",
     "symbolIcon.moduleForeground": "--color-codicon-module",
     "symbolIcon.namespaceForeground": "--color-codicon-namespace",
@@ -553,11 +553,11 @@
     "symbolIcon.packageForeground": "--color-foreground",
     "symbolIcon.propertyForeground": "--color-codicon-property",
     "symbolIcon.referenceForeground": "--color-foreground",
-    "symbolIcon.snippetForeground": "--color-foreground",
+    "symbolIcon.snippetForeground": "#00000000",
     "symbolIcon.stringForeground": "--color-foreground",
     "symbolIcon.structForeground": "--color-codicon-struct",
     "symbolIcon.textForeground": "--color-foreground",
-    "symbolIcon.typeParameterForeground": "--color-foreground",
+    "symbolIcon.typeParameterForeground": "--color-codicon-type",
     "symbolIcon.unitForeground": "--color-foreground",
     "symbolIcon.variableForeground": "--color-codicon-variable",
 
@@ -1196,6 +1196,16 @@
       ],
       "settings": {
         "foreground": "--color-keyword"
+      }
+    },
+    {
+      "name": "C/C++ text",
+      "scope": [
+        "source.c constant.character",
+        "source.cpp constant.character"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
       }
     },
     {

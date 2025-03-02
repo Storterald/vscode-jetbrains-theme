@@ -138,6 +138,7 @@ codicons:
   --color-codicon-constant: "#e66d17"
   --color-codicon-constructor: "#db3b4b"
   --color-codicon-enum: "#3574f0"
+  --color-codicon-enum-member: "#e66d17"
   --color-codicon-field: "#834df0"
   --color-codicon-function: "#db3b4b"
   --color-codicon-interface: "#208a3c"
@@ -147,8 +148,10 @@ codicons:
   --color-codicon-operator: "#834df0"
   --color-codicon-property: "#834df0"
   --color-codicon-struct: "#834df0"
-  # --color-codicon-value: "#e66d17"
+  --color-codicon-type: "#834df0"
   --color-codicon-variable: "#e66d17"
+  # --color-codicon-value: "#e66d17"
+  # --color-codicon-enum-member: "#e66d17"
 
 --color-list-selection: "#d4e2ff"
 --color-list-inactive-selection: "#dfe1e5"
@@ -157,6 +160,7 @@ codicons:
 --color-markdown-accent: "#f5f7f9"
 
 --color-siderbar-border: "#ebecf0"
+--color-titlebar-foreground: "#000000"
 --color-titlebar-background: "#f7f8fa"
 --color-titlebar-inactive: "#ebecf0"
 --color-titlebar-border: "#ebecf0"
