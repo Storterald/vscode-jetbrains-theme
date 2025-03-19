@@ -5,8 +5,8 @@ import stat
 import yaml
 import shutil
 import subprocess
+from infos import *
 
-VERSION_DIR: str = "./.version-getter/"
 PACKAGE: str = ""
 PACKAGE_LOCK: str = ""
 
@@ -19,7 +19,7 @@ with open("./colors/Light.yaml", 'r', encoding="utf-8") as f:
 def getVersion() -> str:
         if not os.path.exists(VERSION_DIR):
                 os.mkdir(VERSION_DIR)
-                subprocess.run(["git", "clone", "--depth", "1", "--no-checkout", "https://github.com/Storterald/Jetbrains-Themes", "."], cwd=VERSION_DIR, shell=True)
+                subprocess.run(["git", "clone", "--depth", "1", "--no-checkout", GITHUB_REPO, "."], cwd=VERSION_DIR, shell=True)
                 subprocess.run(["git", "fetch", "--tags", "--depth", "1"], cwd=VERSION_DIR, shell=True)
         else:
                 subprocess.run(["git", "pull", "--depth", "1"], cwd=VERSION_DIR, shell=True)
@@ -99,4 +99,4 @@ if __name__ == "__main__":
         for flag in sys.argv[1:]:
                 match flag:
                         case "--install":
-                                subprocess.run(["code", "--install-extension", f"jetbrains-themes-{VERSION}.vsix"], shell=True)
+                                subprocess.run(["code", "--install-extension", f"{NAME}-{VERSION}.vsix"], shell=True)
