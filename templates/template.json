@@ -1395,7 +1395,10 @@
     },
     {
       "name": "JAVASCRIPT properties",
-      "scope": "source.js variable.other.object.property",
+      "scope": [
+        "source.js variable.other.object.property",
+        "source.js variable.other.property"
+      ],
       "settings": {
         "foreground": "--color-instance-field"
       }
