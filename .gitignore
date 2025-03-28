@@ -12,6 +12,7 @@ node_modules/
 .version-getter/
 build/
 __pycache__
+package-lock.json
 
 # Other
 .tests/
