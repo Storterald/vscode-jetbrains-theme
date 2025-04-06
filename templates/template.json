@@ -1183,7 +1183,8 @@
       "name": "C/C++ properties",
       "scope": [
         "source.c variable.other.property",
-        "source.cpp variable.other.property"
+        "source.cpp variable.other.property",
+        "source.c variable.other.member"      // clangd + better-cpp-syntax
       ],
       "settings": {
         "foreground": "--color-cpp-struct-field"
@@ -1236,6 +1237,15 @@
       "scope": "source.cpp entity.name.type.template",
       "settings": {
         "foreground": "--color-constant"
+      }
+    },
+    {
+      "name": "C/C++ types",
+      "scope": [
+        "source.cpp entity.name.type" // clangd + better-cpp-syntax
+      ],
+      "settings": {
+        "foreground": "--color-cpp-type"
       }
     },
     
@@ -1916,6 +1926,9 @@
     "type:c": "--color-cpp-type",
     "macro:c": "--color-cpp-macro",
     "property:c": "--color-cpp-struct-field",
+    "function.declaration:c": "--color-function-declaration", // clangd + better.cpp-syntax
+    "function.definition:c": "--color-function-declaration",  // clangd + better.cpp-syntax
+    "class:c": "--color-cpp-type",                            // clangd + better.cpp-syntax
 
     // #
     // #               C++
@@ -1950,8 +1963,6 @@
     // #               PYTHON
     // # 
     "function.builtin:python": "--color-python-builtin",
-    "class.decorator:python": "--color-metadata",
-    "function.decorator:python": "--color-metadata",
     "magicFunction.declaration:python": "--color-python-magic-variable",
     "selfParameter:python": "--color-python-self",
     "function.declaration:python": "--color-function-declaration",
@@ -1963,6 +1974,8 @@
     "class.typeHint:python": "--color-foreground",
     "enum.typeHint:python": "--color-foreground",
     "class.builtin:python": "--color-python-builtin",
+    "class.decorator:python": "--color-metadata",
+    "function.decorator:python": "--color-metadata",
     "enumMember:python": "--color-foreground",
 
     // #

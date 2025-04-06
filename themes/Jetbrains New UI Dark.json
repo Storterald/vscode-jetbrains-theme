@@ -1183,7 +1183,8 @@
       "name": "C/C++ properties",
       "scope": [
         "source.c variable.other.property",
-        "source.cpp variable.other.property"
+        "source.cpp variable.other.property",
+        "source.c variable.other.member"      // clangd + better-cpp-syntax
       ],
       "settings": {
         "foreground": "#9373a5"
@@ -1236,6 +1237,15 @@
       "scope": "source.cpp entity.name.type.template",
       "settings": {
         "foreground": "#c77dbb"
+      }
+    },
+    {
+      "name": "C/C++ types",
+      "scope": [
+        "source.cpp entity.name.type" // clangd + better-cpp-syntax
+      ],
+      "settings": {
+        "foreground": "#b5b6e3"
       }
     },
     
@@ -1916,6 +1926,9 @@
     "type:c": "#b5b6e3",
     "macro:c": "#908b25",
     "property:c": "#9373a5",
+    "function.declaration:c": "#56a8f5", // clangd + better.cpp-syntax
+    "function.definition:c": "#56a8f5",  // clangd + better.cpp-syntax
+    "class:c": "#b5b6e3",                            // clangd + better.cpp-syntax
 
     // #
     // #               C++
@@ -1950,8 +1963,6 @@
     // #               PYTHON
     // # 
     "function.builtin:python": "#8888c6",
-    "class.decorator:python": "#b3ae60",
-    "function.decorator:python": "#b3ae60",
     "magicFunction.declaration:python": "#b200b2",
     "selfParameter:python": "#94558d",
     "function.declaration:python": "#56a8f5",
@@ -1963,6 +1974,8 @@
     "class.typeHint:python": "#bcbec4",
     "enum.typeHint:python": "#bcbec4",
     "class.builtin:python": "#8888c6",
+    "class.decorator:python": "#b3ae60",
+    "function.decorator:python": "#b3ae60",
     "enumMember:python": "#bcbec4",
 
     // #
