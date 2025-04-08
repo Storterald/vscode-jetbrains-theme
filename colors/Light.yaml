@@ -152,6 +152,7 @@ codicons:
   --color-codicon-variable: "#e66d17"
   # --color-codicon-value: "#e66d17"
   # --color-codicon-enum-member: "#e66d17"
+  --color-breakpoint: "#e55765"
 
 --color-list-selection: "#d4e2ff"
 --color-list-inactive-selection: "#dfe1e5"

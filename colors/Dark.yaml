@@ -153,6 +153,7 @@ codicons:
   --color-codicon-variable: "#c77d55"
   # --color-codicon-value: "#c77d55"
   # --color-codicon-parameter: "#c77d55"
+  --color-breakpoint: "#db5c5c"
 
 --color-list-selection: "#2e436e"
 --color-list-inactive-selection: "#43454a"

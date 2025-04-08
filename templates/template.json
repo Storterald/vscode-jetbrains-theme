@@ -573,7 +573,7 @@
     "debugIcon.stepOutForeground": "--color-foreground",
     "debugIcon.continueForeground": "--color-foreground",
     "debugIcon.stepBackForeground": "--color-foreground",
-    "debugIcon.breakpointForeground": "--color-foreground",
+    "debugIcon.breakpointForeground": "--color-breakpoint",
     "debugIcon.breakpointDisabledForeground": "--color-foreground",
     "debugIcon.breakpointUnverifiedForeground": "--color-foreground",
     "debugIcon.breakpointCurrentStackframeForeground": "--color-foreground",
@@ -1193,7 +1193,10 @@
     {
       "name": "C/C++ keywords",
       "scope": [
-        "source.c keyword.operator.sizeof"
+        "source.c keyword.operator.sizeof",
+        "source.cpp keyword.operator.sizeof",
+        "source.c constant.character.escape",   // clangd + better.cpp-syntax
+        "source.cpp constant.character.escape", // clangd + better.cpp-syntax
       ],
       "settings": {
         "foreground": "--color-keyword"
@@ -1407,7 +1410,8 @@
       "name": "JAVASCRIPT properties",
       "scope": [
         "source.js variable.other.object.property",
-        "source.js variable.other.property"
+        "source.js variable.other.property",
+        "source.js variable.object.property"
       ],
       "settings": {
         "foreground": "--color-instance-field"
@@ -1747,7 +1751,8 @@
       "name": "TYPESCRIPT properties",
       "scope": [
         "source.ts variable.object.property",
-        "source.ts variable.other.property"
+        "source.ts variable.other.property",
+        "source.ts variable.other.object.property"
       ],
       "settings": {
         "foreground": "--color-instance-field"
@@ -1929,6 +1934,7 @@
     "function.declaration:c": "--color-function-declaration", // clangd + better.cpp-syntax
     "function.definition:c": "--color-function-declaration",  // clangd + better.cpp-syntax
     "class:c": "--color-cpp-type",                            // clangd + better.cpp-syntax
+    "enum:c": "--color-cpp-type",                             // clangd + better.cpp-syntax
 
     // #
     // #               C++
@@ -1941,6 +1947,10 @@
     "macro:cpp": "--color-cpp-macro",
     "memberOperatorOverload:cpp": "--color-cpp-operator-overload",
     "operatorOverload:cpp": "--color-cpp-operator-overload",
+    "function.declaration:cpp": "--color-function-declaration", // clangd + better.cpp-syntax
+    "function.definition:cpp": "--color-function-declaration",  // clangd + better.cpp-syntax
+    "class:cpp": "--color-cpp-type",                            // clangd + better.cpp-syntax
+    "enum:cpp": "--color-cpp-type",                             // clangd + better.cpp-syntax
 
     // #
     // #               C#

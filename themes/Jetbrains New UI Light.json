@@ -573,7 +573,7 @@
     "debugIcon.stepOutForeground": "#000000",
     "debugIcon.continueForeground": "#000000",
     "debugIcon.stepBackForeground": "#000000",
-    "debugIcon.breakpointForeground": "#000000",
+    "debugIcon.breakpointForeground": "#e55765",
     "debugIcon.breakpointDisabledForeground": "#000000",
     "debugIcon.breakpointUnverifiedForeground": "#000000",
     "debugIcon.breakpointCurrentStackframeForeground": "#000000",
@@ -1193,7 +1193,10 @@
     {
       "name": "C/C++ keywords",
       "scope": [
-        "source.c keyword.operator.sizeof"
+        "source.c keyword.operator.sizeof",
+        "source.cpp keyword.operator.sizeof",
+        "source.c constant.character.escape",
+        "source.cpp constant.character.escape",
       ],
       "settings": {
         "foreground": "#0033b3"
@@ -1407,7 +1410,8 @@
       "name": "JAVASCRIPT properties",
       "scope": [
         "source.js variable.other.object.property",
-        "source.js variable.other.property"
+        "source.js variable.other.property",
+        "source.js variable.object.property"
       ],
       "settings": {
         "foreground": "#871094"
@@ -1747,7 +1751,8 @@
       "name": "TYPESCRIPT properties",
       "scope": [
         "source.ts variable.object.property",
-        "source.ts variable.other.property"
+        "source.ts variable.other.property",
+        "source.ts variable.other.object.property"
       ],
       "settings": {
         "foreground": "#871094"
@@ -1929,6 +1934,7 @@
     "function.declaration:c": "#00627a", // clangd + better.cpp-syntax
     "function.definition:c": "#00627a",  // clangd + better.cpp-syntax
     "class:c": "#008080",                            // clangd + better.cpp-syntax
+    "enum:c": "#008080",                             // clangd + better.cpp-syntax
 
     // #
     // #               C++
@@ -1941,6 +1947,10 @@
     "macro:cpp": "#1f542e",
     "memberOperatorOverload:cpp": "#008080",
     "operatorOverload:cpp": "#008080",
+    "function.declaration:cpp": "#00627a", // clangd + better.cpp-syntax
+    "function.definition:cpp": "#00627a",  // clangd + better.cpp-syntax
+    "class:cpp": "#008080",                            // clangd + better.cpp-syntax
+    "enum:cpp": "#008080",                             // clangd + better.cpp-syntax
 
     // #
     // #               C#
