@@ -1,5 +1,26 @@
 # Changelog
 
+## [Release 1.9.0](https://github.com/Storterald/Jetbrains-Themes/releases/tag/1.9.0)
+
+### New Features
+
+ - Support for `C/C++` tokenization from `jeff-hykin.better-cpp-syntax`.
+ - Added colors for many **codicons**.
+
+### Changes
+
+ - Build system improvements.
+ - Renamed the extension to `vscode-jetbrains-theme`.
+
+### Bug Fixes
+
+ - Fixed `titlebar` foreground.
+ - Fixed `exception widget` colors.
+ - Fixed `javascript` properties.
+ - Fixed `typescript` properties.
+ - Fixed `python` builtin decorators.
+ - Fixed `CMake` variables inside strings.
+
 ## [Release 1.8.0](https://github.com/Storterald/Jetbrains-Themes/releases/tag/1.8.0)
 
 ### New Features
