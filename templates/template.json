@@ -154,8 +154,6 @@
     "testing.message.error.lineBackground": "--color-background-main",
     "debugTokenExpression.error": "--color-error",
     "debugConsole.errorForeground": "--color-error",
-    "problemsErrorIcon.foreground": "--color-error",
-    "problemsWarningIcon.foreground": "--color-warning",
     "editorError.background": "#00000000",
     "editorError.foreground": "--color-error",
     "editorError.border": "#00000000",
@@ -166,11 +164,6 @@
     "editorMarkerNavigationError.headerBackground": "#00000000",
     "editorMarkerNavigationWarning.background": "#00000000",
     "editorMarkerNavigationWarning.headerBackground": "#00000000",
-    "notificationsErrorIcon.foreground": "--color-error",
-    "notificationsWarningIcon.foreground": "--color-warning",
-    "testing.iconFailed": "--color-error",
-    "testing.iconErrored": "--color-error",
-    "notebookStatusErrorIcon.foreground": "--color-error",
     "statusBarItem.warningBackground": "#00000000",
     "statusBarItem.warningForeground": "--color-warning",
     "statusBarItem.warningHoverForeground": "--color-warning",
@@ -367,7 +360,6 @@
     "editorGhostText.foreground": "--color-foreground",
     "editor.inlineValuesForeground": "--color-foreground",
     "editor.inlineValuesBackground": "--color-background-main",
-    "ports.iconRunningProcessForeground": "--color-color",
 
     // #
     // #               EDITOR LINE
@@ -564,22 +556,47 @@
     // #
     // #               ICONS
     // # 
-    "debugIcon.pauseForeground": "--color-foreground",
-    "debugIcon.stopForeground": "--color-foreground",
+    "debugIcon.pauseForeground": "--color-codicon-pause",
+    "debugIcon.stopForeground": "--color-codicon-stop",
     "debugIcon.disconnectForeground": "--color-foreground",
-    "debugIcon.restartForeground": "--color-foreground",
-    "debugIcon.stepOverForeground": "--color-foreground",
-    "debugIcon.stepIntoForeground": "--color-foreground",
-    "debugIcon.stepOutForeground": "--color-foreground",
-    "debugIcon.continueForeground": "--color-foreground",
-    "debugIcon.stepBackForeground": "--color-foreground",
-    "debugIcon.breakpointForeground": "--color-breakpoint",
-    "debugIcon.breakpointDisabledForeground": "--color-foreground",
-    "debugIcon.breakpointUnverifiedForeground": "--color-foreground",
+    "debugIcon.restartForeground": "--color-codicon-restart",
+    "debugIcon.stepOverForeground": "--color-codicon-step-over",
+    "debugIcon.stepIntoForeground": "--color-codicon-step-into",
+    "debugIcon.stepOutForeground": "--color-codicon-step-out",
+    "debugIcon.continueForeground": "--color-codicon-continue",
+    "debugIcon.stepBackForeground": "--color-codicon-step-back",
+    "debugIcon.breakpointForeground": "--color-codicon-breakpoint",
+    "debugIcon.breakpointDisabledForeground": "--color-codicon-breakpoint-disabled",
+    "debugIcon.breakpointUnverifiedForeground": "--color-codicon-breakpoint-unverified",
     "debugIcon.breakpointCurrentStackframeForeground": "--color-foreground",
     "debugIcon.breakpointStackframeForeground": "--color-foreground",
     "problemsInfoIcon.foreground": "--color-foreground",
     "banner.iconForeground": "--color-foreground",
+    "problemsErrorIcon.foreground": "--color-error",
+    "problemsWarningIcon.foreground": "--color-warning",
+    "debugConsoleInputIcon.foreground": "--color-foreground",
+    "debugIcon.startForeground": "--color-foreground",
+    "testing.iconErrored.retired": "--color-background-main",
+    "testing.iconFailed.retired": "--color-background-main",
+    "testing.iconPassed.retired": "--color-background-main",
+    "testing.iconQueued.retired": "--color-background-main",
+    "testing.iconUnset.retired": "--color-background-main",
+    "testing.iconSkipped.retired": "--color-background-main",
+    "notificationsInfoIcon.foreground": "--color-foreground",
+    "commentsView.resolvedIcon": "--color-background-main",
+    "commentsView.unresolvedIcon": "--color-background-secondary",
+    "ports.iconRunningProcessForeground": "--color-color",
+    "notificationsErrorIcon.foreground": "--color-error",
+    "notificationsWarningIcon.foreground": "--color-warning",
+    "testing.iconFailed": "--color-error",
+    "testing.iconErrored": "--color-error",
+    "notebookStatusErrorIcon.foreground": "--color-error",
+    "extensionIcon.starForeground": "--color-foregroundcc",
+    "extensionIcon.verifiedForeground": "--color-foregroundcc",
+    "extensionIcon.preReleaseForeground": "--color-colorcc",
+    "extensionIcon.sponsorForeground": "--color-foregroundcc",
+    "notebookStatusSuccessIcon.foreground": "--color-foreground",
+    "notebookStatusRunningIcon.foreground": "--color-foreground",
 
     // #
     // #               CURSORS
@@ -731,12 +748,10 @@
     "debugConsole.infoForeground": "--color-foreground",
     "debugConsole.warningForeground": "--color-foreground",
     "debugConsole.sourceForeground": "--color-foreground",
-    "debugConsoleInputIcon.foreground": "--color-foreground",
     "debugExceptionWidget.border": "--color-accent",
     "debugExceptionWidget.background": "--color-background-main",
     "debugToolBar.background": "--color-accent",
     "debugToolBar.border": "--color-accent",
-    "debugIcon.startForeground": "--color-foreground",
 
     // #
     // #               SCM
@@ -850,7 +865,6 @@
     "notifications.background": "--color-background-main",
     "notificationCenterHeader.background": "--color-background-secondary",
     "notifications.border": "--color-accent",
-    "notificationsInfoIcon.foreground": "--color-foreground",
 
     // #
     // #               CHAT
@@ -865,8 +879,6 @@
     // #
     // #               COMMENTS
     // #
-    "commentsView.resolvedIcon": "--color-background-main",
-    "commentsView.unresolvedIcon": "--color-background-secondary",
     "editorCommentsWidget.replyInputBackground": "#252526",
     "editorCommentsWidget.resolvedBorder": "--color-background-main",
     "editorCommentsWidget.unresolvedBorder": "--color-background-secondary",
@@ -895,12 +907,6 @@
     "testing.coverCountBadgeBackground": "--color-color",
     "testing.coverCountBadgeForeground": "--color-foreground",
     "testing.message.info.decorationForeground": "--color-foreground",
-    "testing.iconErrored.retired": "--color-background-main",
-    "testing.iconFailed.retired": "--color-background-main",
-    "testing.iconPassed.retired": "--color-background-main",
-    "testing.iconQueued.retired": "--color-background-main",
-    "testing.iconUnset.retired": "--color-background-main",
-    "testing.iconSkipped.retired": "--color-background-main",
 
     // #
     // #               WELCOME PAGE
@@ -923,19 +929,13 @@
     "extensionButton.prominentBackground": "--color-accent",
     "extensionButton.prominentForeground": "--color-foreground",
     "extensionButton.prominentHoverBackground": "--color-hovered",
-    "extensionIcon.starForeground": "--color-foregroundcc",
-    "extensionIcon.verifiedForeground": "--color-foregroundcc",
-    "extensionIcon.preReleaseForeground": "--color-colorcc",
-    "extensionIcon.sponsorForeground": "--color-foregroundcc",
 
     // #
     // #               NOTEBOOK
     // # 
     "notebook.cellBorderColor": "--color-accent",
     "notebook.focusedEditorBorder": "--color-background-secondary",
-    "notebookStatusSuccessIcon.foreground": "--color-foreground",
     "notebookEditorOverviewRuler.runningCellForeground": "--color-foreground",
-    "notebookStatusRunningIcon.foreground": "--color-foreground",
     "notebook.cellToolbarSeparator": "--color-background-main",
     "notebook.focusedCellBorder": "--color-background-secondary",
     "notebook.inactiveFocusedCellBorder": "--color-accent",
@@ -1169,7 +1169,8 @@
       "name": "CMAKE text",
       "scope": [
         "source.cmake variable",
-        "source.cmake keyword.preprocessor.generator-expression"
+        "source.cmake keyword.preprocessor.generator-expression",
+        "source.cmake storage.source"
       ],
       "settings": {
         "foreground": "--color-foreground"
@@ -1924,6 +1925,7 @@
     "type:cmake": "--color-keyword",
     "function:cmake": "--color-cmake-command",
     "enum:cmake": "--color-keyword",
+    "variable:cmake": "--color-foreground",
 
     // #
     // #               C

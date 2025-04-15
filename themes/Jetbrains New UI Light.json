@@ -154,8 +154,6 @@
     "testing.message.error.lineBackground": "#ffffff",
     "debugTokenExpression.error": "#ff0000",
     "debugConsole.errorForeground": "#ff0000",
-    "problemsErrorIcon.foreground": "#ff0000",
-    "problemsWarningIcon.foreground": "#f2bf57",
     "editorError.background": "#00000000",
     "editorError.foreground": "#ff0000",
     "editorError.border": "#00000000",
@@ -166,11 +164,6 @@
     "editorMarkerNavigationError.headerBackground": "#00000000",
     "editorMarkerNavigationWarning.background": "#00000000",
     "editorMarkerNavigationWarning.headerBackground": "#00000000",
-    "notificationsErrorIcon.foreground": "#ff0000",
-    "notificationsWarningIcon.foreground": "#f2bf57",
-    "testing.iconFailed": "#ff0000",
-    "testing.iconErrored": "#ff0000",
-    "notebookStatusErrorIcon.foreground": "#ff0000",
     "statusBarItem.warningBackground": "#00000000",
     "statusBarItem.warningForeground": "#f2bf57",
     "statusBarItem.warningHoverForeground": "#f2bf57",
@@ -367,7 +360,6 @@
     "editorGhostText.foreground": "#000000",
     "editor.inlineValuesForeground": "#000000",
     "editor.inlineValuesBackground": "#ffffff",
-    "ports.iconRunningProcessForeground": "#006dcc",
 
     // #
     // #               EDITOR LINE
@@ -564,22 +556,47 @@
     // #
     // #               ICONS
     // # 
-    "debugIcon.pauseForeground": "#000000",
-    "debugIcon.stopForeground": "#000000",
+    "debugIcon.pauseForeground": "#6c707e",
+    "debugIcon.stopForeground": "#e55765",
     "debugIcon.disconnectForeground": "#000000",
-    "debugIcon.restartForeground": "#000000",
-    "debugIcon.stepOverForeground": "#000000",
-    "debugIcon.stepIntoForeground": "#000000",
-    "debugIcon.stepOutForeground": "#000000",
-    "debugIcon.continueForeground": "#000000",
-    "debugIcon.stepBackForeground": "#000000",
+    "debugIcon.restartForeground": "#6c707e",
+    "debugIcon.stepOverForeground": "#6c707e",
+    "debugIcon.stepIntoForeground": "#6c707e",
+    "debugIcon.stepOutForeground": "#6c707e",
+    "debugIcon.continueForeground": "#208a3c",
+    "debugIcon.stepBackForeground": "#6c707e",
     "debugIcon.breakpointForeground": "#e55765",
-    "debugIcon.breakpointDisabledForeground": "#000000",
-    "debugIcon.breakpointUnverifiedForeground": "#000000",
+    "debugIcon.breakpointDisabledForeground": "#e55765",
+    "debugIcon.breakpointUnverifiedForeground": "#e55765",
     "debugIcon.breakpointCurrentStackframeForeground": "#000000",
     "debugIcon.breakpointStackframeForeground": "#000000",
     "problemsInfoIcon.foreground": "#000000",
     "banner.iconForeground": "#000000",
+    "problemsErrorIcon.foreground": "#ff0000",
+    "problemsWarningIcon.foreground": "#f2bf57",
+    "debugConsoleInputIcon.foreground": "#000000",
+    "debugIcon.startForeground": "#000000",
+    "testing.iconErrored.retired": "#ffffff",
+    "testing.iconFailed.retired": "#ffffff",
+    "testing.iconPassed.retired": "#ffffff",
+    "testing.iconQueued.retired": "#ffffff",
+    "testing.iconUnset.retired": "#ffffff",
+    "testing.iconSkipped.retired": "#ffffff",
+    "notificationsInfoIcon.foreground": "#000000",
+    "commentsView.resolvedIcon": "#ffffff",
+    "commentsView.unresolvedIcon": "#f7f8fa",
+    "ports.iconRunningProcessForeground": "#006dcc",
+    "notificationsErrorIcon.foreground": "#ff0000",
+    "notificationsWarningIcon.foreground": "#f2bf57",
+    "testing.iconFailed": "#ff0000",
+    "testing.iconErrored": "#ff0000",
+    "notebookStatusErrorIcon.foreground": "#ff0000",
+    "extensionIcon.starForeground": "#000000cc",
+    "extensionIcon.verifiedForeground": "#000000cc",
+    "extensionIcon.preReleaseForeground": "#006dcccc",
+    "extensionIcon.sponsorForeground": "#000000cc",
+    "notebookStatusSuccessIcon.foreground": "#000000",
+    "notebookStatusRunningIcon.foreground": "#000000",
 
     // #
     // #               CURSORS
@@ -731,12 +748,10 @@
     "debugConsole.infoForeground": "#000000",
     "debugConsole.warningForeground": "#000000",
     "debugConsole.sourceForeground": "#000000",
-    "debugConsoleInputIcon.foreground": "#000000",
     "debugExceptionWidget.border": "#ebecf0",
     "debugExceptionWidget.background": "#ffffff",
     "debugToolBar.background": "#ebecf0",
     "debugToolBar.border": "#ebecf0",
-    "debugIcon.startForeground": "#000000",
 
     // #
     // #               SCM
@@ -850,7 +865,6 @@
     "notifications.background": "#ffffff",
     "notificationCenterHeader.background": "#f7f8fa",
     "notifications.border": "#ebecf0",
-    "notificationsInfoIcon.foreground": "#000000",
 
     // #
     // #               CHAT
@@ -865,8 +879,6 @@
     // #
     // #               COMMENTS
     // #
-    "commentsView.resolvedIcon": "#ffffff",
-    "commentsView.unresolvedIcon": "#f7f8fa",
     "editorCommentsWidget.replyInputBackground": "#252526",
     "editorCommentsWidget.resolvedBorder": "#ffffff",
     "editorCommentsWidget.unresolvedBorder": "#f7f8fa",
@@ -895,12 +907,6 @@
     "testing.coverCountBadgeBackground": "#006dcc",
     "testing.coverCountBadgeForeground": "#000000",
     "testing.message.info.decorationForeground": "#000000",
-    "testing.iconErrored.retired": "#ffffff",
-    "testing.iconFailed.retired": "#ffffff",
-    "testing.iconPassed.retired": "#ffffff",
-    "testing.iconQueued.retired": "#ffffff",
-    "testing.iconUnset.retired": "#ffffff",
-    "testing.iconSkipped.retired": "#ffffff",
 
     // #
     // #               WELCOME PAGE
@@ -923,19 +929,13 @@
     "extensionButton.prominentBackground": "#ebecf0",
     "extensionButton.prominentForeground": "#000000",
     "extensionButton.prominentHoverBackground": "#eaebed",
-    "extensionIcon.starForeground": "#000000cc",
-    "extensionIcon.verifiedForeground": "#000000cc",
-    "extensionIcon.preReleaseForeground": "#006dcccc",
-    "extensionIcon.sponsorForeground": "#000000cc",
 
     // #
     // #               NOTEBOOK
     // # 
     "notebook.cellBorderColor": "#ebecf0",
     "notebook.focusedEditorBorder": "#f7f8fa",
-    "notebookStatusSuccessIcon.foreground": "#000000",
     "notebookEditorOverviewRuler.runningCellForeground": "#000000",
-    "notebookStatusRunningIcon.foreground": "#000000",
     "notebook.cellToolbarSeparator": "#ffffff",
     "notebook.focusedCellBorder": "#f7f8fa",
     "notebook.inactiveFocusedCellBorder": "#ebecf0",
@@ -1169,7 +1169,8 @@
       "name": "CMAKE text",
       "scope": [
         "source.cmake variable",
-        "source.cmake keyword.preprocessor.generator-expression"
+        "source.cmake keyword.preprocessor.generator-expression",
+        "source.cmake storage.source"
       ],
       "settings": {
         "foreground": "#000000"
@@ -1195,8 +1196,8 @@
       "scope": [
         "source.c keyword.operator.sizeof",
         "source.cpp keyword.operator.sizeof",
-        "source.c constant.character.escape",
-        "source.cpp constant.character.escape",
+        "source.c constant.character.escape",   // clangd + better.cpp-syntax
+        "source.cpp constant.character.escape", // clangd + better.cpp-syntax
       ],
       "settings": {
         "foreground": "#0033b3"
@@ -1924,6 +1925,7 @@
     "type:cmake": "#0033b3",
     "function:cmake": "#00627a",
     "enum:cmake": "#0033b3",
+    "variable:cmake": "#000000",
 
     // #
     // #               C
