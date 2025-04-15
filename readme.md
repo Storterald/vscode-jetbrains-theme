@@ -3,12 +3,6 @@
 A theme with languages support from across all [`Jetbrains`](https://www.jetbrains.com) IDEs.
 You can view the full changelog [here](./CHANGELOG.md).
 
-# Jetbrains Icons
-
-It is suggested to use the [`chadalen.vscode-jetbrains-icon-theme`](https://marketplace.visualstudio.com/items?itemName=chadalen.vscode-jetbrains-icon-theme)
-extension and the [`storterald.jetbrains-product-icons`](https://marketplace.visualstudio.com/items?itemName=storterald.jetbrains-product-iconse)
-extension to have both **icon theme** and **product icon theme**.
-
 # Compatibility and Incompatibilities
 
 ## Extension Incompatibilities
@@ -19,24 +13,12 @@ extension to have both **icon theme** and **product icon theme**.
 
 ## Languages compatibility
 
- - `CSS`
- - `HTML`
- - `Javascript`
- - `Json`
- - `Python`
- - `Regex`
- - `Batch`
- - `Shell`
- - `AHK`: requires [*mark-wiemer.vscode-autohotkey-plus-plus*](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)
- - `Typescript`
- - `XML`
- - `YAML`
+The extension provides *basic* colorization for **all** languages, but there are some languages that are better colored when using a **tokenizer** and **semantic token highlighter**. The languages that **depend** on other extensions for a better colorization are:
 
-### From CLion:
- - `C`
- - `C++`
- - `CMake`: requires [*josetr.cmake-language-support-vscode*](https://marketplace.visualstudio.com/items?itemName=josetr.cmake-language-support-vscode)
- - `Assembly x86`: requires [*maziac.asm-code-lens*](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens)
-
-### From Rider:
- - `C#`
+ - `Python`: [*ms-python.python*](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+ - `AHK`:  [*mark-wiemer.vscode-autohotkey-plus-plus*](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)
+ - `XML`: [*redhat.vscode-xml*](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
+ - `C/C++`: [*ms-vscode.cpptools*](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) or [*jeff-hykin.better-cpp-syntax*](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
+ - `CMake`:  [*josetr.cmake-language-support-vscode*](https://marketplace.visualstudio.com/items?itemName=josetr.cmake-language-support-vscode)
+ - `Assembly x86`:  [*maziac.asm-code-lens*](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens)
+ - `C#`:  [*ms-dotnettools.csharp*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
