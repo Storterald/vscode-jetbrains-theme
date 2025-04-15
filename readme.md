@@ -25,10 +25,12 @@ extension to have both **icon theme** and **product icon theme**.
  - `Json`
  - `Python`
  - `Regex`
+ - `Batch`
  - `Shell`
+ - `AHK`: requires [*mark-wiemer.vscode-autohotkey-plus-plus*](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)
  - `Typescript`
  - `XML`
- - `YAML`,
+ - `YAML`
 
 ### From CLion:
  - `C`
