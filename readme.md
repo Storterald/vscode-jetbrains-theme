@@ -9,7 +9,6 @@ The extension provides *basic* colorization for **all** languages, but there are
 
  - `Python`: [*ms-python.python*](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
  - `AHK`: [*mark-wiemer.vscode-autohotkey-plus-plus*](https://marketplace.visualstudio.com/items?itemName=mark-wiemer.vscode-autohotkey-plus-plus)
- - `XML`: [*redhat.vscode-xml*](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
  - `C/C++`: [*ms-vscode.cpptools*](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) or [*jeff-hykin.better-cpp-syntax*](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
  - `CMake`: [*josetr.cmake-language-support-vscode*](https://marketplace.visualstudio.com/items?itemName=josetr.cmake-language-support-vscode)
  - `Assembly x86`: [*maziac.asm-code-lens*](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens)
@@ -24,5 +23,6 @@ Some languages have a good enough tokenizer already **built in** vscode, so they
  - `CSS`
  - `JSON`
  - `YAML`
+ - `XML`
  - `Shell`
  - `Batch`
