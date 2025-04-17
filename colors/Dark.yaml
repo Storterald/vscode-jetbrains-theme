@@ -97,6 +97,10 @@ HTML:
   --color-html-entity-reference: "#56a8f5"
   --color-html-tag: "#d5b778"
 
+Java:
+  parameters:
+    --color-java-type-parameter: "#16baac"
+
 Javascript:
   identifiers:
     --color-javascript-local-variable: "#a9b7c6"

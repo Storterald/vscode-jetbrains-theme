@@ -1382,7 +1382,55 @@
     // #
     // #               JAVA
     // # 
-    
+    {
+      "name": "JAVA annotations",
+      "scope": [
+        "source.java storage.type.annotation",
+        "source.java punctuation.definition.annotation"
+      ],
+      "settings": {
+        "foreground": "#9e880d"
+      }
+    },
+    {
+      "name": "JAVA text",
+      "scope": [
+        "source.java constant.other.key",
+        "source.java storage.modifier.import",
+        "source.java storage.modifier.package",
+        "source.java comment.block.javadoc variable.parameter",
+        "source.java variable.language.wildcard",
+        "source.java storage.type.generic.wildcard",
+        "source.java keyword.control.ternary"
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    {
+      "name": "JAVA properties",
+      "scope": [
+        "source.java variable.other.object.property"
+      ],
+      "settings": {
+        "foreground": "#871094"
+      }
+    },
+    {
+      "name": "JAVA documentation",
+      "scope": "source.java comment.block.javadoc",
+      "settings": {
+        "foreground": "#8c8c8c"
+      }
+    },
+    {
+      "name": "JAVA documentation tags",
+      "scope": "source.java keyword.other.documentation.javadoc",
+      "settings": {
+        "foreground": "#8c8c8c"
+      }
+    },
+
     // #
     // #               JAVASCRIPT
     // # 
@@ -1961,6 +2009,22 @@
     "field:csharp": "#871094",
     "method:csharp": "#00627a",
     "constant:csharp": "#871094",
+
+    // #
+    // #               JAVA
+    // # 
+    "method.declaration:java": "#00627a",
+    "parameter.documentation:java": "#3d3d3d",
+    "class:java": "#000000",
+    "interface:java": "#000000",
+    "keyword.documentation:java": "#8c8c8c",
+    "annotation.declaration": "#9e880d",
+    "property:java": "#871094",
+    "typeParameter:java": "#007e8a",
+    "class.declaration.constructor:java": "#00627a",
+    "interface.declaration.constructor:java": "#00627a",
+    "method.documentation:java": "#000000",
+    "annotation:java": "#9e880d",
 
     // #
     // #               JAVASCRIPT

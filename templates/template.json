@@ -1382,7 +1382,55 @@
     // #
     // #               JAVA
     // # 
-    
+    {
+      "name": "JAVA annotations",
+      "scope": [
+        "source.java storage.type.annotation",
+        "source.java punctuation.definition.annotation"
+      ],
+      "settings": {
+        "foreground": "--color-metadata"
+      }
+    },
+    {
+      "name": "JAVA text",
+      "scope": [
+        "source.java constant.other.key",
+        "source.java storage.modifier.import",
+        "source.java storage.modifier.package",
+        "source.java comment.block.javadoc variable.parameter",
+        "source.java variable.language.wildcard",
+        "source.java storage.type.generic.wildcard",
+        "source.java keyword.control.ternary"
+      ],
+      "settings": {
+        "foreground": "--color-foreground"
+      }
+    },
+    {
+      "name": "JAVA properties",
+      "scope": [
+        "source.java variable.other.object.property"
+      ],
+      "settings": {
+        "foreground": "--color-instance-field"
+      }
+    },
+    {
+      "name": "JAVA documentation",
+      "scope": "source.java comment.block.javadoc",
+      "settings": {
+        "foreground": "--color-doc-text"
+      }
+    },
+    {
+      "name": "JAVA documentation tags",
+      "scope": "source.java keyword.other.documentation.javadoc",
+      "settings": {
+        "foreground": "--color-doc-tag"
+      }
+    },
+
     // #
     // #               JAVASCRIPT
     // # 
@@ -1961,6 +2009,22 @@
     "field:csharp": "--color-instance-field",
     "method:csharp": "--color-csharp-method",
     "constant:csharp": "--color-constant",
+
+    // #
+    // #               JAVA
+    // # 
+    "method.declaration:java": "--color-function-declaration",
+    "parameter.documentation:java": "--color-doc-tag-value",
+    "class:java": "--color-foreground",
+    "interface:java": "--color-foreground",
+    "keyword.documentation:java": "--color-doc-tag",
+    "annotation.declaration": "--color-metadata",
+    "property:java": "--color-instance-field",
+    "typeParameter:java": "--color-java-type-parameter",
+    "class.declaration.constructor:java": "--color-function-declaration",
+    "interface.declaration.constructor:java": "--color-function-declaration",
+    "method.documentation:java": "--color-foreground",
+    "annotation:java": "--color-metadata",
 
     // #
     // #               JAVASCRIPT
