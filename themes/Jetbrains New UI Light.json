@@ -1209,7 +1209,9 @@
       "name": "C/C++ text",
       "scope": [
         "source.c constant.character",
-        "source.cpp constant.character"
+        "source.cpp constant.character",
+        "source.c constant.character.escape.line-continuation",  // clangd + better.cpp-syntax
+        "source.cpp constant.character.escape.line-continuation" // clangd + better.cpp-syntax
       ],
       "settings": {
         "foreground": "#000000"
@@ -2009,6 +2011,7 @@
     "operator.declaration:cpp": "#008080",                     // clangd + better.cpp-syntax
     "class.declaration.constructorOrDestructor:cpp": "#00627a", // clangd + better.cpp-syntax
     "variable.classScope:cpp": "#660e7a",                           // clangd + better.cpp-syntax
+    "typeParameter:cpp": "#871094",                                         // clangd + better.cpp-syntax
 
     // #
     // #               C#
