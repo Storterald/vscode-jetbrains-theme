@@ -192,3 +192,5 @@ codicons:
 --color-git-deleted: "#8c8c8c"
 --color-git-untracked: "#c73176"
 --color-git-ignored: "#d48d07"
+
+--color-debug-token-name: "#83424d"

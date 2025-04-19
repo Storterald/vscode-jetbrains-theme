@@ -152,7 +152,6 @@
     "statusBarItem.errorHoverBackground": "#ffffff",
     "terminalCommandDecoration.errorBackground": "#00000000",
     "testing.message.error.lineBackground": "#ffffff",
-    "debugTokenExpression.error": "#ff0000",
     "debugConsole.errorForeground": "#ff0000",
     "editorError.background": "#00000000",
     "editorError.foreground": "#ff0000",
@@ -734,12 +733,13 @@
     // #
     // #               DEBUG
     // #
-    "debugTokenExpression.name": "#c586c0", // unknown
-    "debugTokenExpression.type": "#4a90e2", // unknown
-    "debugTokenExpression.value": "#ffffff",
-    "debugTokenExpression.string": "#ce9178", // unknown
-    "debugTokenExpression.boolean": "#006dcc",
-    "debugTokenExpression.number": "#b5cea8", // unknown
+    "debugTokenExpression.error": "#ff0000",
+    "debugTokenExpression.name": "#83424d",
+    "debugTokenExpression.type": "#4a90e2",
+    "debugTokenExpression.value": "#000000",
+    "debugTokenExpression.string": "#067d17",
+    "debugTokenExpression.boolean": "#000000",
+    "debugTokenExpression.number": "#000000",
     "debugView.exceptionLabelForeground": "#000000",
     "debugView.exceptionLabelBackground": "#ebecf0",
     "debugView.stateLabelForeground": "#000000",
@@ -1194,10 +1194,12 @@
     {
       "name": "C/C++ keywords",
       "scope": [
-        "source.c keyword.operator.sizeof",
-        "source.cpp keyword.operator.sizeof",
         "source.c constant.character.escape",   // clangd + better.cpp-syntax
         "source.cpp constant.character.escape", // clangd + better.cpp-syntax
+        "source.cpp keyword.operator.delete",
+        "source.cpp keyword.operator.new",
+        "source.cpp keyword.operator.sizeof",
+        "source.c keyword.operator.sizeof",
       ],
       "settings": {
         "foreground": "#0033b3"
@@ -1997,10 +1999,16 @@
     "macro:cpp": "#1f542e",
     "memberOperatorOverload:cpp": "#008080",
     "operatorOverload:cpp": "#008080",
-    "function.declaration:cpp": "#00627a", // clangd + better.cpp-syntax
-    "function.definition:cpp": "#00627a",  // clangd + better.cpp-syntax
-    "class:cpp": "#008080",                            // clangd + better.cpp-syntax
-    "enum:cpp": "#008080",                             // clangd + better.cpp-syntax
+    "function.declaration:cpp": "#00627a",                      // clangd + better.cpp-syntax
+    "function.definition:cpp": "#00627a",                       // clangd + better.cpp-syntax
+    "class:cpp": "#008080",                                                 // clangd + better.cpp-syntax
+    "enum:cpp": "#008080",                                                  // clangd + better.cpp-syntax
+    "class.deduced:cpp": "#0033b3",                                          // clangd + better.cpp-syntax
+    "operator.userDefined:cpp": "#008080",                     // clangd + better.cpp-syntax
+    "operator.definition:cpp": "#008080",                      // clangd + better.cpp-syntax
+    "operator.declaration:cpp": "#008080",                     // clangd + better.cpp-syntax
+    "class.declaration.constructorOrDestructor:cpp": "#00627a", // clangd + better.cpp-syntax
+    "variable.classScope:cpp": "#660e7a",                           // clangd + better.cpp-syntax
 
     // #
     // #               C#

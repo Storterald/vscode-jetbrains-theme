@@ -152,7 +152,6 @@
     "statusBarItem.errorHoverBackground": "--color-background-main",
     "terminalCommandDecoration.errorBackground": "#00000000",
     "testing.message.error.lineBackground": "--color-background-main",
-    "debugTokenExpression.error": "--color-error",
     "debugConsole.errorForeground": "--color-error",
     "editorError.background": "#00000000",
     "editorError.foreground": "--color-error",
@@ -734,12 +733,13 @@
     // #
     // #               DEBUG
     // #
-    "debugTokenExpression.name": "#c586c0", // unknown
-    "debugTokenExpression.type": "#4a90e2", // unknown
-    "debugTokenExpression.value": "--color-background-main",
-    "debugTokenExpression.string": "#ce9178", // unknown
-    "debugTokenExpression.boolean": "--color-color",
-    "debugTokenExpression.number": "#b5cea8", // unknown
+    "debugTokenExpression.error": "--color-error",
+    "debugTokenExpression.name": "--color-debug-token-name",
+    "debugTokenExpression.type": "#4a90e2",
+    "debugTokenExpression.value": "--color-foreground",
+    "debugTokenExpression.string": "--color-string",
+    "debugTokenExpression.boolean": "--color-foreground",
+    "debugTokenExpression.number": "--color-foreground",
     "debugView.exceptionLabelForeground": "--color-foreground",
     "debugView.exceptionLabelBackground": "--color-accent",
     "debugView.stateLabelForeground": "--color-foreground",
@@ -1194,10 +1194,12 @@
     {
       "name": "C/C++ keywords",
       "scope": [
-        "source.c keyword.operator.sizeof",
-        "source.cpp keyword.operator.sizeof",
         "source.c constant.character.escape",   // clangd + better.cpp-syntax
         "source.cpp constant.character.escape", // clangd + better.cpp-syntax
+        "source.cpp keyword.operator.delete",
+        "source.cpp keyword.operator.new",
+        "source.cpp keyword.operator.sizeof",
+        "source.c keyword.operator.sizeof",
       ],
       "settings": {
         "foreground": "--color-keyword"
@@ -1997,10 +1999,16 @@
     "macro:cpp": "--color-cpp-macro",
     "memberOperatorOverload:cpp": "--color-cpp-operator-overload",
     "operatorOverload:cpp": "--color-cpp-operator-overload",
-    "function.declaration:cpp": "--color-function-declaration", // clangd + better.cpp-syntax
-    "function.definition:cpp": "--color-function-declaration",  // clangd + better.cpp-syntax
-    "class:cpp": "--color-cpp-type",                            // clangd + better.cpp-syntax
-    "enum:cpp": "--color-cpp-type",                             // clangd + better.cpp-syntax
+    "function.declaration:cpp": "--color-function-declaration",                      // clangd + better.cpp-syntax
+    "function.definition:cpp": "--color-function-declaration",                       // clangd + better.cpp-syntax
+    "class:cpp": "--color-cpp-type",                                                 // clangd + better.cpp-syntax
+    "enum:cpp": "--color-cpp-type",                                                  // clangd + better.cpp-syntax
+    "class.deduced:cpp": "--color-keyword",                                          // clangd + better.cpp-syntax
+    "operator.userDefined:cpp": "--color-cpp-operator-overload",                     // clangd + better.cpp-syntax
+    "operator.definition:cpp": "--color-cpp-operator-overload",                      // clangd + better.cpp-syntax
+    "operator.declaration:cpp": "--color-cpp-operator-overload",                     // clangd + better.cpp-syntax
+    "class.declaration.constructorOrDestructor:cpp": "--color-function-declaration", // clangd + better.cpp-syntax
+    "variable.classScope:cpp": "--color-cpp-struct-field",                           // clangd + better.cpp-syntax
 
     // #
     // #               C#
