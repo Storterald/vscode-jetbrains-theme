@@ -80,6 +80,7 @@ C/C++:
   --color-cpp-macro: "#908b25"
   --fontstyle-cpp-macro: ""
   --color-cpp-struct-field: "#9373a5"
+  --color-cpp-defs: "#b9Bcd1"
 
 C#:
   --color-escape-character-2: "#ff8d1c"

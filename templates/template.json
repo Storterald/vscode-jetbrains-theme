@@ -2005,13 +2005,15 @@
     "function.definition:cpp": "--color-function-declaration",                       // clangd + better.cpp-syntax
     "class:cpp": "--color-cpp-type",                                                 // clangd + better.cpp-syntax
     "enum:cpp": "--color-cpp-type",                                                  // clangd + better.cpp-syntax
+    "concept:cpp": "--color-cpp-type",                                               // clangd + better.cpp-syntax
     "class.deduced:cpp": "--color-keyword",                                          // clangd + better.cpp-syntax
     "operator.userDefined:cpp": "--color-cpp-operator-overload",                     // clangd + better.cpp-syntax
     "operator.definition:cpp": "--color-cpp-operator-overload",                      // clangd + better.cpp-syntax
     "operator.declaration:cpp": "--color-cpp-operator-overload",                     // clangd + better.cpp-syntax
     "class.declaration.constructorOrDestructor:cpp": "--color-function-declaration", // clangd + better.cpp-syntax
     "variable.classScope:cpp": "--color-cpp-struct-field",                           // clangd + better.cpp-syntax
-    "typeParameter:cpp": "--color-constant",                                         // clangd + better.cpp-syntax
+    "typeParameter:cpp": "--color-cpp-defs",                                         // clangd + better.cpp-syntax
+    "typeParameter.readonly:cpp": "--color-constant",                                // clangd + better.cpp-syntax
 
     // #
     // #               C#

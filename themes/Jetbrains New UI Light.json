@@ -2005,13 +2005,15 @@
     "function.definition:cpp": "#00627a",                       // clangd + better.cpp-syntax
     "class:cpp": "#008080",                                                 // clangd + better.cpp-syntax
     "enum:cpp": "#008080",                                                  // clangd + better.cpp-syntax
+    "concept:cpp": "#008080",                                               // clangd + better.cpp-syntax
     "class.deduced:cpp": "#0033b3",                                          // clangd + better.cpp-syntax
     "operator.userDefined:cpp": "#008080",                     // clangd + better.cpp-syntax
     "operator.definition:cpp": "#008080",                      // clangd + better.cpp-syntax
     "operator.declaration:cpp": "#008080",                     // clangd + better.cpp-syntax
     "class.declaration.constructorOrDestructor:cpp": "#00627a", // clangd + better.cpp-syntax
     "variable.classScope:cpp": "#660e7a",                           // clangd + better.cpp-syntax
-    "typeParameter:cpp": "#871094",                                         // clangd + better.cpp-syntax
+    "typeParameter:cpp": "#371f80",                                         // clangd + better.cpp-syntax
+    "typeParameter.readonly:cpp": "#871094",                                // clangd + better.cpp-syntax
 
     // #
     // #               C#
